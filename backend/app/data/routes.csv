@@ -1,0 +1,901 @@
+route_id,origin,destination,cargo_type,containers,recommended_ship,imo_number,speed,latitude,longitude,departure_port,arrival_port,origin_country,destination_country
+1,Chennai,Shanghai,General Cargo,15,Pacific Pearl,9300016,15.2,13.0827,80.2707,Chennai,Shanghai,India,China
+2,Valencia,Mumbai,General Cargo,5,Golden Wave,9300022,17.5,39.4699,-0.3763,Valencia,Mumbai,Spain,India
+3,Rotterdam,Los Angeles,Container,75,Neptune Star,9300022,19.8,51.9244,4.4777,Rotterdam,Los Angeles,Netherlands,USA
+4,Valencia,Sydney,General Cargo,25,Global Trader,9300018,17.8,39.4699,-0.3763,Valencia,Sydney,Spain,Australia
+5,Dubai,Colombo,Bulk Cargo,20,Atlantic Spirit,9300021,15.6,25.2048,55.2708,Dubai,Colombo,UAE,Sri Lanka
+6,Chennai,Mumbai,Liquid Cargo,30,Maritime Eagle,9300023,13.3,13.0827,80.2707,Chennai,Mumbai,India,India
+7,Los Angeles,Singapore,General Cargo,40,Cargo Express,9300025,19.0,33.7405,-118.2755,Los Angeles,Singapore,USA,Singapore
+8,Valencia,New York,Liquid Cargo,30,Golden Wave,9300028,23.5,39.4699,-0.3763,Valencia,New York,Spain,USA
+9,Rotterdam,Mumbai,General Cargo,25,Ocean Star,9300020,20.6,51.9244,4.4777,Rotterdam,Mumbai,Netherlands,India
+10,Hamburg,Chennai,Container,30,Maritime Eagle,9300017,15.6,53.5511,9.9937,Hamburg,Chennai,Germany,India
+11,Hong Kong,Tokyo,Liquid Cargo,10,Global Trader,9300015,20.7,22.3193,114.1694,Hong Kong,Tokyo,Hong Kong,Japan
+12,Dubai,Santos,Bulk Cargo,40,Global Trader,9300016,14.1,25.2048,55.2708,Dubai,Santos,UAE,Brazil
+13,Valencia,Hamburg,Container,5,Atlantic Spirit,9300019,23.0,39.4699,-0.3763,Valencia,Hamburg,Spain,Germany
+14,Singapore,Hong Kong,Liquid Cargo,20,Maritime Eagle,9300021,15.5,1.3521,103.8198,Singapore,Hong Kong,Singapore,Hong Kong
+15,Busan,Rotterdam,Container,50,Cargo Express,9300023,17.1,35.1796,129.0756,Busan,Rotterdam,South Korea,Netherlands
+16,Los Angeles,Kolkata,Bulk Cargo,75,Global Trader,9300020,21.7,33.7405,-118.2755,Los Angeles,Kolkata,USA,India
+17,Santos,Sydney,Container,20,Golden Wave,9300027,17.2,-23.9608,-46.3336,Santos,Sydney,Brazil,Australia
+18,Antwerp,Jebel Ali,Container,10,Sea Voyager,9300020,21.8,51.2194,4.4025,Antwerp,Jebel Ali,Belgium,UAE
+19,Dubai,Colombo,Liquid Cargo,40,Golden Wave,9300029,12.8,25.2048,55.2708,Dubai,Colombo,UAE,Sri Lanka
+20,Colombo,Valencia,General Cargo,5,Pacific Pearl,9300015,24.6,6.9271,79.8612,Colombo,Valencia,Sri Lanka,Spain
+21,Valencia,Los Angeles,Container,40,Atlantic Spirit,9300017,13.5,39.4699,-0.3763,Valencia,Los Angeles,Spain,USA
+22,Colombo,Shanghai,Liquid Cargo,15,Pacific Pearl,9300017,24.6,6.9271,79.8612,Colombo,Shanghai,Sri Lanka,China
+23,Chennai,Busan,Bulk Cargo,15,Neptune Star,9300022,19.9,13.0827,80.2707,Chennai,Busan,India,South Korea
+24,Dubai,Santos,Bulk Cargo,100,Neptune Star,9300023,23.9,25.2048,55.2708,Dubai,Santos,UAE,Brazil
+25,Jebel Ali,Shanghai,Container,25,Sea Voyager,9300017,24.1,25.0657,55.1713,Jebel Ali,Shanghai,UAE,China
+26,Singapore,Los Angeles,Refrigerated Cargo,10,Golden Wave,9300026,24.3,1.3521,103.8198,Singapore,Los Angeles,Singapore,USA
+27,Mumbai,Santos,Liquid Cargo,50,Blue Horizon,9300020,13.7,19.076,72.8777,Mumbai,Santos,India,Brazil
+28,Dubai,New York,Container,40,Neptune Star,9300027,23.3,25.2048,55.2708,Dubai,New York,UAE,USA
+29,Valencia,Rotterdam,Refrigerated Cargo,30,Pacific Pearl,9300024,17.2,39.4699,-0.3763,Valencia,Rotterdam,Spain,Netherlands
+30,Antwerp,Colombo,Bulk Cargo,10,Sea Voyager,9300012,15.2,51.2194,4.4025,Antwerp,Colombo,Belgium,Sri Lanka
+31,Shanghai,Durban,General Cargo,20,Neptune Star,9300020,15.0,31.2304,121.4737,Shanghai,Durban,China,South Africa
+32,Mumbai,Singapore,Bulk Cargo,5,Global Trader,9300016,12.9,19.076,72.8777,Mumbai,Singapore,India,Singapore
+33,Mumbai,Valencia,Container,50,Global Trader,9300017,15.6,19.076,72.8777,Mumbai,Valencia,India,Spain
+34,Valencia,Kolkata,Refrigerated Cargo,20,Golden Wave,9300024,19.5,39.4699,-0.3763,Valencia,Kolkata,Spain,India
+35,Sydney,Rotterdam,Bulk Cargo,40,Sea Voyager,9300017,13.3,-33.8688,151.2093,Sydney,Rotterdam,Australia,Netherlands
+36,Sydney,Colombo,General Cargo,5,Cargo Express,9300024,23.2,-33.8688,151.2093,Sydney,Colombo,Australia,Sri Lanka
+37,Singapore,Sydney,Container,10,Atlantic Spirit,9300023,22.4,1.3521,103.8198,Singapore,Sydney,Singapore,Australia
+38,Rotterdam,Hamburg,Container,40,Neptune Star,9300027,17.8,51.9244,4.4777,Rotterdam,Hamburg,Netherlands,Germany
+39,Los Angeles,Jebel Ali,Refrigerated Cargo,10,Global Trader,9300023,23.4,33.7405,-118.2755,Los Angeles,Jebel Ali,USA,UAE
+40,Valencia,Chennai,General Cargo,75,Ocean Star,9300011,20.5,39.4699,-0.3763,Valencia,Chennai,Spain,India
+41,Mumbai,Los Angeles,Container,50,Blue Horizon,9300014,17.3,19.076,72.8777,Mumbai,Los Angeles,India,USA
+42,Tokyo,Singapore,Bulk Cargo,40,Blue Horizon,9300015,16.9,35.6762,139.6503,Tokyo,Singapore,Japan,Singapore
+43,Colombo,New York,Refrigerated Cargo,75,Maritime Eagle,9300020,21.1,6.9271,79.8612,Colombo,New York,Sri Lanka,USA
+44,Kolkata,Hamburg,Liquid Cargo,5,Pacific Pearl,9300019,14.8,22.5726,88.3639,Kolkata,Hamburg,India,Germany
+45,Valencia,Singapore,Refrigerated Cargo,100,Atlantic Spirit,9300021,12.7,39.4699,-0.3763,Valencia,Singapore,Spain,Singapore
+46,Antwerp,Valencia,General Cargo,75,Blue Horizon,9300019,12.7,51.2194,4.4025,Antwerp,Valencia,Belgium,Spain
+47,Dubai,Mumbai,Refrigerated Cargo,20,Golden Wave,9300027,12.9,25.2048,55.2708,Dubai,Mumbai,UAE,India
+48,Chennai,Durban,Liquid Cargo,5,Global Trader,9300022,19.5,13.0827,80.2707,Chennai,Durban,India,South Africa
+49,Mumbai,Colombo,Bulk Cargo,30,Golden Wave,9300029,19.3,19.076,72.8777,Mumbai,Colombo,India,Sri Lanka
+50,Rotterdam,Hong Kong,Bulk Cargo,15,Global Trader,9300014,15.5,51.9244,4.4777,Rotterdam,Hong Kong,Netherlands,Hong Kong
+51,Colombo,Busan,Liquid Cargo,100,Sea Voyager,9300013,12.1,6.9271,79.8612,Colombo,Busan,Sri Lanka,South Korea
+52,Chennai,Mumbai,Container,25,Neptune Star,9300021,14.8,13.0827,80.2707,Chennai,Mumbai,India,India
+53,Hong Kong,Mumbai,Refrigerated Cargo,15,Global Trader,9300017,16.8,22.3193,114.1694,Hong Kong,Mumbai,Hong Kong,India
+54,Valencia,New York,General Cargo,75,Golden Wave,9300024,24.8,39.4699,-0.3763,Valencia,New York,Spain,USA
+55,Valencia,New York,Bulk Cargo,15,Sea Voyager,9300017,24.2,39.4699,-0.3763,Valencia,New York,Spain,USA
+56,Chennai,Kolkata,Liquid Cargo,25,Neptune Star,9300025,14.0,13.0827,80.2707,Chennai,Kolkata,India,India
+57,Rotterdam,Hong Kong,Liquid Cargo,25,Global Trader,9300021,20.9,51.9244,4.4777,Rotterdam,Hong Kong,Netherlands,Hong Kong
+58,Jebel Ali,Los Angeles,Bulk Cargo,40,Ocean Star,9300019,13.2,25.0657,55.1713,Jebel Ali,Los Angeles,UAE,USA
+59,Singapore,Shanghai,Container,25,Atlantic Spirit,9300025,22.0,1.3521,103.8198,Singapore,Shanghai,Singapore,China
+60,Colombo,Santos,General Cargo,10,Maritime Eagle,9300017,19.3,6.9271,79.8612,Colombo,Santos,Sri Lanka,Brazil
+61,Kolkata,Santos,Liquid Cargo,100,Ocean Star,9300012,22.8,22.5726,88.3639,Kolkata,Santos,India,Brazil
+62,Kolkata,Colombo,General Cargo,30,Blue Horizon,9300015,12.5,22.5726,88.3639,Kolkata,Colombo,India,Sri Lanka
+63,Hong Kong,Rotterdam,Liquid Cargo,30,Global Trader,9300017,20.7,22.3193,114.1694,Hong Kong,Rotterdam,Hong Kong,Netherlands
+64,Sydney,Kolkata,Refrigerated Cargo,15,Global Trader,9300018,23.2,-33.8688,151.2093,Sydney,Kolkata,Australia,India
+65,Shanghai,Rotterdam,Container,40,Atlantic Spirit,9300021,22.2,31.2304,121.4737,Shanghai,Rotterdam,China,Netherlands
+66,Los Angeles,Dubai,Refrigerated Cargo,5,Sea Voyager,9300018,17.0,33.7405,-118.2755,Los Angeles,Dubai,USA,UAE
+67,Hamburg,Rotterdam,Container,20,Cargo Express,9300025,16.5,53.5511,9.9937,Hamburg,Rotterdam,Germany,Netherlands
+68,Shanghai,Hamburg,Bulk Cargo,10,Maritime Eagle,9300025,16.3,31.2304,121.4737,Shanghai,Hamburg,China,Germany
+69,Hong Kong,Valencia,Bulk Cargo,75,Maritime Eagle,9300026,20.8,22.3193,114.1694,Hong Kong,Valencia,Hong Kong,Spain
+70,Shanghai,Kolkata,General Cargo,25,Pacific Pearl,9300015,14.3,31.2304,121.4737,Shanghai,Kolkata,China,India
+71,Chennai,Colombo,Refrigerated Cargo,30,Atlantic Spirit,9300017,21.5,13.0827,80.2707,Chennai,Colombo,India,Sri Lanka
+72,Durban,Antwerp,Container,100,Sea Voyager,9300014,17.0,-29.8587,31.0218,Durban,Antwerp,South Africa,Belgium
+73,Los Angeles,Singapore,Container,75,Maritime Eagle,9300020,12.0,33.7405,-118.2755,Los Angeles,Singapore,USA,Singapore
+74,Hong Kong,Colombo,Liquid Cargo,30,Sea Voyager,9300016,24.3,22.3193,114.1694,Hong Kong,Colombo,Hong Kong,Sri Lanka
+75,Busan,Chennai,Bulk Cargo,40,Pacific Pearl,9300020,18.6,35.1796,129.0756,Busan,Chennai,South Korea,India
+76,Tokyo,New York,Refrigerated Cargo,40,Neptune Star,9300025,13.7,35.6762,139.6503,Tokyo,New York,Japan,USA
+77,Dubai,Durban,Bulk Cargo,5,Pacific Pearl,9300022,17.3,25.2048,55.2708,Dubai,Durban,UAE,South Africa
+78,New York,Rotterdam,Bulk Cargo,100,Maritime Eagle,9300025,22.2,40.7128,-74.006,New York,Rotterdam,USA,Netherlands
+79,Colombo,Jebel Ali,Refrigerated Cargo,75,Cargo Express,9300027,20.8,6.9271,79.8612,Colombo,Jebel Ali,Sri Lanka,UAE
+80,Dubai,Mumbai,Bulk Cargo,100,Pacific Pearl,9300015,18.7,25.2048,55.2708,Dubai,Mumbai,UAE,India
+81,Mumbai,Los Angeles,Container,20,Pacific Pearl,9300016,14.9,19.076,72.8777,Mumbai,Los Angeles,India,USA
+82,Shanghai,Mumbai,General Cargo,100,Global Trader,9300016,24.8,31.2304,121.4737,Shanghai,Mumbai,China,India
+83,Colombo,Sydney,Refrigerated Cargo,40,Golden Wave,9300023,14.5,6.9271,79.8612,Colombo,Sydney,Sri Lanka,Australia
+84,Tokyo,Hamburg,General Cargo,5,Blue Horizon,9300017,20.5,35.6762,139.6503,Tokyo,Hamburg,Japan,Germany
+85,Sydney,Hamburg,Refrigerated Cargo,75,Blue Horizon,9300018,22.5,-33.8688,151.2093,Sydney,Hamburg,Australia,Germany
+86,Singapore,Santos,Refrigerated Cargo,10,Global Trader,9300020,23.9,1.3521,103.8198,Singapore,Santos,Singapore,Brazil
+87,Kolkata,Jebel Ali,Bulk Cargo,100,Neptune Star,9300026,24.8,22.5726,88.3639,Kolkata,Jebel Ali,India,UAE
+88,Colombo,Valencia,Refrigerated Cargo,75,Maritime Eagle,9300025,22.8,6.9271,79.8612,Colombo,Valencia,Sri Lanka,Spain
+89,Dubai,Antwerp,Bulk Cargo,20,Cargo Express,9300027,15.4,25.2048,55.2708,Dubai,Antwerp,UAE,Belgium
+90,Antwerp,Jebel Ali,Bulk Cargo,10,Global Trader,9300014,15.6,51.2194,4.4025,Antwerp,Jebel Ali,Belgium,UAE
+91,Hamburg,New York,General Cargo,75,Atlantic Spirit,9300017,16.2,53.5511,9.9937,Hamburg,New York,Germany,USA
+92,Kolkata,Dubai,Container,15,Global Trader,9300016,17.0,22.5726,88.3639,Kolkata,Dubai,India,UAE
+93,Mumbai,Colombo,Refrigerated Cargo,50,Maritime Eagle,9300020,16.3,19.076,72.8777,Mumbai,Colombo,India,Sri Lanka
+94,Singapore,Hamburg,General Cargo,100,Maritime Eagle,9300021,17.1,1.3521,103.8198,Singapore,Hamburg,Singapore,Germany
+95,Santos,Tokyo,Bulk Cargo,30,Cargo Express,9300023,12.1,-23.9608,-46.3336,Santos,Tokyo,Brazil,Japan
+96,Tokyo,Colombo,Liquid Cargo,75,Neptune Star,9300025,21.7,35.6762,139.6503,Tokyo,Colombo,Japan,Sri Lanka
+97,Hamburg,Antwerp,General Cargo,50,Global Trader,9300021,15.5,53.5511,9.9937,Hamburg,Antwerp,Germany,Belgium
+98,Tokyo,Busan,Container,50,Maritime Eagle,9300025,21.4,35.6762,139.6503,Tokyo,Busan,Japan,South Korea
+99,Durban,Valencia,Liquid Cargo,100,Ocean Star,9300020,23.8,-29.8587,31.0218,Durban,Valencia,South Africa,Spain
+100,Shanghai,Chennai,Container,50,Maritime Eagle,9300017,13.8,31.2304,121.4737,Shanghai,Chennai,China,India
+101,Singapore,New York,Bulk Cargo,50,Maritime Eagle,9300018,16.3,1.3521,103.8198,Singapore,New York,Singapore,USA
+102,Busan,Sydney,Bulk Cargo,40,Pacific Pearl,9300017,21.8,35.1796,129.0756,Busan,Sydney,South Korea,Australia
+103,Mumbai,Antwerp,Bulk Cargo,5,Ocean Star,9300014,21.7,19.076,72.8777,Mumbai,Antwerp,India,Belgium
+104,Hamburg,Mumbai,Container,20,Ocean Star,9300015,21.8,53.5511,9.9937,Hamburg,Mumbai,Germany,India
+105,Shanghai,Dubai,Liquid Cargo,10,Global Trader,9300019,13.6,31.2304,121.4737,Shanghai,Dubai,China,UAE
+106,Rotterdam,Jebel Ali,Liquid Cargo,15,Pacific Pearl,9300021,22.0,51.9244,4.4777,Rotterdam,Jebel Ali,Netherlands,UAE
+107,Durban,Chennai,Liquid Cargo,10,Blue Horizon,9300020,24.5,-29.8587,31.0218,Durban,Chennai,South Africa,India
+108,Shanghai,Busan,Refrigerated Cargo,40,Golden Wave,9300028,20.8,31.2304,121.4737,Shanghai,Busan,China,South Korea
+109,Rotterdam,Mumbai,General Cargo,20,Golden Wave,9300029,21.0,51.9244,4.4777,Rotterdam,Mumbai,Netherlands,India
+110,New York,Chennai,Liquid Cargo,30,Golden Wave,9300020,22.2,40.7128,-74.006,New York,Chennai,USA,India
+111,Sydney,Hong Kong,General Cargo,30,Sea Voyager,9300013,18.6,-33.8688,151.2093,Sydney,Hong Kong,Australia,Hong Kong
+112,Sydney,Antwerp,Refrigerated Cargo,30,Sea Voyager,9300014,17.6,-33.8688,151.2093,Sydney,Antwerp,Australia,Belgium
+113,Kolkata,Colombo,Liquid Cargo,25,Blue Horizon,9300016,21.5,22.5726,88.3639,Kolkata,Colombo,India,Sri Lanka
+114,Valencia,Jebel Ali,Bulk Cargo,100,Cargo Express,9300022,17.7,39.4699,-0.3763,Valencia,Jebel Ali,Spain,UAE
+115,Busan,Hamburg,Container,50,Sea Voyager,9300017,15.6,35.1796,129.0756,Busan,Hamburg,South Korea,Germany
+116,Colombo,Durban,General Cargo,30,Golden Wave,9300026,20.7,6.9271,79.8612,Colombo,Durban,Sri Lanka,South Africa
+117,Jebel Ali,Busan,Bulk Cargo,30,Blue Horizon,9300020,18.3,25.0657,55.1713,Jebel Ali,Busan,UAE,South Korea
+118,Busan,Los Angeles,Liquid Cargo,25,Golden Wave,9300028,21.1,35.1796,129.0756,Busan,Los Angeles,South Korea,USA
+119,Shanghai,Valencia,Refrigerated Cargo,40,Global Trader,9300023,13.1,31.2304,121.4737,Shanghai,Valencia,China,Spain
+120,Valencia,Hamburg,Refrigerated Cargo,50,Cargo Express,9300018,20.4,39.4699,-0.3763,Valencia,Hamburg,Spain,Germany
+121,Shanghai,Chennai,Bulk Cargo,20,Pacific Pearl,9300016,14.9,31.2304,121.4737,Shanghai,Chennai,China,India
+122,Santos,Hong Kong,Refrigerated Cargo,30,Cargo Express,9300020,19.2,-23.9608,-46.3336,Santos,Hong Kong,Brazil,Hong Kong
+123,Valencia,Busan,Bulk Cargo,25,Atlantic Spirit,9300019,21.1,39.4699,-0.3763,Valencia,Busan,Spain,South Korea
+124,Los Angeles,Hamburg,General Cargo,30,Sea Voyager,9300016,21.4,33.7405,-118.2755,Los Angeles,Hamburg,USA,Germany
+125,Valencia,Dubai,Bulk Cargo,50,Global Trader,9300019,14.8,39.4699,-0.3763,Valencia,Dubai,Spain,UAE
+126,Santos,Antwerp,Container,10,Golden Wave,9300026,15.7,-23.9608,-46.3336,Santos,Antwerp,Brazil,Belgium
+127,New York,Hamburg,Liquid Cargo,5,Atlantic Spirit,9300023,14.3,40.7128,-74.006,New York,Hamburg,USA,Germany
+128,Kolkata,New York,Bulk Cargo,75,Ocean Star,9300019,24.7,22.5726,88.3639,Kolkata,New York,India,USA
+129,Kolkata,Antwerp,Bulk Cargo,100,Sea Voyager,9300021,23.3,22.5726,88.3639,Kolkata,Antwerp,India,Belgium
+130,Jebel Ali,Antwerp,Bulk Cargo,5,Cargo Express,9300018,16.4,25.0657,55.1713,Jebel Ali,Antwerp,UAE,Belgium
+131,Jebel Ali,Chennai,Liquid Cargo,10,Sea Voyager,9300013,17.2,25.0657,55.1713,Jebel Ali,Chennai,UAE,India
+132,Singapore,Dubai,General Cargo,25,Blue Horizon,9300015,22.5,1.3521,103.8198,Singapore,Dubai,Singapore,UAE
+133,Hamburg,Chennai,Liquid Cargo,100,Neptune Star,9300022,21.9,53.5511,9.9937,Hamburg,Chennai,Germany,India
+134,Durban,Hamburg,Bulk Cargo,50,Neptune Star,9300023,16.9,-29.8587,31.0218,Durban,Hamburg,South Africa,Germany
+135,Santos,Sydney,Liquid Cargo,5,Pacific Pearl,9300020,19.4,-23.9608,-46.3336,Santos,Sydney,Brazil,Australia
+136,Chennai,Hamburg,Container,10,Global Trader,9300020,15.4,13.0827,80.2707,Chennai,Hamburg,India,Germany
+137,Hamburg,Dubai,Refrigerated Cargo,5,Neptune Star,9300026,13.0,53.5511,9.9937,Hamburg,Dubai,Germany,UAE
+138,Colombo,Antwerp,Bulk Cargo,25,Pacific Pearl,9300023,12.4,6.9271,79.8612,Colombo,Antwerp,Sri Lanka,Belgium
+139,Colombo,Mumbai,Container,100,Global Trader,9300023,24.0,6.9271,79.8612,Colombo,Mumbai,Sri Lanka,India
+140,Sydney,Chennai,Bulk Cargo,15,Neptune Star,9300019,14.9,-33.8688,151.2093,Sydney,Chennai,Australia,India
+141,Kolkata,Mumbai,Liquid Cargo,25,Ocean Star,9300012,14.2,22.5726,88.3639,Kolkata,Mumbai,India,India
+142,Santos,New York,Refrigerated Cargo,25,Cargo Express,9300020,13.6,-23.9608,-46.3336,Santos,New York,Brazil,USA
+143,Los Angeles,Valencia,Liquid Cargo,10,Neptune Star,9300022,18.4,33.7405,-118.2755,Los Angeles,Valencia,USA,Spain
+144,Singapore,Colombo,General Cargo,5,Atlantic Spirit,9300020,19.8,1.3521,103.8198,Singapore,Colombo,Singapore,Sri Lanka
+145,Hamburg,Durban,Liquid Cargo,25,Golden Wave,9300025,24.4,53.5511,9.9937,Hamburg,Durban,Germany,South Africa
+146,Singapore,Rotterdam,Bulk Cargo,50,Cargo Express,9300024,18.7,1.3521,103.8198,Singapore,Rotterdam,Singapore,Netherlands
+147,Dubai,Durban,General Cargo,50,Maritime Eagle,9300024,20.3,25.2048,55.2708,Dubai,Durban,UAE,South Africa
+148,Jebel Ali,Hong Kong,Container,10,Maritime Eagle,9300025,16.3,25.0657,55.1713,Jebel Ali,Hong Kong,UAE,Hong Kong
+149,Busan,Colombo,Liquid Cargo,40,Cargo Express,9300027,15.7,35.1796,129.0756,Busan,Colombo,South Korea,Sri Lanka
+150,Singapore,Jebel Ali,General Cargo,30,Sea Voyager,9300012,16.1,1.3521,103.8198,Singapore,Jebel Ali,Singapore,UAE
+151,Tokyo,Valencia,Refrigerated Cargo,75,Ocean Star,9300012,20.5,35.6762,139.6503,Tokyo,Valencia,Japan,Spain
+152,Sydney,Singapore,Refrigerated Cargo,100,Global Trader,9300016,18.7,-33.8688,151.2093,Sydney,Singapore,Australia,Singapore
+153,Colombo,Singapore,Bulk Cargo,15,Global Trader,9300017,15.5,6.9271,79.8612,Colombo,Singapore,Sri Lanka,Singapore
+154,Colombo,Antwerp,Container,100,Sea Voyager,9300016,12.4,6.9271,79.8612,Colombo,Antwerp,Sri Lanka,Belgium
+155,Dubai,Busan,General Cargo,40,Neptune Star,9300024,12.2,25.2048,55.2708,Dubai,Busan,UAE,South Korea
+156,Hamburg,Chennai,Refrigerated Cargo,15,Cargo Express,9300024,24.3,53.5511,9.9937,Hamburg,Chennai,Germany,India
+157,New York,Valencia,Refrigerated Cargo,50,Pacific Pearl,9300022,17.4,40.7128,-74.006,New York,Valencia,USA,Spain
+158,Hamburg,Jebel Ali,Liquid Cargo,20,Neptune Star,9300027,13.9,53.5511,9.9937,Hamburg,Jebel Ali,Germany,UAE
+159,Antwerp,Kolkata,Bulk Cargo,40,Sea Voyager,9300021,15.6,51.2194,4.4025,Antwerp,Kolkata,Belgium,India
+160,Antwerp,Los Angeles,Liquid Cargo,25,Ocean Star,9300011,15.7,51.2194,4.4025,Antwerp,Los Angeles,Belgium,USA
+161,Santos,Jebel Ali,Bulk Cargo,50,Blue Horizon,9300014,17.8,-23.9608,-46.3336,Santos,Jebel Ali,Brazil,UAE
+162,Busan,Santos,Container,30,Neptune Star,9300021,16.9,35.1796,129.0756,Busan,Santos,South Korea,Brazil
+163,Hamburg,Durban,General Cargo,40,Maritime Eagle,9300020,15.0,53.5511,9.9937,Hamburg,Durban,Germany,South Africa
+164,Busan,Antwerp,Refrigerated Cargo,15,Maritime Eagle,9300021,17.0,35.1796,129.0756,Busan,Antwerp,South Korea,Belgium
+165,Singapore,Dubai,General Cargo,30,Neptune Star,9300024,24.5,1.3521,103.8198,Singapore,Dubai,Singapore,UAE
+166,Colombo,Chennai,Container,5,Neptune Star,9300025,23.8,6.9271,79.8612,Colombo,Chennai,Sri Lanka,India
+167,Sydney,Kolkata,Bulk Cargo,25,Sea Voyager,9300019,18.1,-33.8688,151.2093,Sydney,Kolkata,Australia,India
+168,Durban,Tokyo,Refrigerated Cargo,75,Sea Voyager,9300020,23.1,-29.8587,31.0218,Durban,Tokyo,South Africa,Japan
+169,Busan,Antwerp,Container,10,Neptune Star,9300028,12.5,35.1796,129.0756,Busan,Antwerp,South Korea,Belgium
+170,New York,Hamburg,General Cargo,10,Sea Voyager,9300012,17.6,40.7128,-74.006,New York,Hamburg,USA,Germany
+171,Colombo,Dubai,Bulk Cargo,5,Pacific Pearl,9300016,23.7,6.9271,79.8612,Colombo,Dubai,Sri Lanka,UAE
+172,Singapore,Busan,Container,15,Atlantic Spirit,9300018,16.9,1.3521,103.8198,Singapore,Busan,Singapore,South Korea
+173,Antwerp,Sydney,Container,15,Golden Wave,9300023,20.9,51.2194,4.4025,Antwerp,Sydney,Belgium,Australia
+174,Dubai,Mumbai,Container,100,Golden Wave,9300024,23.3,25.2048,55.2708,Dubai,Mumbai,UAE,India
+175,Jebel Ali,Durban,Refrigerated Cargo,25,Blue Horizon,9300018,15.0,25.0657,55.1713,Jebel Ali,Durban,UAE,South Africa
+176,Los Angeles,Shanghai,Container,75,Cargo Express,9300024,23.7,33.7405,-118.2755,Los Angeles,Shanghai,USA,China
+177,Mumbai,Jebel Ali,Refrigerated Cargo,25,Atlantic Spirit,9300023,24.8,19.076,72.8777,Mumbai,Jebel Ali,India,UAE
+178,Los Angeles,Jebel Ali,Refrigerated Cargo,40,Pacific Pearl,9300023,14.6,33.7405,-118.2755,Los Angeles,Jebel Ali,USA,UAE
+179,Chennai,Los Angeles,Bulk Cargo,100,Maritime Eagle,9300026,19.4,13.0827,80.2707,Chennai,Los Angeles,India,USA
+180,New York,Shanghai,General Cargo,100,Maritime Eagle,9300017,15.6,40.7128,-74.006,New York,Shanghai,USA,China
+181,Durban,Jebel Ali,Liquid Cargo,20,Pacific Pearl,9300016,22.1,-29.8587,31.0218,Durban,Jebel Ali,South Africa,UAE
+182,Hong Kong,Hamburg,General Cargo,15,Global Trader,9300016,20.1,22.3193,114.1694,Hong Kong,Hamburg,Hong Kong,Germany
+183,Singapore,Busan,Container,30,Cargo Express,9300021,12.4,1.3521,103.8198,Singapore,Busan,Singapore,South Korea
+184,Mumbai,Busan,Container,15,Atlantic Spirit,9300020,21.7,19.076,72.8777,Mumbai,Busan,India,South Korea
+185,Kolkata,Santos,Container,25,Atlantic Spirit,9300021,18.9,22.5726,88.3639,Kolkata,Santos,India,Brazil
+186,Los Angeles,Antwerp,General Cargo,30,Pacific Pearl,9300021,21.7,33.7405,-118.2755,Los Angeles,Antwerp,USA,Belgium
+187,Colombo,Mumbai,Refrigerated Cargo,20,Blue Horizon,9300020,21.8,6.9271,79.8612,Colombo,Mumbai,Sri Lanka,India
+188,Valencia,Hong Kong,Bulk Cargo,5,Sea Voyager,9300020,22.3,39.4699,-0.3763,Valencia,Hong Kong,Spain,Hong Kong
+189,Valencia,Chennai,Liquid Cargo,25,Cargo Express,9300027,16.8,39.4699,-0.3763,Valencia,Chennai,Spain,India
+190,Tokyo,Hong Kong,General Cargo,50,Sea Voyager,9300012,20.8,35.6762,139.6503,Tokyo,Hong Kong,Japan,Hong Kong
+191,Durban,Valencia,General Cargo,20,Atlantic Spirit,9300017,23.9,-29.8587,31.0218,Durban,Valencia,South Africa,Spain
+192,Colombo,New York,General Cargo,5,Maritime Eagle,9300019,13.5,6.9271,79.8612,Colombo,New York,Sri Lanka,USA
+193,New York,Antwerp,Container,75,Sea Voyager,9300015,13.3,40.7128,-74.006,New York,Antwerp,USA,Belgium
+194,Tokyo,Jebel Ali,Refrigerated Cargo,75,Atlantic Spirit,9300020,20.7,35.6762,139.6503,Tokyo,Jebel Ali,Japan,UAE
+195,Santos,Kolkata,Liquid Cargo,50,Maritime Eagle,9300022,20.5,-23.9608,-46.3336,Santos,Kolkata,Brazil,India
+196,Sydney,Los Angeles,Refrigerated Cargo,20,Ocean Star,9300017,21.0,-33.8688,151.2093,Sydney,Los Angeles,Australia,USA
+197,Colombo,Hamburg,Liquid Cargo,30,Atlantic Spirit,9300023,13.3,6.9271,79.8612,Colombo,Hamburg,Sri Lanka,Germany
+198,Hong Kong,Singapore,Refrigerated Cargo,10,Maritime Eagle,9300025,15.6,22.3193,114.1694,Hong Kong,Singapore,Hong Kong,Singapore
+199,Mumbai,Hamburg,Bulk Cargo,5,Golden Wave,9300029,24.6,19.076,72.8777,Mumbai,Hamburg,India,Germany
+200,Hamburg,Kolkata,Container,75,Golden Wave,9300020,14.7,53.5511,9.9937,Hamburg,Kolkata,Germany,India
+201,Santos,Rotterdam,Liquid Cargo,15,Global Trader,9300015,16.3,-23.9608,-46.3336,Santos,Rotterdam,Brazil,Netherlands
+202,Shanghai,New York,Bulk Cargo,75,Blue Horizon,9300015,24.8,31.2304,121.4737,Shanghai,New York,China,USA
+203,Dubai,Chennai,Container,30,Ocean Star,9300014,13.7,25.2048,55.2708,Dubai,Chennai,UAE,India
+204,Santos,Busan,Container,5,Ocean Star,9300015,14.3,-23.9608,-46.3336,Santos,Busan,Brazil,South Korea
+205,Sydney,Valencia,Refrigerated Cargo,50,Sea Voyager,9300017,21.7,-33.8688,151.2093,Sydney,Valencia,Australia,Spain
+206,Hong Kong,Valencia,Container,75,Golden Wave,9300026,13.4,22.3193,114.1694,Hong Kong,Valencia,Hong Kong,Spain
+207,Durban,Singapore,General Cargo,5,Neptune Star,9300026,15.9,-29.8587,31.0218,Durban,Singapore,South Africa,Singapore
+208,Jebel Ali,Tokyo,Refrigerated Cargo,50,Maritime Eagle,9300025,20.9,25.0657,55.1713,Jebel Ali,Tokyo,UAE,Japan
+209,Mumbai,Chennai,Container,10,Atlantic Spirit,9300025,19.9,19.076,72.8777,Mumbai,Chennai,India,India
+210,Los Angeles,Durban,Liquid Cargo,40,Neptune Star,9300019,21.3,33.7405,-118.2755,Los Angeles,Durban,USA,South Africa
+211,Antwerp,New York,General Cargo,40,Cargo Express,9300019,18.6,51.2194,4.4025,Antwerp,New York,Belgium,USA
+212,Chennai,Santos,Refrigerated Cargo,20,Global Trader,9300016,17.6,13.0827,80.2707,Chennai,Santos,India,Brazil
+213,Busan,Jebel Ali,Bulk Cargo,10,Maritime Eagle,9300020,17.4,35.1796,129.0756,Busan,Jebel Ali,South Korea,UAE
+214,Sydney,Busan,Refrigerated Cargo,15,Pacific Pearl,9300019,16.9,-33.8688,151.2093,Sydney,Busan,Australia,South Korea
+215,Mumbai,Chennai,Bulk Cargo,10,Sea Voyager,9300017,13.2,19.076,72.8777,Mumbai,Chennai,India,India
+216,Kolkata,Santos,Liquid Cargo,75,Ocean Star,9300017,19.6,22.5726,88.3639,Kolkata,Santos,India,Brazil
+217,Busan,Chennai,General Cargo,40,Maritime Eagle,9300024,16.6,35.1796,129.0756,Busan,Chennai,South Korea,India
+218,New York,Busan,Container,75,Atlantic Spirit,9300024,13.3,40.7128,-74.006,New York,Busan,USA,South Korea
+219,Kolkata,Antwerp,Liquid Cargo,30,Global Trader,9300023,23.0,22.5726,88.3639,Kolkata,Antwerp,India,Belgium
+220,Hong Kong,Chennai,Liquid Cargo,40,Pacific Pearl,9300015,19.5,22.3193,114.1694,Hong Kong,Chennai,Hong Kong,India
+221,Durban,Valencia,General Cargo,25,Ocean Star,9300012,19.9,-29.8587,31.0218,Durban,Valencia,South Africa,Spain
+222,Dubai,New York,General Cargo,30,Pacific Pearl,9300017,24.0,25.2048,55.2708,Dubai,New York,UAE,USA
+223,Dubai,Kolkata,Container,10,Golden Wave,9300023,20.5,25.2048,55.2708,Dubai,Kolkata,UAE,India
+224,Shanghai,Chennai,Refrigerated Cargo,40,Neptune Star,9300023,14.8,31.2304,121.4737,Shanghai,Chennai,China,India
+225,Busan,Dubai,Liquid Cargo,30,Atlantic Spirit,9300021,16.1,35.1796,129.0756,Busan,Dubai,South Korea,UAE
+226,Durban,Mumbai,General Cargo,100,Ocean Star,9300017,14.0,-29.8587,31.0218,Durban,Mumbai,South Africa,India
+227,Mumbai,New York,Liquid Cargo,50,Cargo Express,9300025,20.6,19.076,72.8777,Mumbai,New York,India,USA
+228,Colombo,Sydney,General Cargo,75,Pacific Pearl,9300023,14.8,6.9271,79.8612,Colombo,Sydney,Sri Lanka,Australia
+229,Hong Kong,Colombo,Refrigerated Cargo,100,Sea Voyager,9300021,15.7,22.3193,114.1694,Hong Kong,Colombo,Hong Kong,Sri Lanka
+230,Antwerp,New York,General Cargo,100,Ocean Star,9300011,14.9,51.2194,4.4025,Antwerp,New York,Belgium,USA
+231,Shanghai,Hamburg,Bulk Cargo,15,Pacific Pearl,9300016,24.3,31.2304,121.4737,Shanghai,Hamburg,China,Germany
+232,New York,Hong Kong,Container,40,Sea Voyager,9300014,12.1,40.7128,-74.006,New York,Hong Kong,USA,Hong Kong
+233,Kolkata,Sydney,Liquid Cargo,75,Neptune Star,9300022,21.1,22.5726,88.3639,Kolkata,Sydney,India,Australia
+234,Hong Kong,Mumbai,Refrigerated Cargo,5,Maritime Eagle,9300021,23.2,22.3193,114.1694,Hong Kong,Mumbai,Hong Kong,India
+235,Shanghai,Jebel Ali,Refrigerated Cargo,100,Sea Voyager,9300017,23.2,31.2304,121.4737,Shanghai,Jebel Ali,China,UAE
+236,Santos,Tokyo,General Cargo,40,Maritime Eagle,9300023,15.8,-23.9608,-46.3336,Santos,Tokyo,Brazil,Japan
+237,Busan,Dubai,General Cargo,30,Golden Wave,9300027,18.0,35.1796,129.0756,Busan,Dubai,South Korea,UAE
+238,Sydney,Chennai,Liquid Cargo,40,Global Trader,9300022,17.7,-33.8688,151.2093,Sydney,Chennai,Australia,India
+239,Mumbai,Sydney,Bulk Cargo,20,Pacific Pearl,9300024,21.7,19.076,72.8777,Mumbai,Sydney,India,Australia
+240,Dubai,Mumbai,Liquid Cargo,75,Neptune Star,9300019,20.2,25.2048,55.2708,Dubai,Mumbai,UAE,India
+241,Rotterdam,Tokyo,Container,15,Atlantic Spirit,9300017,21.5,51.9244,4.4777,Rotterdam,Tokyo,Netherlands,Japan
+242,Chennai,Dubai,Container,100,Pacific Pearl,9300017,14.6,13.0827,80.2707,Chennai,Dubai,India,UAE
+243,Mumbai,Rotterdam,Liquid Cargo,100,Cargo Express,9300021,18.0,19.076,72.8777,Mumbai,Rotterdam,India,Netherlands
+244,Colombo,Durban,Container,30,Golden Wave,9300024,16.2,6.9271,79.8612,Colombo,Durban,Sri Lanka,South Africa
+245,Colombo,Mumbai,Bulk Cargo,25,Cargo Express,9300023,17.7,6.9271,79.8612,Colombo,Mumbai,Sri Lanka,India
+246,Santos,Singapore,Refrigerated Cargo,25,Atlantic Spirit,9300022,18.6,-23.9608,-46.3336,Santos,Singapore,Brazil,Singapore
+247,Colombo,Singapore,General Cargo,25,Ocean Star,9300018,16.8,6.9271,79.8612,Colombo,Singapore,Sri Lanka,Singapore
+248,Mumbai,Valencia,General Cargo,75,Maritime Eagle,9300025,18.0,19.076,72.8777,Mumbai,Valencia,India,Spain
+249,Colombo,Durban,Liquid Cargo,50,Global Trader,9300023,16.2,6.9271,79.8612,Colombo,Durban,Sri Lanka,South Africa
+250,Kolkata,Singapore,General Cargo,30,Cargo Express,9300018,13.3,22.5726,88.3639,Kolkata,Singapore,India,Singapore
+251,Antwerp,Dubai,Refrigerated Cargo,50,Ocean Star,9300012,15.2,51.2194,4.4025,Antwerp,Dubai,Belgium,UAE
+252,Antwerp,Valencia,Bulk Cargo,30,Golden Wave,9300022,14.1,51.2194,4.4025,Antwerp,Valencia,Belgium,Spain
+253,Tokyo,Colombo,Bulk Cargo,5,Atlantic Spirit,9300019,20.8,35.6762,139.6503,Tokyo,Colombo,Japan,Sri Lanka
+254,Mumbai,Hong Kong,Bulk Cargo,40,Sea Voyager,9300016,19.3,19.076,72.8777,Mumbai,Hong Kong,India,Hong Kong
+255,Los Angeles,Kolkata,Bulk Cargo,15,Atlantic Spirit,9300021,13.1,33.7405,-118.2755,Los Angeles,Kolkata,USA,India
+256,New York,Sydney,Bulk Cargo,10,Blue Horizon,9300019,19.7,40.7128,-74.006,New York,Sydney,USA,Australia
+257,Valencia,Tokyo,General Cargo,75,Atlantic Spirit,9300023,22.6,39.4699,-0.3763,Valencia,Tokyo,Spain,Japan
+258,Sydney,Valencia,Container,25,Atlantic Spirit,9300024,12.2,-33.8688,151.2093,Sydney,Valencia,Australia,Spain
+259,Rotterdam,Hong Kong,Container,15,Cargo Express,9300027,14.5,51.9244,4.4777,Rotterdam,Hong Kong,Netherlands,Hong Kong
+260,Mumbai,Busan,Liquid Cargo,75,Sea Voyager,9300012,18.6,19.076,72.8777,Mumbai,Busan,India,South Korea
+261,Singapore,Hong Kong,Container,40,Golden Wave,9300021,13.7,1.3521,103.8198,Singapore,Hong Kong,Singapore,Hong Kong
+262,Dubai,Rotterdam,Refrigerated Cargo,15,Golden Wave,9300022,22.5,25.2048,55.2708,Dubai,Rotterdam,UAE,Netherlands
+263,Singapore,Colombo,Refrigerated Cargo,20,Atlantic Spirit,9300019,20.8,1.3521,103.8198,Singapore,Colombo,Singapore,Sri Lanka
+264,Durban,New York,Bulk Cargo,20,Cargo Express,9300022,15.0,-29.8587,31.0218,Durban,New York,South Africa,USA
+265,Jebel Ali,Rotterdam,Refrigerated Cargo,100,Atlantic Spirit,9300021,20.8,25.0657,55.1713,Jebel Ali,Rotterdam,UAE,Netherlands
+266,Colombo,New York,Container,40,Maritime Eagle,9300023,18.5,6.9271,79.8612,Colombo,New York,Sri Lanka,USA
+267,Rotterdam,Kolkata,Bulk Cargo,50,Pacific Pearl,9300022,12.7,51.9244,4.4777,Rotterdam,Kolkata,Netherlands,India
+268,Valencia,Chennai,General Cargo,25,Neptune Star,9300027,23.1,39.4699,-0.3763,Valencia,Chennai,Spain,India
+269,Dubai,New York,Refrigerated Cargo,15,Cargo Express,9300027,23.8,25.2048,55.2708,Dubai,New York,UAE,USA
+270,Mumbai,Los Angeles,Refrigerated Cargo,5,Cargo Express,9300018,23.5,19.076,72.8777,Mumbai,Los Angeles,India,USA
+271,Singapore,Sydney,General Cargo,40,Neptune Star,9300020,16.9,1.3521,103.8198,Singapore,Sydney,Singapore,Australia
+272,Hong Kong,Hamburg,Bulk Cargo,10,Ocean Star,9300013,16.1,22.3193,114.1694,Hong Kong,Hamburg,Hong Kong,Germany
+273,Kolkata,Dubai,Container,50,Ocean Star,9300014,15.7,22.5726,88.3639,Kolkata,Dubai,India,UAE
+274,Jebel Ali,Colombo,General Cargo,10,Golden Wave,9300024,12.1,25.0657,55.1713,Jebel Ali,Colombo,UAE,Sri Lanka
+275,Los Angeles,Rotterdam,Liquid Cargo,100,Blue Horizon,9300018,19.1,33.7405,-118.2755,Los Angeles,Rotterdam,USA,Netherlands
+276,Sydney,Chennai,General Cargo,10,Pacific Pearl,9300021,15.1,-33.8688,151.2093,Sydney,Chennai,Australia,India
+277,Hamburg,Colombo,Refrigerated Cargo,10,Golden Wave,9300027,17.9,53.5511,9.9937,Hamburg,Colombo,Germany,Sri Lanka
+278,Durban,Valencia,Container,100,Ocean Star,9300019,20.2,-29.8587,31.0218,Durban,Valencia,South Africa,Spain
+279,Kolkata,Busan,Container,30,Maritime Eagle,9300026,12.0,22.5726,88.3639,Kolkata,Busan,India,South Korea
+280,Santos,Sydney,Liquid Cargo,10,Blue Horizon,9300013,20.6,-23.9608,-46.3336,Santos,Sydney,Brazil,Australia
+281,Hong Kong,Mumbai,Liquid Cargo,75,Neptune Star,9300020,19.1,22.3193,114.1694,Hong Kong,Mumbai,Hong Kong,India
+282,Shanghai,Sydney,Bulk Cargo,40,Cargo Express,9300020,12.6,31.2304,121.4737,Shanghai,Sydney,China,Australia
+283,Los Angeles,Shanghai,Container,30,Atlantic Spirit,9300019,22.3,33.7405,-118.2755,Los Angeles,Shanghai,USA,China
+284,Chennai,Durban,Liquid Cargo,30,Atlantic Spirit,9300020,13.7,13.0827,80.2707,Chennai,Durban,India,South Africa
+285,Busan,Dubai,Container,50,Cargo Express,9300023,24.8,35.1796,129.0756,Busan,Dubai,South Korea,UAE
+286,Kolkata,Mumbai,General Cargo,20,Cargo Express,9300024,12.5,22.5726,88.3639,Kolkata,Mumbai,India,India
+287,Rotterdam,Singapore,Refrigerated Cargo,75,Atlantic Spirit,9300023,24.1,51.9244,4.4777,Rotterdam,Singapore,Netherlands,Singapore
+288,Valencia,Jebel Ali,Bulk Cargo,20,Pacific Pearl,9300023,12.5,39.4699,-0.3763,Valencia,Jebel Ali,Spain,UAE
+289,Hong Kong,Singapore,Refrigerated Cargo,30,Atlantic Spirit,9300025,15.6,22.3193,114.1694,Hong Kong,Singapore,Hong Kong,Singapore
+290,Tokyo,Jebel Ali,Refrigerated Cargo,15,Maritime Eagle,9300017,16.4,35.6762,139.6503,Tokyo,Jebel Ali,Japan,UAE
+291,Jebel Ali,Hong Kong,Refrigerated Cargo,10,Neptune Star,9300020,15.5,25.0657,55.1713,Jebel Ali,Hong Kong,UAE,Hong Kong
+292,Mumbai,Colombo,Liquid Cargo,15,Golden Wave,9300022,24.9,19.076,72.8777,Mumbai,Colombo,India,Sri Lanka
+293,New York,Hong Kong,Bulk Cargo,25,Sea Voyager,9300015,13.0,40.7128,-74.006,New York,Hong Kong,USA,Hong Kong
+294,Colombo,Sydney,Refrigerated Cargo,30,Blue Horizon,9300017,21.0,6.9271,79.8612,Colombo,Sydney,Sri Lanka,Australia
+295,Singapore,Tokyo,General Cargo,25,Golden Wave,9300025,25.0,1.3521,103.8198,Singapore,Tokyo,Singapore,Japan
+296,Mumbai,Sydney,General Cargo,15,Atlantic Spirit,9300022,18.7,19.076,72.8777,Mumbai,Sydney,India,Australia
+297,Kolkata,Jebel Ali,Bulk Cargo,20,Ocean Star,9300018,13.6,22.5726,88.3639,Kolkata,Jebel Ali,India,UAE
+298,Hong Kong,Sydney,Refrigerated Cargo,15,Golden Wave,9300028,12.4,22.3193,114.1694,Hong Kong,Sydney,Hong Kong,Australia
+299,Hong Kong,Tokyo,Container,100,Cargo Express,9300027,21.9,22.3193,114.1694,Hong Kong,Tokyo,Hong Kong,Japan
+300,Antwerp,Hong Kong,Container,25,Maritime Eagle,9300017,16.1,51.2194,4.4025,Antwerp,Hong Kong,Belgium,Hong Kong
+301,Chennai,Shanghai,Liquid Cargo,40,Blue Horizon,9300014,18.5,13.0827,80.2707,Chennai,Shanghai,India,China
+302,Chennai,New York,Liquid Cargo,20,Pacific Pearl,9300017,21.2,13.0827,80.2707,Chennai,New York,India,USA
+303,New York,Antwerp,Refrigerated Cargo,10,Global Trader,9300017,13.6,40.7128,-74.006,New York,Antwerp,USA,Belgium
+304,Dubai,Jebel Ali,Bulk Cargo,30,Sea Voyager,9300016,22.5,25.2048,55.2708,Dubai,Jebel Ali,UAE,UAE
+305,Mumbai,Santos,Container,25,Neptune Star,9300024,15.8,19.076,72.8777,Mumbai,Santos,India,Brazil
+306,Dubai,Tokyo,Container,20,Neptune Star,9300025,14.9,25.2048,55.2708,Dubai,Tokyo,UAE,Japan
+307,Hamburg,Antwerp,Bulk Cargo,100,Ocean Star,9300018,16.7,53.5511,9.9937,Hamburg,Antwerp,Germany,Belgium
+308,Colombo,Santos,General Cargo,10,Blue Horizon,9300021,20.0,6.9271,79.8612,Colombo,Santos,Sri Lanka,Brazil
+309,New York,Sydney,Liquid Cargo,40,Cargo Express,9300027,18.8,40.7128,-74.006,New York,Sydney,USA,Australia
+310,Mumbai,Dubai,Refrigerated Cargo,50,Atlantic Spirit,9300016,20.4,19.076,72.8777,Mumbai,Dubai,India,UAE
+311,Antwerp,Hong Kong,Liquid Cargo,75,Blue Horizon,9300014,23.4,51.2194,4.4025,Antwerp,Hong Kong,Belgium,Hong Kong
+312,Dubai,Kolkata,General Cargo,5,Maritime Eagle,9300019,18.5,25.2048,55.2708,Dubai,Kolkata,UAE,India
+313,Antwerp,Kolkata,Container,30,Pacific Pearl,9300018,14.1,51.2194,4.4025,Antwerp,Kolkata,Belgium,India
+314,Hong Kong,Valencia,Container,25,Pacific Pearl,9300019,23.0,22.3193,114.1694,Hong Kong,Valencia,Hong Kong,Spain
+315,Valencia,Los Angeles,Liquid Cargo,100,Blue Horizon,9300018,20.1,39.4699,-0.3763,Valencia,Los Angeles,Spain,USA
+316,Mumbai,Valencia,Container,100,Blue Horizon,9300019,19.7,19.076,72.8777,Mumbai,Valencia,India,Spain
+317,Dubai,Hong Kong,General Cargo,5,Golden Wave,9300027,12.5,25.2048,55.2708,Dubai,Hong Kong,UAE,Hong Kong
+318,Singapore,Durban,Refrigerated Cargo,100,Pacific Pearl,9300023,20.5,1.3521,103.8198,Singapore,Durban,Singapore,South Africa
+319,Durban,Shanghai,Bulk Cargo,75,Cargo Express,9300027,23.6,-29.8587,31.0218,Durban,Shanghai,South Africa,China
+320,New York,Antwerp,Bulk Cargo,40,Global Trader,9300014,22.5,40.7128,-74.006,New York,Antwerp,USA,Belgium
+321,Colombo,Mumbai,Refrigerated Cargo,40,Ocean Star,9300012,14.1,6.9271,79.8612,Colombo,Mumbai,Sri Lanka,India
+322,Colombo,Rotterdam,Bulk Cargo,30,Atlantic Spirit,9300018,19.9,6.9271,79.8612,Colombo,Rotterdam,Sri Lanka,Netherlands
+323,Hong Kong,Sydney,Liquid Cargo,75,Blue Horizon,9300016,21.9,22.3193,114.1694,Hong Kong,Sydney,Hong Kong,Australia
+324,Chennai,Hong Kong,Refrigerated Cargo,25,Global Trader,9300018,18.1,13.0827,80.2707,Chennai,Hong Kong,India,Hong Kong
+325,Hamburg,Kolkata,Liquid Cargo,40,Sea Voyager,9300017,12.7,53.5511,9.9937,Hamburg,Kolkata,Germany,India
+326,Sydney,Hamburg,Bulk Cargo,100,Blue Horizon,9300019,22.6,-33.8688,151.2093,Sydney,Hamburg,Australia,Germany
+327,Rotterdam,Dubai,Refrigerated Cargo,50,Cargo Express,9300025,24.9,51.9244,4.4777,Rotterdam,Dubai,Netherlands,UAE
+328,New York,Antwerp,Liquid Cargo,40,Ocean Star,9300019,13.2,40.7128,-74.006,New York,Antwerp,USA,Belgium
+329,Colombo,Hamburg,General Cargo,5,Global Trader,9300023,19.6,6.9271,79.8612,Colombo,Hamburg,Sri Lanka,Germany
+330,New York,Antwerp,Bulk Cargo,50,Golden Wave,9300020,23.5,40.7128,-74.006,New York,Antwerp,USA,Belgium
+331,Valencia,Shanghai,Bulk Cargo,25,Sea Voyager,9300013,17.6,39.4699,-0.3763,Valencia,Shanghai,Spain,China
+332,Tokyo,Hong Kong,Liquid Cargo,100,Ocean Star,9300013,17.2,35.6762,139.6503,Tokyo,Hong Kong,Japan,Hong Kong
+333,Rotterdam,Tokyo,Liquid Cargo,40,Neptune Star,9300022,15.8,51.9244,4.4777,Rotterdam,Tokyo,Netherlands,Japan
+334,Colombo,Santos,Liquid Cargo,100,Pacific Pearl,9300019,22.7,6.9271,79.8612,Colombo,Santos,Sri Lanka,Brazil
+335,Chennai,Dubai,Liquid Cargo,30,Sea Voyager,9300017,17.1,13.0827,80.2707,Chennai,Dubai,India,UAE
+336,Hong Kong,Kolkata,Liquid Cargo,40,Global Trader,9300020,19.8,22.3193,114.1694,Hong Kong,Kolkata,Hong Kong,India
+337,Singapore,Mumbai,Refrigerated Cargo,30,Ocean Star,9300018,13.8,1.3521,103.8198,Singapore,Mumbai,Singapore,India
+338,Antwerp,Colombo,Container,75,Blue Horizon,9300021,19.9,51.2194,4.4025,Antwerp,Colombo,Belgium,Sri Lanka
+339,Busan,Hong Kong,Bulk Cargo,100,Blue Horizon,9300022,17.1,35.1796,129.0756,Busan,Hong Kong,South Korea,Hong Kong
+340,Santos,Busan,Refrigerated Cargo,75,Neptune Star,9300019,22.8,-23.9608,-46.3336,Santos,Busan,Brazil,South Korea
+341,Santos,New York,Bulk Cargo,30,Cargo Express,9300019,22.6,-23.9608,-46.3336,Santos,New York,Brazil,USA
+342,Chennai,Colombo,Liquid Cargo,5,Golden Wave,9300022,16.0,13.0827,80.2707,Chennai,Colombo,India,Sri Lanka
+343,Jebel Ali,Los Angeles,Liquid Cargo,5,Golden Wave,9300023,19.5,25.0657,55.1713,Jebel Ali,Los Angeles,UAE,USA
+344,Jebel Ali,Dubai,Refrigerated Cargo,100,Neptune Star,9300023,20.2,25.0657,55.1713,Jebel Ali,Dubai,UAE,UAE
+345,Kolkata,Los Angeles,Container,10,Ocean Star,9300016,19.4,22.5726,88.3639,Kolkata,Los Angeles,India,USA
+346,Shanghai,Jebel Ali,Container,40,Atlantic Spirit,9300022,17.4,31.2304,121.4737,Shanghai,Jebel Ali,China,UAE
+347,Sydney,Valencia,Container,5,Golden Wave,9300027,24.0,-33.8688,151.2093,Sydney,Valencia,Australia,Spain
+348,Antwerp,Rotterdam,Liquid Cargo,50,Neptune Star,9300027,16.2,51.2194,4.4025,Antwerp,Rotterdam,Belgium,Netherlands
+349,Tokyo,Busan,Bulk Cargo,75,Blue Horizon,9300022,18.0,35.6762,139.6503,Tokyo,Busan,Japan,South Korea
+350,Valencia,Hong Kong,Container,20,Pacific Pearl,9300015,19.9,39.4699,-0.3763,Valencia,Hong Kong,Spain,Hong Kong
+351,Los Angeles,Santos,Bulk Cargo,25,Pacific Pearl,9300016,14.9,33.7405,-118.2755,Los Angeles,Santos,USA,Brazil
+352,Rotterdam,Antwerp,Bulk Cargo,75,Atlantic Spirit,9300018,18.2,51.9244,4.4777,Rotterdam,Antwerp,Netherlands,Belgium
+353,New York,Chennai,Refrigerated Cargo,40,Golden Wave,9300023,20.8,40.7128,-74.006,New York,Chennai,USA,India
+354,Hong Kong,Kolkata,Bulk Cargo,10,Pacific Pearl,9300019,12.5,22.3193,114.1694,Hong Kong,Kolkata,Hong Kong,India
+355,Colombo,Los Angeles,Bulk Cargo,75,Cargo Express,9300023,14.8,6.9271,79.8612,Colombo,Los Angeles,Sri Lanka,USA
+356,Valencia,Los Angeles,Container,100,Blue Horizon,9300019,13.4,39.4699,-0.3763,Valencia,Los Angeles,Spain,USA
+357,Hamburg,Singapore,General Cargo,20,Neptune Star,9300026,14.9,53.5511,9.9937,Hamburg,Singapore,Germany,Singapore
+358,Chennai,Colombo,Container,10,Atlantic Spirit,9300024,21.3,13.0827,80.2707,Chennai,Colombo,India,Sri Lanka
+359,Shanghai,Santos,Refrigerated Cargo,50,Blue Horizon,9300022,17.3,31.2304,121.4737,Shanghai,Santos,China,Brazil
+360,Rotterdam,Busan,General Cargo,5,Atlantic Spirit,9300016,15.7,51.9244,4.4777,Rotterdam,Busan,Netherlands,South Korea
+361,Santos,Hamburg,Container,5,Neptune Star,9300020,21.6,-23.9608,-46.3336,Santos,Hamburg,Brazil,Germany
+362,Sydney,Dubai,Refrigerated Cargo,40,Ocean Star,9300013,25.0,-33.8688,151.2093,Sydney,Dubai,Australia,UAE
+363,Dubai,Busan,Liquid Cargo,100,Ocean Star,9300014,12.1,25.2048,55.2708,Dubai,Busan,UAE,South Korea
+364,Chennai,Hong Kong,Liquid Cargo,75,Pacific Pearl,9300019,17.9,13.0827,80.2707,Chennai,Hong Kong,India,Hong Kong
+365,Jebel Ali,Kolkata,General Cargo,20,Neptune Star,9300024,18.1,25.0657,55.1713,Jebel Ali,Kolkata,UAE,India
+366,Busan,Dubai,General Cargo,15,Cargo Express,9300024,20.4,35.1796,129.0756,Busan,Dubai,South Korea,UAE
+367,Busan,New York,Container,20,Golden Wave,9300027,20.8,35.1796,129.0756,Busan,New York,South Korea,USA
+368,Durban,Tokyo,Refrigerated Cargo,10,Maritime Eagle,9300025,18.7,-29.8587,31.0218,Durban,Tokyo,South Africa,Japan
+369,Chennai,Rotterdam,General Cargo,20,Blue Horizon,9300022,18.2,13.0827,80.2707,Chennai,Rotterdam,India,Netherlands
+370,Los Angeles,Sydney,Bulk Cargo,25,Global Trader,9300014,17.8,33.7405,-118.2755,Los Angeles,Sydney,USA,Australia
+371,New York,Durban,Container,30,Golden Wave,9300021,12.1,40.7128,-74.006,New York,Durban,USA,South Africa
+372,Singapore,Kolkata,Liquid Cargo,40,Cargo Express,9300020,16.0,1.3521,103.8198,Singapore,Kolkata,Singapore,India
+373,New York,Chennai,Container,20,Pacific Pearl,9300018,16.8,40.7128,-74.006,New York,Chennai,USA,India
+374,Kolkata,Antwerp,Bulk Cargo,100,Blue Horizon,9300017,17.9,22.5726,88.3639,Kolkata,Antwerp,India,Belgium
+375,Sydney,Santos,Container,20,Cargo Express,9300023,21.8,-33.8688,151.2093,Sydney,Santos,Australia,Brazil
+376,Durban,Mumbai,General Cargo,30,Neptune Star,9300025,17.8,-29.8587,31.0218,Durban,Mumbai,South Africa,India
+377,Santos,Chennai,Container,75,Ocean Star,9300018,22.8,-23.9608,-46.3336,Santos,Chennai,Brazil,India
+378,Santos,Valencia,Refrigerated Cargo,75,Blue Horizon,9300021,14.1,-23.9608,-46.3336,Santos,Valencia,Brazil,Spain
+379,Chennai,Hamburg,Refrigerated Cargo,75,Golden Wave,9300029,18.4,13.0827,80.2707,Chennai,Hamburg,India,Germany
+380,Singapore,Jebel Ali,Liquid Cargo,50,Blue Horizon,9300013,18.7,1.3521,103.8198,Singapore,Jebel Ali,Singapore,UAE
+381,Singapore,Santos,General Cargo,25,Cargo Express,9300019,20.7,1.3521,103.8198,Singapore,Santos,Singapore,Brazil
+382,Tokyo,Los Angeles,General Cargo,100,Ocean Star,9300013,21.7,35.6762,139.6503,Tokyo,Los Angeles,Japan,USA
+383,Singapore,Colombo,General Cargo,75,Atlantic Spirit,9300019,21.1,1.3521,103.8198,Singapore,Colombo,Singapore,Sri Lanka
+384,Mumbai,Antwerp,Container,15,Ocean Star,9300015,15.7,19.076,72.8777,Mumbai,Antwerp,India,Belgium
+385,Sydney,Hong Kong,Refrigerated Cargo,40,Maritime Eagle,9300022,17.8,-33.8688,151.2093,Sydney,Hong Kong,Australia,Hong Kong
+386,Mumbai,Santos,General Cargo,30,Blue Horizon,9300019,20.5,19.076,72.8777,Mumbai,Santos,India,Brazil
+387,Dubai,Santos,General Cargo,20,Maritime Eagle,9300024,18.9,25.2048,55.2708,Dubai,Santos,UAE,Brazil
+388,Shanghai,Busan,Refrigerated Cargo,75,Cargo Express,9300026,20.8,31.2304,121.4737,Shanghai,Busan,China,South Korea
+389,Valencia,Tokyo,Container,30,Global Trader,9300023,15.2,39.4699,-0.3763,Valencia,Tokyo,Spain,Japan
+390,Los Angeles,Rotterdam,Liquid Cargo,40,Sea Voyager,9300012,12.4,33.7405,-118.2755,Los Angeles,Rotterdam,USA,Netherlands
+391,Shanghai,Los Angeles,General Cargo,100,Global Trader,9300015,12.9,31.2304,121.4737,Shanghai,Los Angeles,China,USA
+392,Colombo,Singapore,Refrigerated Cargo,40,Global Trader,9300016,21.6,6.9271,79.8612,Colombo,Singapore,Sri Lanka,Singapore
+393,Hamburg,Santos,Container,5,Global Trader,9300017,21.8,53.5511,9.9937,Hamburg,Santos,Germany,Brazil
+394,Antwerp,New York,Bulk Cargo,100,Global Trader,9300018,22.6,51.2194,4.4025,Antwerp,New York,Belgium,USA
+395,Santos,Busan,Liquid Cargo,15,Global Trader,9300019,15.9,-23.9608,-46.3336,Santos,Busan,Brazil,South Korea
+396,Hamburg,Colombo,Liquid Cargo,75,Pacific Pearl,9300021,15.6,53.5511,9.9937,Hamburg,Colombo,Germany,Sri Lanka
+397,Dubai,Colombo,Refrigerated Cargo,30,Neptune Star,9300026,18.4,25.2048,55.2708,Dubai,Colombo,UAE,Sri Lanka
+398,Antwerp,Busan,Refrigerated Cargo,25,Maritime Eagle,9300025,17.3,51.2194,4.4025,Antwerp,Busan,Belgium,South Korea
+399,Dubai,Santos,Bulk Cargo,20,Cargo Express,9300027,15.1,25.2048,55.2708,Dubai,Santos,UAE,Brazil
+400,Kolkata,Jebel Ali,Liquid Cargo,40,Ocean Star,9300011,19.3,22.5726,88.3639,Kolkata,Jebel Ali,India,UAE
+401,Antwerp,Kolkata,Bulk Cargo,20,Maritime Eagle,9300018,15.2,51.2194,4.4025,Antwerp,Kolkata,Belgium,India
+402,Mumbai,Jebel Ali,General Cargo,20,Atlantic Spirit,9300018,13.2,19.076,72.8777,Mumbai,Jebel Ali,India,UAE
+403,Los Angeles,Sydney,Container,10,Golden Wave,9300023,19.8,33.7405,-118.2755,Los Angeles,Sydney,USA,Australia
+404,Santos,Valencia,Bulk Cargo,30,Global Trader,9300018,18.2,-23.9608,-46.3336,Santos,Valencia,Brazil,Spain
+405,Shanghai,Hamburg,Refrigerated Cargo,10,Global Trader,9300019,24.5,31.2304,121.4737,Shanghai,Hamburg,China,Germany
+406,Hamburg,Rotterdam,Bulk Cargo,75,Maritime Eagle,9300023,23.9,53.5511,9.9937,Hamburg,Rotterdam,Germany,Netherlands
+407,New York,Sydney,Bulk Cargo,30,Cargo Express,9300025,18.9,40.7128,-74.006,New York,Sydney,USA,Australia
+408,Los Angeles,Tokyo,General Cargo,50,Neptune Star,9300027,23.5,33.7405,-118.2755,Los Angeles,Tokyo,USA,Japan
+409,Jebel Ali,Busan,General Cargo,40,Global Trader,9300023,16.8,25.0657,55.1713,Jebel Ali,Busan,UAE,South Korea
+410,Santos,Hamburg,Liquid Cargo,75,Blue Horizon,9300013,12.2,-23.9608,-46.3336,Santos,Hamburg,Brazil,Germany
+411,Santos,Sydney,Container,30,Pacific Pearl,9300016,14.0,-23.9608,-46.3336,Santos,Sydney,Brazil,Australia
+412,Tokyo,Durban,Bulk Cargo,30,Global Trader,9300016,18.5,35.6762,139.6503,Tokyo,Durban,Japan,South Africa
+413,Jebel Ali,Antwerp,Container,30,Cargo Express,9300021,14.2,25.0657,55.1713,Jebel Ali,Antwerp,UAE,Belgium
+414,Kolkata,Santos,General Cargo,75,Cargo Express,9300022,14.4,22.5726,88.3639,Kolkata,Santos,India,Brazil
+415,Antwerp,Singapore,General Cargo,5,Sea Voyager,9300017,24.3,51.2194,4.4025,Antwerp,Singapore,Belgium,Singapore
+416,Sydney,Kolkata,General Cargo,15,Global Trader,9300020,12.9,-33.8688,151.2093,Sydney,Kolkata,Australia,India
+417,Rotterdam,Valencia,Liquid Cargo,100,Cargo Express,9300025,16.9,51.9244,4.4777,Rotterdam,Valencia,Netherlands,Spain
+418,Jebel Ali,Antwerp,Refrigerated Cargo,75,Ocean Star,9300019,12.1,25.0657,55.1713,Jebel Ali,Antwerp,UAE,Belgium
+419,Shanghai,Singapore,Bulk Cargo,75,Neptune Star,9300028,21.4,31.2304,121.4737,Shanghai,Singapore,China,Singapore
+420,Shanghai,Valencia,General Cargo,15,Maritime Eagle,9300017,22.5,31.2304,121.4737,Shanghai,Valencia,China,Spain
+421,Chennai,Valencia,Liquid Cargo,100,Blue Horizon,9300014,15.1,13.0827,80.2707,Chennai,Valencia,India,Spain
+422,Los Angeles,Tokyo,Bulk Cargo,10,Pacific Pearl,9300017,22.3,33.7405,-118.2755,Los Angeles,Tokyo,USA,Japan
+423,Tokyo,Jebel Ali,Bulk Cargo,20,Golden Wave,9300023,15.2,35.6762,139.6503,Tokyo,Jebel Ali,Japan,UAE
+424,Mumbai,Singapore,Liquid Cargo,40,Sea Voyager,9300016,17.3,19.076,72.8777,Mumbai,Singapore,India,Singapore
+425,Jebel Ali,Singapore,Refrigerated Cargo,10,Ocean Star,9300016,21.1,25.0657,55.1713,Jebel Ali,Singapore,UAE,Singapore
+426,Sydney,Busan,Liquid Cargo,10,Golden Wave,9300026,24.7,-33.8688,151.2093,Sydney,Busan,Australia,South Korea
+427,Singapore,Los Angeles,Refrigerated Cargo,100,Global Trader,9300021,23.7,1.3521,103.8198,Singapore,Los Angeles,Singapore,USA
+428,Los Angeles,Singapore,Liquid Cargo,25,Sea Voyager,9300020,20.9,33.7405,-118.2755,Los Angeles,Singapore,USA,Singapore
+429,Santos,Singapore,General Cargo,30,Blue Horizon,9300022,24.1,-23.9608,-46.3336,Santos,Singapore,Brazil,Singapore
+430,Rotterdam,Durban,General Cargo,40,Blue Horizon,9300013,21.8,51.9244,4.4777,Rotterdam,Durban,Netherlands,South Africa
+431,New York,Dubai,Liquid Cargo,40,Golden Wave,9300021,15.1,40.7128,-74.006,New York,Dubai,USA,UAE
+432,Busan,Sydney,Liquid Cargo,10,Blue Horizon,9300015,22.3,35.1796,129.0756,Busan,Sydney,South Korea,Australia
+433,Hong Kong,Singapore,Bulk Cargo,10,Sea Voyager,9300015,17.7,22.3193,114.1694,Hong Kong,Singapore,Hong Kong,Singapore
+434,Durban,Tokyo,Refrigerated Cargo,25,Atlantic Spirit,9300020,12.4,-29.8587,31.0218,Durban,Tokyo,South Africa,Japan
+435,Jebel Ali,Hamburg,Refrigerated Cargo,40,Atlantic Spirit,9300021,19.2,25.0657,55.1713,Jebel Ali,Hamburg,UAE,Germany
+436,Dubai,Durban,Bulk Cargo,100,Maritime Eagle,9300023,13.1,25.2048,55.2708,Dubai,Durban,UAE,South Africa
+437,Hamburg,Mumbai,Container,40,Sea Voyager,9300019,15.5,53.5511,9.9937,Hamburg,Mumbai,Germany,India
+438,Tokyo,Busan,Bulk Cargo,5,Atlantic Spirit,9300024,13.4,35.6762,139.6503,Tokyo,Busan,Japan,South Korea
+439,Colombo,Hong Kong,Container,10,Pacific Pearl,9300024,13.3,6.9271,79.8612,Colombo,Hong Kong,Sri Lanka,Hong Kong
+440,Sydney,Jebel Ali,General Cargo,40,Neptune Star,9300019,19.2,-33.8688,151.2093,Sydney,Jebel Ali,Australia,UAE
+441,Shanghai,Chennai,Liquid Cargo,100,Atlantic Spirit,9300017,19.2,31.2304,121.4737,Shanghai,Chennai,China,India
+442,Busan,Sydney,General Cargo,40,Ocean Star,9300013,15.8,35.1796,129.0756,Busan,Sydney,South Korea,Australia
+443,Valencia,Hamburg,Container,40,Golden Wave,9300023,18.8,39.4699,-0.3763,Valencia,Hamburg,Spain,Germany
+444,Kolkata,New York,General Cargo,15,Pacific Pearl,9300019,15.5,22.5726,88.3639,Kolkata,New York,India,USA
+445,Dubai,Colombo,General Cargo,50,Pacific Pearl,9300020,17.5,25.2048,55.2708,Dubai,Colombo,UAE,Sri Lanka
+446,Hong Kong,Los Angeles,Liquid Cargo,50,Global Trader,9300020,21.4,22.3193,114.1694,Hong Kong,Los Angeles,Hong Kong,USA
+447,Durban,Rotterdam,General Cargo,25,Cargo Express,9300025,13.4,-29.8587,31.0218,Durban,Rotterdam,South Africa,Netherlands
+448,Tokyo,Busan,Refrigerated Cargo,30,Golden Wave,9300028,16.9,35.6762,139.6503,Tokyo,Busan,Japan,South Korea
+449,Busan,Colombo,Liquid Cargo,30,Golden Wave,9300029,13.8,35.1796,129.0756,Busan,Colombo,South Korea,Sri Lanka
+450,Rotterdam,Antwerp,Bulk Cargo,40,Atlantic Spirit,9300016,14.3,51.9244,4.4777,Rotterdam,Antwerp,Netherlands,Belgium
+451,New York,Antwerp,Refrigerated Cargo,30,Golden Wave,9300021,22.2,40.7128,-74.006,New York,Antwerp,USA,Belgium
+452,Los Angeles,Sydney,Container,100,Atlantic Spirit,9300018,13.5,33.7405,-118.2755,Los Angeles,Sydney,USA,Australia
+453,Santos,Valencia,General Cargo,75,Blue Horizon,9300016,20.9,-23.9608,-46.3336,Santos,Valencia,Brazil,Spain
+454,Colombo,Rotterdam,Refrigerated Cargo,10,Cargo Express,9300022,22.4,6.9271,79.8612,Colombo,Rotterdam,Sri Lanka,Netherlands
+455,Jebel Ali,Kolkata,Refrigerated Cargo,15,Pacific Pearl,9300020,15.1,25.0657,55.1713,Jebel Ali,Kolkata,UAE,India
+456,Tokyo,Mumbai,Liquid Cargo,50,Cargo Express,9300024,24.9,35.6762,139.6503,Tokyo,Mumbai,Japan,India
+457,Tokyo,Santos,Liquid Cargo,40,Neptune Star,9300026,24.0,35.6762,139.6503,Tokyo,Santos,Japan,Brazil
+458,Singapore,Tokyo,General Cargo,10,Neptune Star,9300027,19.7,1.3521,103.8198,Singapore,Tokyo,Singapore,Japan
+459,Hamburg,Tokyo,Liquid Cargo,5,Blue Horizon,9300022,20.4,53.5511,9.9937,Hamburg,Tokyo,Germany,Japan
+460,Tokyo,Busan,Bulk Cargo,10,Maritime Eagle,9300017,13.4,35.6762,139.6503,Tokyo,Busan,Japan,South Korea
+461,Hamburg,Valencia,Container,100,Neptune Star,9300020,19.3,53.5511,9.9937,Hamburg,Valencia,Germany,Spain
+462,Colombo,Hong Kong,Liquid Cargo,100,Maritime Eagle,9300019,18.0,6.9271,79.8612,Colombo,Hong Kong,Sri Lanka,Hong Kong
+463,Kolkata,Tokyo,Refrigerated Cargo,25,Ocean Star,9300014,18.3,22.5726,88.3639,Kolkata,Tokyo,India,Japan
+464,Mumbai,Kolkata,Refrigerated Cargo,30,Blue Horizon,9300017,16.5,19.076,72.8777,Mumbai,Kolkata,India,India
+465,Rotterdam,Valencia,Refrigerated Cargo,10,Cargo Express,9300023,16.5,51.9244,4.4777,Rotterdam,Valencia,Netherlands,Spain
+466,Colombo,Busan,General Cargo,10,Sea Voyager,9300018,15.9,6.9271,79.8612,Colombo,Busan,Sri Lanka,South Korea
+467,Busan,Chennai,Liquid Cargo,20,Blue Horizon,9300020,24.1,35.1796,129.0756,Busan,Chennai,South Korea,India
+468,Dubai,Santos,Refrigerated Cargo,40,Blue Horizon,9300021,16.3,25.2048,55.2708,Dubai,Santos,UAE,Brazil
+469,Hamburg,Sydney,Refrigerated Cargo,40,Blue Horizon,9300022,14.4,53.5511,9.9937,Hamburg,Sydney,Germany,Australia
+470,Shanghai,Hamburg,General Cargo,40,Cargo Express,9300018,19.7,31.2304,121.4737,Shanghai,Hamburg,China,Germany
+471,Rotterdam,Hamburg,Liquid Cargo,10,Pacific Pearl,9300016,21.8,51.9244,4.4777,Rotterdam,Hamburg,Netherlands,Germany
+472,Chennai,Santos,Refrigerated Cargo,20,Blue Horizon,9300015,16.8,13.0827,80.2707,Chennai,Santos,India,Brazil
+473,Chennai,New York,Liquid Cargo,30,Cargo Express,9300021,18.9,13.0827,80.2707,Chennai,New York,India,USA
+474,Tokyo,Sydney,Refrigerated Cargo,30,Golden Wave,9300024,13.5,35.6762,139.6503,Tokyo,Sydney,Japan,Australia
+475,Durban,Dubai,General Cargo,100,Pacific Pearl,9300020,23.9,-29.8587,31.0218,Durban,Dubai,South Africa,UAE
+476,Kolkata,Hong Kong,Container,10,Sea Voyager,9300018,15.1,22.5726,88.3639,Kolkata,Hong Kong,India,Hong Kong
+477,Hong Kong,Kolkata,Container,100,Neptune Star,9300026,17.1,22.3193,114.1694,Hong Kong,Kolkata,Hong Kong,India
+478,Santos,Tokyo,Container,75,Maritime Eagle,9300025,14.4,-23.9608,-46.3336,Santos,Tokyo,Brazil,Japan
+479,Valencia,Dubai,Bulk Cargo,15,Cargo Express,9300027,15.8,39.4699,-0.3763,Valencia,Dubai,Spain,UAE
+480,Colombo,Singapore,Container,50,Atlantic Spirit,9300016,24.4,6.9271,79.8612,Colombo,Singapore,Sri Lanka,Singapore
+481,Rotterdam,Sydney,Refrigerated Cargo,50,Neptune Star,9300020,18.6,51.9244,4.4777,Rotterdam,Sydney,Netherlands,Australia
+482,Jebel Ali,Sydney,Liquid Cargo,10,Cargo Express,9300020,18.4,25.0657,55.1713,Jebel Ali,Sydney,UAE,Australia
+483,Shanghai,Los Angeles,Liquid Cargo,20,Pacific Pearl,9300018,12.4,31.2304,121.4737,Shanghai,Los Angeles,China,USA
+484,New York,Dubai,Liquid Cargo,50,Cargo Express,9300022,19.4,40.7128,-74.006,New York,Dubai,USA,UAE
+485,Antwerp,Chennai,Bulk Cargo,75,Golden Wave,9300025,13.5,51.2194,4.4025,Antwerp,Chennai,Belgium,India
+486,Valencia,Singapore,General Cargo,40,Cargo Express,9300024,19.1,39.4699,-0.3763,Valencia,Singapore,Spain,Singapore
+487,Hamburg,Busan,General Cargo,30,Ocean Star,9300018,17.8,53.5511,9.9937,Hamburg,Busan,Germany,South Korea
+488,Colombo,Chennai,Bulk Cargo,100,Global Trader,9300022,14.7,6.9271,79.8612,Colombo,Chennai,Sri Lanka,India
+489,Durban,Sydney,Container,20,Blue Horizon,9300022,20.0,-29.8587,31.0218,Durban,Sydney,South Africa,Australia
+490,Singapore,Durban,Liquid Cargo,100,Atlantic Spirit,9300016,18.9,1.3521,103.8198,Singapore,Durban,Singapore,South Africa
+491,Dubai,Hong Kong,Liquid Cargo,25,Pacific Pearl,9300016,15.8,25.2048,55.2708,Dubai,Hong Kong,UAE,Hong Kong
+492,Chennai,Dubai,Container,25,Maritime Eagle,9300019,23.9,13.0827,80.2707,Chennai,Dubai,India,UAE
+493,Kolkata,Los Angeles,Refrigerated Cargo,20,Blue Horizon,9300016,21.2,22.5726,88.3639,Kolkata,Los Angeles,India,USA
+494,Jebel Ali,Kolkata,Refrigerated Cargo,40,Golden Wave,9300024,20.2,25.0657,55.1713,Jebel Ali,Kolkata,UAE,India
+495,Colombo,Mumbai,Bulk Cargo,25,Sea Voyager,9300017,17.2,6.9271,79.8612,Colombo,Mumbai,Sri Lanka,India
+496,Colombo,Antwerp,Refrigerated Cargo,10,Atlantic Spirit,9300022,19.6,6.9271,79.8612,Colombo,Antwerp,Sri Lanka,Belgium
+497,Hong Kong,Mumbai,Container,40,Neptune Star,9300026,17.2,22.3193,114.1694,Hong Kong,Mumbai,Hong Kong,India
+498,Jebel Ali,Los Angeles,Liquid Cargo,30,Atlantic Spirit,9300024,22.8,25.0657,55.1713,Jebel Ali,Los Angeles,UAE,USA
+499,Santos,Kolkata,General Cargo,30,Golden Wave,9300029,23.1,-23.9608,-46.3336,Santos,Kolkata,Brazil,India
+500,Singapore,Kolkata,Refrigerated Cargo,15,Cargo Express,9300018,12.2,1.3521,103.8198,Singapore,Kolkata,Singapore,India
+501,Colombo,Shanghai,Bulk Cargo,15,Maritime Eagle,9300018,14.6,6.9271,79.8612,Colombo,Shanghai,Sri Lanka,China
+502,Dubai,New York,General Cargo,25,Sea Voyager,9300014,20.5,25.2048,55.2708,Dubai,New York,UAE,USA
+503,Hong Kong,Dubai,Container,25,Ocean Star,9300014,17.2,22.3193,114.1694,Hong Kong,Dubai,Hong Kong,UAE
+504,Sydney,Mumbai,General Cargo,50,Sea Voyager,9300016,12.0,-33.8688,151.2093,Sydney,Mumbai,Australia,India
+505,Kolkata,Durban,General Cargo,50,Global Trader,9300019,18.8,22.5726,88.3639,Kolkata,Durban,India,South Africa
+506,Shanghai,Hong Kong,Container,40,Sea Voyager,9300018,24.8,31.2304,121.4737,Shanghai,Hong Kong,China,Hong Kong
+507,Jebel Ali,Mumbai,General Cargo,10,Global Trader,9300021,17.0,25.0657,55.1713,Jebel Ali,Mumbai,UAE,India
+508,Busan,Tokyo,Container,15,Pacific Pearl,9300023,13.8,35.1796,129.0756,Busan,Tokyo,South Korea,Japan
+509,Mumbai,Valencia,Refrigerated Cargo,15,Golden Wave,9300029,12.1,19.076,72.8777,Mumbai,Valencia,India,Spain
+510,Hong Kong,Rotterdam,Refrigerated Cargo,100,Blue Horizon,9300013,24.0,22.3193,114.1694,Hong Kong,Rotterdam,Hong Kong,Netherlands
+511,Rotterdam,Mumbai,Liquid Cargo,10,Sea Voyager,9300013,13.8,51.9244,4.4777,Rotterdam,Mumbai,Netherlands,India
+512,Tokyo,Hong Kong,Container,15,Maritime Eagle,9300019,16.1,35.6762,139.6503,Tokyo,Hong Kong,Japan,Hong Kong
+513,Los Angeles,Mumbai,Liquid Cargo,100,Global Trader,9300017,19.2,33.7405,-118.2755,Los Angeles,Mumbai,USA,India
+514,New York,Shanghai,Liquid Cargo,100,Pacific Pearl,9300019,14.7,40.7128,-74.006,New York,Shanghai,USA,China
+515,Rotterdam,Sydney,Refrigerated Cargo,20,Pacific Pearl,9300020,20.4,51.9244,4.4777,Rotterdam,Sydney,Netherlands,Australia
+516,Tokyo,Chennai,General Cargo,100,Global Trader,9300020,18.5,35.6762,139.6503,Tokyo,Chennai,Japan,India
+517,Antwerp,Shanghai,Refrigerated Cargo,15,Atlantic Spirit,9300023,24.1,51.2194,4.4025,Antwerp,Shanghai,Belgium,China
+518,Santos,Sydney,Refrigerated Cargo,15,Atlantic Spirit,9300024,19.1,-23.9608,-46.3336,Santos,Sydney,Brazil,Australia
+519,Mumbai,Shanghai,Container,25,Golden Wave,9300029,12.9,19.076,72.8777,Mumbai,Shanghai,India,China
+520,Singapore,Mumbai,Refrigerated Cargo,75,Maritime Eagle,9300017,18.6,1.3521,103.8198,Singapore,Mumbai,Singapore,India
+521,Sydney,Tokyo,Liquid Cargo,75,Sea Voyager,9300013,20.3,-33.8688,151.2093,Sydney,Tokyo,Australia,Japan
+522,Kolkata,New York,Container,75,Sea Voyager,9300014,16.0,22.5726,88.3639,Kolkata,New York,India,USA
+523,Kolkata,Santos,Bulk Cargo,10,Atlantic Spirit,9300019,17.1,22.5726,88.3639,Kolkata,Santos,India,Brazil
+524,Sydney,Hamburg,General Cargo,40,Ocean Star,9300015,15.2,-33.8688,151.2093,Sydney,Hamburg,Australia,Germany
+525,Colombo,Singapore,General Cargo,15,Pacific Pearl,9300020,20.7,6.9271,79.8612,Colombo,Singapore,Sri Lanka,Singapore
+526,Shanghai,Dubai,Liquid Cargo,30,Ocean Star,9300017,14.1,31.2304,121.4737,Shanghai,Dubai,China,UAE
+527,Antwerp,Los Angeles,General Cargo,25,Blue Horizon,9300020,16.8,51.2194,4.4025,Antwerp,Los Angeles,Belgium,USA
+528,Shanghai,Hong Kong,Bulk Cargo,10,Maritime Eagle,9300025,15.5,31.2304,121.4737,Shanghai,Hong Kong,China,Hong Kong
+529,Santos,Mumbai,General Cargo,30,Cargo Express,9300027,17.9,-23.9608,-46.3336,Santos,Mumbai,Brazil,India
+530,Jebel Ali,Durban,General Cargo,25,Blue Horizon,9300013,16.8,25.0657,55.1713,Jebel Ali,Durban,UAE,South Africa
+531,Santos,Chennai,General Cargo,5,Global Trader,9300015,21.6,-23.9608,-46.3336,Santos,Chennai,Brazil,India
+532,Shanghai,Los Angeles,Container,40,Ocean Star,9300013,18.1,31.2304,121.4737,Shanghai,Los Angeles,China,USA
+533,Dubai,Singapore,Container,40,Neptune Star,9300022,22.4,25.2048,55.2708,Dubai,Singapore,UAE,Singapore
+534,Busan,Hamburg,Bulk Cargo,30,Maritime Eagle,9300021,23.9,35.1796,129.0756,Busan,Hamburg,South Korea,Germany
+535,Mumbai,Durban,Container,5,Atlantic Spirit,9300021,13.6,19.076,72.8777,Mumbai,Durban,India,South Africa
+536,Hamburg,Valencia,Refrigerated Cargo,10,Ocean Star,9300017,24.4,53.5511,9.9937,Hamburg,Valencia,Germany,Spain
+537,New York,Busan,General Cargo,50,Atlantic Spirit,9300023,13.1,40.7128,-74.006,New York,Busan,USA,South Korea
+538,Hong Kong,Rotterdam,Liquid Cargo,25,Pacific Pearl,9300023,19.3,22.3193,114.1694,Hong Kong,Rotterdam,Hong Kong,Netherlands
+539,Hamburg,Jebel Ali,Container,50,Atlantic Spirit,9300025,19.7,53.5511,9.9937,Hamburg,Jebel Ali,Germany,UAE
+540,Valencia,Hamburg,General Cargo,40,Blue Horizon,9300013,12.1,39.4699,-0.3763,Valencia,Hamburg,Spain,Germany
+541,Hamburg,Santos,Bulk Cargo,5,Atlantic Spirit,9300017,20.3,53.5511,9.9937,Hamburg,Santos,Germany,Brazil
+542,Shanghai,Sydney,Container,75,Pacific Pearl,9300017,13.4,31.2304,121.4737,Shanghai,Sydney,China,Australia
+543,Sydney,Antwerp,Bulk Cargo,15,Ocean Star,9300014,24.6,-33.8688,151.2093,Sydney,Antwerp,Australia,Belgium
+544,Mumbai,Singapore,Refrigerated Cargo,75,Global Trader,9300018,23.7,19.076,72.8777,Mumbai,Singapore,India,Singapore
+545,Hong Kong,Jebel Ali,Container,75,Sea Voyager,9300017,19.6,22.3193,114.1694,Hong Kong,Jebel Ali,Hong Kong,UAE
+546,Tokyo,Mumbai,Container,40,Golden Wave,9300026,19.4,35.6762,139.6503,Tokyo,Mumbai,Japan,India
+547,Hamburg,Busan,Bulk Cargo,40,Pacific Pearl,9300022,23.1,53.5511,9.9937,Hamburg,Busan,Germany,South Korea
+548,Busan,Jebel Ali,Container,20,Pacific Pearl,9300023,15.0,35.1796,129.0756,Busan,Jebel Ali,South Korea,UAE
+549,Santos,Chennai,Refrigerated Cargo,50,Blue Horizon,9300022,13.4,-23.9608,-46.3336,Santos,Chennai,Brazil,India
+550,Busan,Colombo,Refrigerated Cargo,20,Sea Voyager,9300012,19.0,35.1796,129.0756,Busan,Colombo,South Korea,Sri Lanka
+551,New York,Jebel Ali,Container,10,Pacific Pearl,9300016,23.1,40.7128,-74.006,New York,Jebel Ali,USA,UAE
+552,New York,Singapore,Container,30,Global Trader,9300016,22.9,40.7128,-74.006,New York,Singapore,USA,Singapore
+553,Mumbai,Los Angeles,Bulk Cargo,5,Atlantic Spirit,9300019,17.2,19.076,72.8777,Mumbai,Los Angeles,India,USA
+554,Los Angeles,Dubai,Liquid Cargo,50,Ocean Star,9300015,24.4,33.7405,-118.2755,Los Angeles,Dubai,USA,UAE
+555,Valencia,Hamburg,General Cargo,15,Sea Voyager,9300017,18.0,39.4699,-0.3763,Valencia,Hamburg,Spain,Germany
+556,Shanghai,Mumbai,Bulk Cargo,40,Global Trader,9300020,13.7,31.2304,121.4737,Shanghai,Mumbai,China,India
+557,Mumbai,Durban,General Cargo,10,Golden Wave,9300027,15.4,19.076,72.8777,Mumbai,Durban,India,South Africa
+558,Mumbai,Hamburg,Bulk Cargo,10,Cargo Express,9300026,22.5,19.076,72.8777,Mumbai,Hamburg,India,Germany
+559,Chennai,Singapore,Refrigerated Cargo,100,Cargo Express,9300027,12.7,13.0827,80.2707,Chennai,Singapore,India,Singapore
+560,Tokyo,Antwerp,Container,40,Ocean Star,9300011,17.0,35.6762,139.6503,Tokyo,Antwerp,Japan,Belgium
+561,Hong Kong,Rotterdam,Container,50,Blue Horizon,9300014,15.6,22.3193,114.1694,Hong Kong,Rotterdam,Hong Kong,Netherlands
+562,Singapore,Los Angeles,Refrigerated Cargo,75,Pacific Pearl,9300017,18.5,1.3521,103.8198,Singapore,Los Angeles,Singapore,USA
+563,Singapore,Chennai,Container,40,Pacific Pearl,9300018,17.0,1.3521,103.8198,Singapore,Chennai,Singapore,India
+564,Antwerp,Hamburg,Bulk Cargo,40,Neptune Star,9300023,22.3,51.2194,4.4025,Antwerp,Hamburg,Belgium,Germany
+565,Jebel Ali,Santos,Liquid Cargo,100,Cargo Express,9300023,16.5,25.0657,55.1713,Jebel Ali,Santos,UAE,Brazil
+566,Busan,Sydney,Liquid Cargo,30,Pacific Pearl,9300021,14.3,35.1796,129.0756,Busan,Sydney,South Korea,Australia
+567,Hamburg,Shanghai,Liquid Cargo,50,Pacific Pearl,9300022,12.8,53.5511,9.9937,Hamburg,Shanghai,Germany,China
+568,Hong Kong,Durban,Container,10,Global Trader,9300022,24.7,22.3193,114.1694,Hong Kong,Durban,Hong Kong,South Africa
+569,Hamburg,New York,Container,5,Neptune Star,9300028,22.6,53.5511,9.9937,Hamburg,New York,Germany,USA
+570,Santos,Tokyo,Container,15,Atlantic Spirit,9300016,24.2,-23.9608,-46.3336,Santos,Tokyo,Brazil,Japan
+571,Hamburg,Durban,Liquid Cargo,30,Atlantic Spirit,9300017,22.5,53.5511,9.9937,Hamburg,Durban,Germany,South Africa
+572,Shanghai,Tokyo,Container,100,Golden Wave,9300022,19.3,31.2304,121.4737,Shanghai,Tokyo,China,Japan
+573,Jebel Ali,Santos,General Cargo,5,Pacific Pearl,9300018,14.3,25.0657,55.1713,Jebel Ali,Santos,UAE,Brazil
+574,Singapore,Los Angeles,Refrigerated Cargo,75,Golden Wave,9300024,14.8,1.3521,103.8198,Singapore,Los Angeles,Singapore,USA
+575,Shanghai,Hong Kong,Bulk Cargo,15,Golden Wave,9300025,14.6,31.2304,121.4737,Shanghai,Hong Kong,China,Hong Kong
+576,Dubai,Hong Kong,Container,100,Ocean Star,9300017,12.3,25.2048,55.2708,Dubai,Hong Kong,UAE,Hong Kong
+577,Chennai,Valencia,Refrigerated Cargo,30,Atlantic Spirit,9300023,24.5,13.0827,80.2707,Chennai,Valencia,India,Spain
+578,Santos,Chennai,Container,15,Atlantic Spirit,9300024,15.9,-23.9608,-46.3336,Santos,Chennai,Brazil,India
+579,Sydney,Antwerp,Liquid Cargo,75,Atlantic Spirit,9300025,14.3,-33.8688,151.2093,Sydney,Antwerp,Australia,Belgium
+580,Hong Kong,Hamburg,Bulk Cargo,40,Golden Wave,9300020,22.6,22.3193,114.1694,Hong Kong,Hamburg,Hong Kong,Germany
+581,New York,Kolkata,Refrigerated Cargo,100,Blue Horizon,9300014,21.5,40.7128,-74.006,New York,Kolkata,USA,India
+582,Santos,Singapore,Container,100,Blue Horizon,9300015,19.8,-23.9608,-46.3336,Santos,Singapore,Brazil,Singapore
+583,Santos,Chennai,Container,10,Cargo Express,9300021,13.8,-23.9608,-46.3336,Santos,Chennai,Brazil,India
+584,Hong Kong,Busan,Bulk Cargo,10,Blue Horizon,9300017,20.3,22.3193,114.1694,Hong Kong,Busan,Hong Kong,South Korea
+585,Colombo,Shanghai,Bulk Cargo,10,Pacific Pearl,9300020,14.7,6.9271,79.8612,Colombo,Shanghai,Sri Lanka,China
+586,Los Angeles,Chennai,Refrigerated Cargo,50,Ocean Star,9300017,12.6,33.7405,-118.2755,Los Angeles,Chennai,USA,India
+587,Dubai,Colombo,Liquid Cargo,30,Cargo Express,9300025,23.5,25.2048,55.2708,Dubai,Colombo,UAE,Sri Lanka
+588,Tokyo,Chennai,Container,100,Cargo Express,9300026,22.3,35.6762,139.6503,Tokyo,Chennai,Japan,India
+589,Dubai,Jebel Ali,Bulk Cargo,5,Sea Voyager,9300021,22.4,25.2048,55.2708,Dubai,Jebel Ali,UAE,UAE
+590,Shanghai,Hong Kong,Bulk Cargo,10,Pacific Pearl,9300015,24.4,31.2304,121.4737,Shanghai,Hong Kong,China,Hong Kong
+591,Dubai,Sydney,General Cargo,75,Blue Horizon,9300014,21.5,25.2048,55.2708,Dubai,Sydney,UAE,Australia
+592,Busan,Antwerp,Liquid Cargo,15,Ocean Star,9300013,17.6,35.1796,129.0756,Busan,Antwerp,South Korea,Belgium
+593,Sydney,Dubai,Container,20,Ocean Star,9300014,13.3,-33.8688,151.2093,Sydney,Dubai,Australia,UAE
+594,Sydney,Santos,Bulk Cargo,25,Neptune Star,9300023,15.4,-33.8688,151.2093,Sydney,Santos,Australia,Brazil
+595,Hamburg,Chennai,Refrigerated Cargo,75,Ocean Star,9300016,17.1,53.5511,9.9937,Hamburg,Chennai,Germany,India
+596,Kolkata,Singapore,Bulk Cargo,10,Atlantic Spirit,9300022,12.0,22.5726,88.3639,Kolkata,Singapore,India,Singapore
+597,Durban,Jebel Ali,Container,20,Global Trader,9300021,13.3,-29.8587,31.0218,Durban,Jebel Ali,South Africa,UAE
+598,New York,Mumbai,Refrigerated Cargo,25,Cargo Express,9300026,23.0,40.7128,-74.006,New York,Mumbai,USA,India
+599,Jebel Ali,Antwerp,Refrigerated Cargo,75,Pacific Pearl,9300024,13.2,25.0657,55.1713,Jebel Ali,Antwerp,UAE,Belgium
+600,Dubai,Tokyo,General Cargo,50,Maritime Eagle,9300017,16.8,25.2048,55.2708,Dubai,Tokyo,UAE,Japan
+601,Los Angeles,Jebel Ali,Liquid Cargo,25,Cargo Express,9300019,15.4,33.7405,-118.2755,Los Angeles,Jebel Ali,USA,UAE
+602,Singapore,Dubai,Liquid Cargo,30,Sea Voyager,9300014,13.1,1.3521,103.8198,Singapore,Dubai,Singapore,UAE
+603,Sydney,Durban,Liquid Cargo,40,Global Trader,9300017,19.2,-33.8688,151.2093,Sydney,Durban,Australia,South Africa
+604,Sydney,Santos,Refrigerated Cargo,20,Cargo Express,9300022,19.4,-33.8688,151.2093,Sydney,Santos,Australia,Brazil
+605,New York,Mumbai,Liquid Cargo,5,Maritime Eagle,9300022,23.7,40.7128,-74.006,New York,Mumbai,USA,India
+606,Santos,Antwerp,Container,100,Golden Wave,9300026,20.8,-23.9608,-46.3336,Santos,Antwerp,Brazil,Belgium
+607,Chennai,Jebel Ali,Container,15,Blue Horizon,9300020,24.3,13.0827,80.2707,Chennai,Jebel Ali,India,UAE
+608,Rotterdam,Kolkata,Container,40,Ocean Star,9300019,17.5,51.9244,4.4777,Rotterdam,Kolkata,Netherlands,India
+609,Kolkata,New York,General Cargo,10,Atlantic Spirit,9300025,23.8,22.5726,88.3639,Kolkata,New York,India,USA
+610,Tokyo,Santos,Liquid Cargo,25,Maritime Eagle,9300017,19.2,35.6762,139.6503,Tokyo,Santos,Japan,Brazil
+611,Colombo,Shanghai,General Cargo,40,Golden Wave,9300021,19.6,6.9271,79.8612,Colombo,Shanghai,Sri Lanka,China
+612,Sydney,Kolkata,General Cargo,100,Blue Horizon,9300015,19.4,-33.8688,151.2093,Sydney,Kolkata,Australia,India
+613,Chennai,Durban,Bulk Cargo,75,Sea Voyager,9300015,22.2,13.0827,80.2707,Chennai,Durban,India,South Africa
+614,Sydney,Los Angeles,Liquid Cargo,100,Maritime Eagle,9300021,20.5,-33.8688,151.2093,Sydney,Los Angeles,Australia,USA
+615,Jebel Ali,Singapore,Liquid Cargo,15,Blue Horizon,9300018,15.6,25.0657,55.1713,Jebel Ali,Singapore,UAE,Singapore
+616,Durban,Tokyo,Container,30,Ocean Star,9300017,17.1,-29.8587,31.0218,Durban,Tokyo,South Africa,Japan
+617,Singapore,Antwerp,Bulk Cargo,5,Pacific Pearl,9300022,23.7,1.3521,103.8198,Singapore,Antwerp,Singapore,Belgium
+618,New York,Busan,Container,10,Pacific Pearl,9300023,23.0,40.7128,-74.006,New York,Busan,USA,South Korea
+619,Kolkata,Busan,Bulk Cargo,30,Cargo Express,9300027,22.1,22.5726,88.3639,Kolkata,Busan,India,South Korea
+620,Sydney,Mumbai,Refrigerated Cargo,40,Global Trader,9300014,17.7,-33.8688,151.2093,Sydney,Mumbai,Australia,India
+621,Antwerp,Hong Kong,General Cargo,15,Ocean Star,9300012,18.7,51.2194,4.4025,Antwerp,Hong Kong,Belgium,Hong Kong
+622,New York,Valencia,Liquid Cargo,75,Maritime Eagle,9300019,13.8,40.7128,-74.006,New York,Valencia,USA,Spain
+623,Shanghai,Rotterdam,General Cargo,20,Global Trader,9300017,23.4,31.2304,121.4737,Shanghai,Rotterdam,China,Netherlands
+624,Hamburg,Singapore,Container,30,Cargo Express,9300022,12.7,53.5511,9.9937,Hamburg,Singapore,Germany,Singapore
+625,Los Angeles,Tokyo,General Cargo,10,Cargo Express,9300023,18.6,33.7405,-118.2755,Los Angeles,Tokyo,USA,Japan
+626,Hamburg,Tokyo,Refrigerated Cargo,15,Cargo Express,9300024,19.7,53.5511,9.9937,Hamburg,Tokyo,Germany,Japan
+627,Santos,Valencia,General Cargo,25,Atlantic Spirit,9300023,16.5,-23.9608,-46.3336,Santos,Valencia,Brazil,Spain
+628,New York,Shanghai,Container,100,Maritime Eagle,9300025,12.6,40.7128,-74.006,New York,Shanghai,USA,China
+629,Hamburg,Los Angeles,Liquid Cargo,40,Global Trader,9300023,15.5,53.5511,9.9937,Hamburg,Los Angeles,Germany,USA
+630,Shanghai,Singapore,Liquid Cargo,15,Cargo Express,9300018,23.8,31.2304,121.4737,Shanghai,Singapore,China,Singapore
+631,Shanghai,Los Angeles,Bulk Cargo,25,Pacific Pearl,9300016,19.9,31.2304,121.4737,Shanghai,Los Angeles,China,USA
+632,Sydney,Tokyo,Refrigerated Cargo,20,Atlantic Spirit,9300018,18.0,-33.8688,151.2093,Sydney,Tokyo,Australia,Japan
+633,New York,Valencia,General Cargo,10,Golden Wave,9300023,17.2,40.7128,-74.006,New York,Valencia,USA,Spain
+634,Antwerp,Hong Kong,Bulk Cargo,100,Neptune Star,9300023,20.4,51.2194,4.4025,Antwerp,Hong Kong,Belgium,Hong Kong
+635,New York,Chennai,Bulk Cargo,25,Cargo Express,9300023,12.8,40.7128,-74.006,New York,Chennai,USA,India
+636,Los Angeles,New York,Container,75,Pacific Pearl,9300021,14.4,33.7405,-118.2755,Los Angeles,New York,USA,USA
+637,Singapore,Sydney,Refrigerated Cargo,5,Atlantic Spirit,9300023,20.8,1.3521,103.8198,Singapore,Sydney,Singapore,Australia
+638,New York,Los Angeles,Liquid Cargo,5,Maritime Eagle,9300025,17.3,40.7128,-74.006,New York,Los Angeles,USA,USA
+639,Santos,Rotterdam,Liquid Cargo,20,Atlantic Spirit,9300025,21.4,-23.9608,-46.3336,Santos,Rotterdam,Brazil,Netherlands
+640,Jebel Ali,Hong Kong,Liquid Cargo,15,Neptune Star,9300019,15.9,25.0657,55.1713,Jebel Ali,Hong Kong,UAE,Hong Kong
+641,Dubai,Busan,Liquid Cargo,25,Sea Voyager,9300013,18.1,25.2048,55.2708,Dubai,Busan,UAE,South Korea
+642,Dubai,Hong Kong,Bulk Cargo,20,Sea Voyager,9300014,14.9,25.2048,55.2708,Dubai,Hong Kong,UAE,Hong Kong
+643,Sydney,Busan,Refrigerated Cargo,25,Atlantic Spirit,9300019,15.4,-33.8688,151.2093,Sydney,Busan,Australia,South Korea
+644,Chennai,Antwerp,Liquid Cargo,100,Ocean Star,9300015,23.3,13.0827,80.2707,Chennai,Antwerp,India,Belgium
+645,Durban,Mumbai,General Cargo,75,Cargo Express,9300023,23.6,-29.8587,31.0218,Durban,Mumbai,South Africa,India
+646,Tokyo,Valencia,Container,15,Pacific Pearl,9300021,17.4,35.6762,139.6503,Tokyo,Valencia,Japan,Spain
+647,Rotterdam,Hong Kong,Container,50,Maritime Eagle,9300024,24.8,51.9244,4.4777,Rotterdam,Hong Kong,Netherlands,Hong Kong
+648,Busan,Dubai,Bulk Cargo,15,Sea Voyager,9300020,18.3,35.1796,129.0756,Busan,Dubai,South Korea,UAE
+649,Singapore,Shanghai,Liquid Cargo,15,Cargo Express,9300027,15.6,1.3521,103.8198,Singapore,Shanghai,Singapore,China
+650,Dubai,Antwerp,Refrigerated Cargo,40,Sea Voyager,9300012,13.7,25.2048,55.2708,Dubai,Antwerp,UAE,Belgium
+651,Tokyo,Colombo,Liquid Cargo,5,Cargo Express,9300019,17.0,35.6762,139.6503,Tokyo,Colombo,Japan,Sri Lanka
+652,Rotterdam,Tokyo,Container,75,Ocean Star,9300013,23.6,51.9244,4.4777,Rotterdam,Tokyo,Netherlands,Japan
+653,Shanghai,Singapore,Bulk Cargo,30,Global Trader,9300017,14.9,31.2304,121.4737,Shanghai,Singapore,China,Singapore
+654,Kolkata,Chennai,Container,25,Maritime Eagle,9300021,18.5,22.5726,88.3639,Kolkata,Chennai,India,India
+655,Mumbai,Singapore,Liquid Cargo,50,Pacific Pearl,9300020,24.3,19.076,72.8777,Mumbai,Singapore,India,Singapore
+656,Durban,Antwerp,Bulk Cargo,15,Atlantic Spirit,9300022,17.6,-29.8587,31.0218,Durban,Antwerp,South Africa,Belgium
+657,Jebel Ali,Hong Kong,General Cargo,40,Global Trader,9300021,14.1,25.0657,55.1713,Jebel Ali,Hong Kong,UAE,Hong Kong
+658,Hamburg,Los Angeles,Liquid Cargo,5,Blue Horizon,9300021,14.7,53.5511,9.9937,Hamburg,Los Angeles,Germany,USA
+659,Antwerp,Dubai,Refrigerated Cargo,5,Sea Voyager,9300021,16.8,51.2194,4.4025,Antwerp,Dubai,Belgium,UAE
+660,Los Angeles,Santos,General Cargo,5,Golden Wave,9300020,12.6,33.7405,-118.2755,Los Angeles,Santos,USA,Brazil
+661,Shanghai,Mumbai,General Cargo,40,Sea Voyager,9300013,17.4,31.2304,121.4737,Shanghai,Mumbai,China,India
+662,Valencia,Los Angeles,General Cargo,20,Cargo Express,9300020,21.1,39.4699,-0.3763,Valencia,Los Angeles,Spain,USA
+663,New York,Colombo,Liquid Cargo,25,Sea Voyager,9300015,20.6,40.7128,-74.006,New York,Colombo,USA,Sri Lanka
+664,Durban,Kolkata,Liquid Cargo,10,Maritime Eagle,9300021,22.8,-29.8587,31.0218,Durban,Kolkata,South Africa,India
+665,Durban,Chennai,Refrigerated Cargo,10,Pacific Pearl,9300020,13.5,-29.8587,31.0218,Durban,Chennai,South Africa,India
+666,Rotterdam,Hamburg,Bulk Cargo,20,Pacific Pearl,9300021,22.8,51.9244,4.4777,Rotterdam,Hamburg,Netherlands,Germany
+667,Sydney,New York,Container,50,Blue Horizon,9300020,12.5,-33.8688,151.2093,Sydney,New York,Australia,USA
+668,Jebel Ali,Busan,General Cargo,10,Global Trader,9300022,12.0,25.0657,55.1713,Jebel Ali,Busan,UAE,South Korea
+669,Santos,Jebel Ali,General Cargo,75,Blue Horizon,9300022,24.3,-23.9608,-46.3336,Santos,Jebel Ali,Brazil,UAE
+670,Chennai,New York,Bulk Cargo,25,Global Trader,9300014,17.9,13.0827,80.2707,Chennai,New York,India,USA
+671,Colombo,Singapore,Bulk Cargo,5,Sea Voyager,9300013,22.6,6.9271,79.8612,Colombo,Singapore,Sri Lanka,Singapore
+672,Hong Kong,Busan,General Cargo,10,Maritime Eagle,9300019,21.6,22.3193,114.1694,Hong Kong,Busan,Hong Kong,South Korea
+673,Shanghai,Dubai,Liquid Cargo,50,Blue Horizon,9300016,16.3,31.2304,121.4737,Shanghai,Dubai,China,UAE
+674,Los Angeles,Mumbai,General Cargo,15,Atlantic Spirit,9300020,22.6,33.7405,-118.2755,Los Angeles,Mumbai,USA,India
+675,Tokyo,Sydney,Refrigerated Cargo,40,Cargo Express,9300023,15.5,35.6762,139.6503,Tokyo,Sydney,Japan,Australia
+676,Sydney,Dubai,Container,5,Sea Voyager,9300018,13.7,-33.8688,151.2093,Sydney,Dubai,Australia,UAE
+677,Chennai,Colombo,Refrigerated Cargo,100,Golden Wave,9300027,18.3,13.0827,80.2707,Chennai,Colombo,India,Sri Lanka
+678,Dubai,Sydney,Refrigerated Cargo,15,Atlantic Spirit,9300024,19.9,25.2048,55.2708,Dubai,Sydney,UAE,Australia
+679,Jebel Ali,Chennai,Bulk Cargo,10,Maritime Eagle,9300026,17.7,25.0657,55.1713,Jebel Ali,Chennai,UAE,India
+680,Busan,Shanghai,Liquid Cargo,100,Neptune Star,9300019,22.0,35.1796,129.0756,Busan,Shanghai,South Korea,China
+681,Hamburg,Hong Kong,General Cargo,100,Neptune Star,9300020,18.8,53.5511,9.9937,Hamburg,Hong Kong,Germany,Hong Kong
+682,Sydney,Hamburg,Container,40,Cargo Express,9300020,16.5,-33.8688,151.2093,Sydney,Hamburg,Australia,Germany
+683,Valencia,Singapore,Liquid Cargo,15,Ocean Star,9300014,20.4,39.4699,-0.3763,Valencia,Singapore,Spain,Singapore
+684,Jebel Ali,Antwerp,Bulk Cargo,50,Blue Horizon,9300017,13.0,25.0657,55.1713,Jebel Ali,Antwerp,UAE,Belgium
+685,Hamburg,Hong Kong,Liquid Cargo,20,Pacific Pearl,9300020,12.7,53.5511,9.9937,Hamburg,Hong Kong,Germany,Hong Kong
+686,Tokyo,Sydney,Liquid Cargo,50,Global Trader,9300020,13.0,35.6762,139.6503,Tokyo,Sydney,Japan,Australia
+687,Colombo,Mumbai,Refrigerated Cargo,10,Cargo Express,9300025,17.8,6.9271,79.8612,Colombo,Mumbai,Sri Lanka,India
+688,Shanghai,Kolkata,Liquid Cargo,75,Maritime Eagle,9300025,17.4,31.2304,121.4737,Shanghai,Kolkata,China,India
+689,Shanghai,Chennai,Liquid Cargo,25,Golden Wave,9300029,24.5,31.2304,121.4737,Shanghai,Chennai,China,India
+690,Valencia,Rotterdam,General Cargo,30,Cargo Express,9300018,24.4,39.4699,-0.3763,Valencia,Rotterdam,Spain,Netherlands
+691,Hamburg,Jebel Ali,Liquid Cargo,100,Atlantic Spirit,9300017,19.3,53.5511,9.9937,Hamburg,Jebel Ali,Germany,UAE
+692,Jebel Ali,Hong Kong,General Cargo,20,Cargo Express,9300020,13.5,25.0657,55.1713,Jebel Ali,Hong Kong,UAE,Hong Kong
+693,Busan,Tokyo,General Cargo,30,Pacific Pearl,9300018,19.1,35.1796,129.0756,Busan,Tokyo,South Korea,Japan
+694,Singapore,Rotterdam,General Cargo,40,Cargo Express,9300022,13.8,1.3521,103.8198,Singapore,Rotterdam,Singapore,Netherlands
+695,Los Angeles,Rotterdam,Container,40,Global Trader,9300019,13.6,33.7405,-118.2755,Los Angeles,Rotterdam,USA,Netherlands
+696,Colombo,Rotterdam,General Cargo,40,Atlantic Spirit,9300022,13.4,6.9271,79.8612,Colombo,Rotterdam,Sri Lanka,Netherlands
+697,Santos,Chennai,Liquid Cargo,100,Cargo Express,9300025,17.9,-23.9608,-46.3336,Santos,Chennai,Brazil,India
+698,Kolkata,Antwerp,Liquid Cargo,5,Ocean Star,9300019,18.9,22.5726,88.3639,Kolkata,Antwerp,India,Belgium
+699,Sydney,Durban,Liquid Cargo,15,Cargo Express,9300027,24.0,-33.8688,151.2093,Sydney,Durban,Australia,South Africa
+700,Dubai,Kolkata,Liquid Cargo,100,Sea Voyager,9300012,17.0,25.2048,55.2708,Dubai,Kolkata,UAE,India
+701,Busan,Valencia,Container,100,Maritime Eagle,9300018,17.4,35.1796,129.0756,Busan,Valencia,South Korea,Spain
+702,Los Angeles,Sydney,Container,50,Atlantic Spirit,9300018,24.6,33.7405,-118.2755,Los Angeles,Sydney,USA,Australia
+703,Kolkata,Colombo,Bulk Cargo,75,Golden Wave,9300023,21.1,22.5726,88.3639,Kolkata,Colombo,India,Sri Lanka
+704,Valencia,Busan,Container,20,Neptune Star,9300023,20.2,39.4699,-0.3763,Valencia,Busan,Spain,South Korea
+705,Durban,New York,Container,15,Atlantic Spirit,9300021,24.0,-29.8587,31.0218,Durban,New York,South Africa,USA
+706,Antwerp,Santos,Liquid Cargo,30,Atlantic Spirit,9300022,21.2,51.2194,4.4025,Antwerp,Santos,Belgium,Brazil
+707,Jebel Ali,Durban,Liquid Cargo,40,Golden Wave,9300027,24.3,25.0657,55.1713,Jebel Ali,Durban,UAE,South Africa
+708,New York,Colombo,Refrigerated Cargo,5,Ocean Star,9300019,18.8,40.7128,-74.006,New York,Colombo,USA,Sri Lanka
+709,Kolkata,Singapore,Bulk Cargo,15,Ocean Star,9300020,14.6,22.5726,88.3639,Kolkata,Singapore,India,Singapore
+710,Los Angeles,Kolkata,Container,25,Ocean Star,9300011,21.0,33.7405,-118.2755,Los Angeles,Kolkata,USA,India
+711,Valencia,Singapore,Liquid Cargo,10,Atlantic Spirit,9300017,22.6,39.4699,-0.3763,Valencia,Singapore,Spain,Singapore
+712,Valencia,Hamburg,Bulk Cargo,75,Neptune Star,9300021,17.1,39.4699,-0.3763,Valencia,Hamburg,Spain,Germany
+713,Singapore,Sydney,Liquid Cargo,30,Maritime Eagle,9300020,17.4,1.3521,103.8198,Singapore,Sydney,Singapore,Australia
+714,Singapore,Shanghai,Container,50,Pacific Pearl,9300019,14.6,1.3521,103.8198,Singapore,Shanghai,Singapore,China
+715,Hong Kong,Durban,Container,20,Neptune Star,9300024,21.6,22.3193,114.1694,Hong Kong,Durban,Hong Kong,South Africa
+716,New York,Jebel Ali,Container,10,Blue Horizon,9300019,24.8,40.7128,-74.006,New York,Jebel Ali,USA,UAE
+717,Dubai,Valencia,Bulk Cargo,40,Sea Voyager,9300019,16.9,25.2048,55.2708,Dubai,Valencia,UAE,Spain
+718,Valencia,Los Angeles,General Cargo,25,Blue Horizon,9300021,14.1,39.4699,-0.3763,Valencia,Los Angeles,Spain,USA
+719,Busan,Jebel Ali,Liquid Cargo,30,Blue Horizon,9300022,12.5,35.1796,129.0756,Busan,Jebel Ali,South Korea,UAE
+720,Singapore,Busan,Bulk Cargo,75,Cargo Express,9300018,22.3,1.3521,103.8198,Singapore,Busan,Singapore,South Korea
+721,Mumbai,Hong Kong,Liquid Cargo,15,Neptune Star,9300020,14.9,19.076,72.8777,Mumbai,Hong Kong,India,Hong Kong
+722,Mumbai,Valencia,Refrigerated Cargo,75,Blue Horizon,9300015,17.4,19.076,72.8777,Mumbai,Valencia,India,Spain
+723,Mumbai,Tokyo,Bulk Cargo,30,Global Trader,9300017,23.5,19.076,72.8777,Mumbai,Tokyo,India,Japan
+724,Hong Kong,New York,Liquid Cargo,100,Global Trader,9300018,24.4,22.3193,114.1694,Hong Kong,New York,Hong Kong,USA
+725,Jebel Ali,Santos,Refrigerated Cargo,30,Ocean Star,9300016,13.5,25.0657,55.1713,Jebel Ali,Santos,UAE,Brazil
+726,Hamburg,Los Angeles,Refrigerated Cargo,30,Ocean Star,9300017,20.9,53.5511,9.9937,Hamburg,Los Angeles,Germany,USA
+727,Chennai,Sydney,General Cargo,25,Pacific Pearl,9300022,19.0,13.0827,80.2707,Chennai,Sydney,India,Australia
+728,Antwerp,Hong Kong,Refrigerated Cargo,50,Neptune Star,9300027,22.4,51.2194,4.4025,Antwerp,Hong Kong,Belgium,Hong Kong
+729,Singapore,Busan,General Cargo,10,Global Trader,9300023,16.2,1.3521,103.8198,Singapore,Busan,Singapore,South Korea
+730,Dubai,Santos,Container,10,Neptune Star,9300019,12.1,25.2048,55.2708,Dubai,Santos,UAE,Brazil
+731,Rotterdam,Colombo,General Cargo,40,Sea Voyager,9300013,14.7,51.9244,4.4777,Rotterdam,Colombo,Netherlands,Sri Lanka
+732,Kolkata,Shanghai,General Cargo,5,Cargo Express,9300020,21.3,22.5726,88.3639,Kolkata,Shanghai,India,China
+733,Mumbai,Singapore,General Cargo,75,Blue Horizon,9300016,22.3,19.076,72.8777,Mumbai,Singapore,India,Singapore
+734,Santos,Hamburg,Refrigerated Cargo,50,Pacific Pearl,9300019,17.3,-23.9608,-46.3336,Santos,Hamburg,Brazil,Germany
+735,Sydney,Busan,Liquid Cargo,10,Ocean Star,9300016,17.1,-33.8688,151.2093,Sydney,Busan,Australia,South Korea
+736,Shanghai,Chennai,Bulk Cargo,10,Golden Wave,9300026,12.6,31.2304,121.4737,Shanghai,Chennai,China,India
+737,Antwerp,Chennai,Liquid Cargo,25,Pacific Pearl,9300022,22.2,51.2194,4.4025,Antwerp,Chennai,Belgium,India
+738,Mumbai,Busan,Refrigerated Cargo,5,Cargo Express,9300026,17.0,19.076,72.8777,Mumbai,Busan,India,South Korea
+739,Dubai,Santos,Liquid Cargo,40,Global Trader,9300023,13.8,25.2048,55.2708,Dubai,Santos,UAE,Brazil
+740,New York,Kolkata,General Cargo,30,Pacific Pearl,9300015,20.8,40.7128,-74.006,New York,Kolkata,USA,India
+741,Valencia,Santos,Liquid Cargo,5,Blue Horizon,9300014,13.6,39.4699,-0.3763,Valencia,Santos,Spain,Brazil
+742,Durban,Tokyo,Bulk Cargo,10,Neptune Star,9300021,19.1,-29.8587,31.0218,Durban,Tokyo,South Africa,Japan
+743,Rotterdam,Tokyo,Container,75,Global Trader,9300017,17.4,51.9244,4.4777,Rotterdam,Tokyo,Netherlands,Japan
+744,Dubai,Rotterdam,Container,25,Global Trader,9300018,20.0,25.2048,55.2708,Dubai,Rotterdam,UAE,Netherlands
+745,Chennai,Rotterdam,Refrigerated Cargo,75,Golden Wave,9300025,23.1,13.0827,80.2707,Chennai,Rotterdam,India,Netherlands
+746,Valencia,Mumbai,General Cargo,25,Pacific Pearl,9300021,20.7,39.4699,-0.3763,Valencia,Mumbai,Spain,India
+747,Rotterdam,Durban,Container,30,Cargo Express,9300025,24.4,51.9244,4.4777,Rotterdam,Durban,Netherlands,South Africa
+748,Hamburg,Chennai,Bulk Cargo,20,Pacific Pearl,9300023,20.1,53.5511,9.9937,Hamburg,Chennai,Germany,India
+749,Jebel Ali,Colombo,Liquid Cargo,25,Atlantic Spirit,9300025,20.0,25.0657,55.1713,Jebel Ali,Colombo,UAE,Sri Lanka
+750,Kolkata,Durban,Refrigerated Cargo,30,Golden Wave,9300020,16.7,22.5726,88.3639,Kolkata,Durban,India,South Africa
+751,Dubai,Shanghai,Refrigerated Cargo,20,Atlantic Spirit,9300017,15.2,25.2048,55.2708,Dubai,Shanghai,UAE,China
+752,Los Angeles,Tokyo,Refrigerated Cargo,30,Blue Horizon,9300015,20.8,33.7405,-118.2755,Los Angeles,Tokyo,USA,Japan
+753,Colombo,Jebel Ali,Liquid Cargo,50,Atlantic Spirit,9300019,22.1,6.9271,79.8612,Colombo,Jebel Ali,Sri Lanka,UAE
+754,Chennai,Rotterdam,Container,25,Golden Wave,9300024,13.1,13.0827,80.2707,Chennai,Rotterdam,India,Netherlands
+755,Valencia,Rotterdam,General Cargo,10,Pacific Pearl,9300020,21.5,39.4699,-0.3763,Valencia,Rotterdam,Spain,Netherlands
+756,Shanghai,Valencia,Refrigerated Cargo,100,Ocean Star,9300017,22.6,31.2304,121.4737,Shanghai,Valencia,China,Spain
+757,Santos,Rotterdam,Liquid Cargo,75,Ocean Star,9300018,19.2,-23.9608,-46.3336,Santos,Rotterdam,Brazil,Netherlands
+758,Jebel Ali,Kolkata,Bulk Cargo,100,Atlantic Spirit,9300024,17.1,25.0657,55.1713,Jebel Ali,Kolkata,UAE,India
+759,Kolkata,Jebel Ali,Bulk Cargo,40,Neptune Star,9300028,18.6,22.5726,88.3639,Kolkata,Jebel Ali,India,UAE
+760,Antwerp,Shanghai,Container,100,Global Trader,9300014,23.0,51.2194,4.4025,Antwerp,Shanghai,Belgium,China
+761,Antwerp,Kolkata,Liquid Cargo,100,Cargo Express,9300019,14.1,51.2194,4.4025,Antwerp,Kolkata,Belgium,India
+762,Kolkata,Antwerp,Container,50,Atlantic Spirit,9300018,12.5,22.5726,88.3639,Kolkata,Antwerp,India,Belgium
+763,Mumbai,New York,Liquid Cargo,20,Atlantic Spirit,9300019,15.0,19.076,72.8777,Mumbai,New York,India,USA
+764,Hong Kong,Sydney,General Cargo,5,Cargo Express,9300022,23.9,22.3193,114.1694,Hong Kong,Sydney,Hong Kong,Australia
+765,Busan,Chennai,Bulk Cargo,25,Neptune Star,9300024,20.2,35.1796,129.0756,Busan,Chennai,South Korea,India
+766,Santos,Valencia,Bulk Cargo,40,Golden Wave,9300026,14.3,-23.9608,-46.3336,Santos,Valencia,Brazil,Spain
+767,Santos,Mumbai,Liquid Cargo,20,Neptune Star,9300026,15.3,-23.9608,-46.3336,Santos,Mumbai,Brazil,India
+768,Tokyo,Hong Kong,Liquid Cargo,50,Atlantic Spirit,9300024,18.3,35.6762,139.6503,Tokyo,Hong Kong,Japan,Hong Kong
+769,Shanghai,Valencia,General Cargo,20,Blue Horizon,9300022,17.7,31.2304,121.4737,Shanghai,Valencia,China,Spain
+770,Antwerp,Los Angeles,Bulk Cargo,15,Global Trader,9300014,14.0,51.2194,4.4025,Antwerp,Los Angeles,Belgium,USA
+771,Durban,Chennai,General Cargo,30,Global Trader,9300015,17.4,-29.8587,31.0218,Durban,Chennai,South Africa,India
+772,Jebel Ali,Antwerp,Refrigerated Cargo,15,Cargo Express,9300020,14.7,25.0657,55.1713,Jebel Ali,Antwerp,UAE,Belgium
+773,Shanghai,Los Angeles,Container,100,Ocean Star,9300014,13.7,31.2304,121.4737,Shanghai,Los Angeles,China,USA
+774,Kolkata,Valencia,General Cargo,15,Ocean Star,9300015,23.6,22.5726,88.3639,Kolkata,Valencia,India,Spain
+775,Dubai,New York,Liquid Cargo,40,Blue Horizon,9300018,18.7,25.2048,55.2708,Dubai,New York,UAE,USA
+776,Santos,Shanghai,Refrigerated Cargo,20,Pacific Pearl,9300021,24.3,-23.9608,-46.3336,Santos,Shanghai,Brazil,China
+777,Durban,Jebel Ali,Liquid Cargo,40,Cargo Express,9300025,14.2,-29.8587,31.0218,Durban,Jebel Ali,South Africa,UAE
+778,Kolkata,Durban,Bulk Cargo,75,Blue Horizon,9300021,20.1,22.5726,88.3639,Kolkata,Durban,India,South Africa
+779,Dubai,Hong Kong,Container,10,Cargo Express,9300027,19.8,25.2048,55.2708,Dubai,Hong Kong,UAE,Hong Kong
+780,Tokyo,Sydney,Liquid Cargo,20,Blue Horizon,9300013,13.4,35.6762,139.6503,Tokyo,Sydney,Japan,Australia
+781,Antwerp,Sydney,Refrigerated Cargo,15,Blue Horizon,9300014,19.9,51.2194,4.4025,Antwerp,Sydney,Belgium,Australia
+782,Durban,Singapore,General Cargo,10,Neptune Star,9300021,18.5,-29.8587,31.0218,Durban,Singapore,South Africa,Singapore
+783,Jebel Ali,Kolkata,Refrigerated Cargo,5,Golden Wave,9300023,19.0,25.0657,55.1713,Jebel Ali,Kolkata,UAE,India
+784,Antwerp,Sydney,Refrigerated Cargo,75,Atlantic Spirit,9300020,23.4,51.2194,4.4025,Antwerp,Sydney,Belgium,Australia
+785,Hamburg,Antwerp,General Cargo,100,Maritime Eagle,9300022,16.6,53.5511,9.9937,Hamburg,Antwerp,Germany,Belgium
+786,Sydney,Kolkata,General Cargo,20,Pacific Pearl,9300021,18.2,-33.8688,151.2093,Sydney,Kolkata,Australia,India
+787,New York,Santos,General Cargo,5,Maritime Eagle,9300024,15.4,40.7128,-74.006,New York,Santos,USA,Brazil
+788,Santos,Antwerp,Container,40,Sea Voyager,9300020,18.8,-23.9608,-46.3336,Santos,Antwerp,Brazil,Belgium
+789,Busan,Colombo,Liquid Cargo,40,Atlantic Spirit,9300025,13.4,35.1796,129.0756,Busan,Colombo,South Korea,Sri Lanka
+790,Los Angeles,New York,Liquid Cargo,30,Neptune Star,9300019,17.5,33.7405,-118.2755,Los Angeles,New York,USA,USA
+791,Los Angeles,Sydney,Refrigerated Cargo,75,Global Trader,9300015,17.4,33.7405,-118.2755,Los Angeles,Sydney,USA,Australia
+792,Dubai,Tokyo,Bulk Cargo,25,Neptune Star,9300021,19.2,25.2048,55.2708,Dubai,Tokyo,UAE,Japan
+793,Santos,Hong Kong,Container,10,Maritime Eagle,9300020,21.6,-23.9608,-46.3336,Santos,Hong Kong,Brazil,Hong Kong
+794,Colombo,Dubai,Bulk Cargo,40,Sea Voyager,9300016,14.8,6.9271,79.8612,Colombo,Dubai,Sri Lanka,UAE
+795,Valencia,Singapore,General Cargo,5,Blue Horizon,9300018,17.1,39.4699,-0.3763,Valencia,Singapore,Spain,Singapore
+796,Kolkata,Antwerp,Bulk Cargo,10,Golden Wave,9300026,17.7,22.5726,88.3639,Kolkata,Antwerp,India,Belgium
+797,Hamburg,Tokyo,Refrigerated Cargo,40,Sea Voyager,9300019,19.9,53.5511,9.9937,Hamburg,Tokyo,Germany,Japan
+798,Durban,Antwerp,General Cargo,100,Pacific Pearl,9300023,21.3,-29.8587,31.0218,Durban,Antwerp,South Africa,Belgium
+799,Dubai,Antwerp,Bulk Cargo,75,Cargo Express,9300027,12.1,25.2048,55.2708,Dubai,Antwerp,UAE,Belgium
+800,Rotterdam,Singapore,Liquid Cargo,20,Golden Wave,9300020,18.6,51.9244,4.4777,Rotterdam,Singapore,Netherlands,Singapore
+801,Dubai,Singapore,Container,5,Atlantic Spirit,9300017,15.1,25.2048,55.2708,Dubai,Singapore,UAE,Singapore
+802,Mumbai,New York,Refrigerated Cargo,40,Maritime Eagle,9300019,16.6,19.076,72.8777,Mumbai,New York,India,USA
+803,Santos,Rotterdam,General Cargo,10,Neptune Star,9300022,12.2,-23.9608,-46.3336,Santos,Rotterdam,Brazil,Netherlands
+804,Valencia,New York,Bulk Cargo,30,Neptune Star,9300023,23.9,39.4699,-0.3763,Valencia,New York,Spain,USA
+805,Los Angeles,Hamburg,Refrigerated Cargo,50,Golden Wave,9300025,24.5,33.7405,-118.2755,Los Angeles,Hamburg,USA,Germany
+806,Santos,Shanghai,General Cargo,75,Pacific Pearl,9300021,14.3,-23.9608,-46.3336,Santos,Shanghai,Brazil,China
+807,Valencia,Mumbai,Liquid Cargo,10,Neptune Star,9300026,15.8,39.4699,-0.3763,Valencia,Mumbai,Spain,India
+808,Los Angeles,Santos,Refrigerated Cargo,50,Golden Wave,9300028,15.3,33.7405,-118.2755,Los Angeles,Santos,USA,Brazil
+809,Santos,Jebel Ali,Refrigerated Cargo,50,Global Trader,9300023,21.8,-23.9608,-46.3336,Santos,Jebel Ali,Brazil,UAE
+810,Santos,Shanghai,Refrigerated Cargo,10,Cargo Express,9300018,13.5,-23.9608,-46.3336,Santos,Shanghai,Brazil,China
+811,Hamburg,Los Angeles,Liquid Cargo,30,Atlantic Spirit,9300017,17.4,53.5511,9.9937,Hamburg,Los Angeles,Germany,USA
+812,Valencia,Shanghai,Refrigerated Cargo,10,Pacific Pearl,9300017,15.2,39.4699,-0.3763,Valencia,Shanghai,Spain,China
+813,Busan,Mumbai,Bulk Cargo,50,Neptune Star,9300022,24.1,35.1796,129.0756,Busan,Mumbai,South Korea,India
+814,Hong Kong,Rotterdam,Refrigerated Cargo,20,Golden Wave,9300024,15.5,22.3193,114.1694,Hong Kong,Rotterdam,Hong Kong,Netherlands
+815,Rotterdam,Los Angeles,Container,20,Global Trader,9300019,23.3,51.9244,4.4777,Rotterdam,Los Angeles,Netherlands,USA
+816,Rotterdam,Los Angeles,General Cargo,10,Golden Wave,9300026,16.6,51.9244,4.4777,Rotterdam,Los Angeles,Netherlands,USA
+817,Mumbai,Antwerp,General Cargo,75,Golden Wave,9300027,12.1,19.076,72.8777,Mumbai,Antwerp,India,Belgium
+818,Jebel Ali,Hong Kong,Bulk Cargo,100,Golden Wave,9300028,16.1,25.0657,55.1713,Jebel Ali,Hong Kong,UAE,Hong Kong
+819,Jebel Ali,Dubai,Liquid Cargo,20,Neptune Star,9300028,15.6,25.0657,55.1713,Jebel Ali,Dubai,UAE,UAE
+820,Kolkata,Singapore,Liquid Cargo,50,Neptune Star,9300019,22.4,22.5726,88.3639,Kolkata,Singapore,India,Singapore
+821,Singapore,Valencia,Refrigerated Cargo,15,Atlantic Spirit,9300017,17.1,1.3521,103.8198,Singapore,Valencia,Singapore,Spain
+822,Chennai,Valencia,General Cargo,5,Cargo Express,9300020,16.1,13.0827,80.2707,Chennai,Valencia,India,Spain
+823,Rotterdam,Sydney,Liquid Cargo,30,Golden Wave,9300023,13.3,51.9244,4.4777,Rotterdam,Sydney,Netherlands,Australia
+824,Los Angeles,Dubai,Refrigerated Cargo,25,Neptune Star,9300023,15.4,33.7405,-118.2755,Los Angeles,Dubai,USA,UAE
+825,Durban,Busan,Container,40,Atlantic Spirit,9300021,14.4,-29.8587,31.0218,Durban,Busan,South Africa,South Korea
+826,Sydney,Hong Kong,Refrigerated Cargo,25,Atlantic Spirit,9300022,23.1,-33.8688,151.2093,Sydney,Hong Kong,Australia,Hong Kong
+827,Dubai,Durban,General Cargo,20,Blue Horizon,9300020,24.7,25.2048,55.2708,Dubai,Durban,UAE,South Africa
+828,Los Angeles,Hamburg,Container,40,Neptune Star,9300027,17.6,33.7405,-118.2755,Los Angeles,Hamburg,USA,Germany
+829,Kolkata,Dubai,Refrigerated Cargo,15,Cargo Express,9300027,22.5,22.5726,88.3639,Kolkata,Dubai,India,UAE
+830,Jebel Ali,Kolkata,Refrigerated Cargo,30,Neptune Star,9300019,18.9,25.0657,55.1713,Jebel Ali,Kolkata,UAE,India
+831,New York,Los Angeles,Refrigerated Cargo,5,Neptune Star,9300020,23.2,40.7128,-74.006,New York,Los Angeles,USA,USA
+832,Chennai,Rotterdam,Refrigerated Cargo,25,Ocean Star,9300013,14.8,13.0827,80.2707,Chennai,Rotterdam,India,Netherlands
+833,Chennai,Jebel Ali,Liquid Cargo,30,Atlantic Spirit,9300019,15.4,13.0827,80.2707,Chennai,Jebel Ali,India,UAE
+834,Valencia,Los Angeles,Bulk Cargo,10,Atlantic Spirit,9300020,12.3,39.4699,-0.3763,Valencia,Los Angeles,Spain,USA
+835,Durban,Rotterdam,Container,75,Golden Wave,9300025,19.5,-29.8587,31.0218,Durban,Rotterdam,South Africa,Netherlands
+836,New York,Tokyo,Refrigerated Cargo,50,Atlantic Spirit,9300022,20.8,40.7128,-74.006,New York,Tokyo,USA,Japan
+837,Mumbai,Sydney,Container,15,Golden Wave,9300027,15.7,19.076,72.8777,Mumbai,Sydney,India,Australia
+838,Busan,Colombo,General Cargo,10,Golden Wave,9300028,19.4,35.1796,129.0756,Busan,Colombo,South Korea,Sri Lanka
+839,Dubai,Hong Kong,Bulk Cargo,25,Global Trader,9300023,16.1,25.2048,55.2708,Dubai,Hong Kong,UAE,Hong Kong
+840,Durban,Tokyo,Liquid Cargo,30,Pacific Pearl,9300015,23.5,-29.8587,31.0218,Durban,Tokyo,South Africa,Japan
+841,Antwerp,Colombo,Container,5,Maritime Eagle,9300018,14.2,51.2194,4.4025,Antwerp,Colombo,Belgium,Sri Lanka
+842,Hamburg,New York,General Cargo,40,Sea Voyager,9300014,14.7,53.5511,9.9937,Hamburg,New York,Germany,USA
+843,Chennai,Mumbai,Refrigerated Cargo,5,Cargo Express,9300021,19.1,13.0827,80.2707,Chennai,Mumbai,India,India
+844,Antwerp,Mumbai,General Cargo,15,Sea Voyager,9300016,15.4,51.2194,4.4025,Antwerp,Mumbai,Belgium,India
+845,Tokyo,New York,Refrigerated Cargo,25,Global Trader,9300019,15.2,35.6762,139.6503,Tokyo,New York,Japan,USA
+846,Kolkata,Dubai,General Cargo,5,Neptune Star,9300025,22.9,22.5726,88.3639,Kolkata,Dubai,India,UAE
+847,Hong Kong,Busan,Bulk Cargo,75,Cargo Express,9300025,18.1,22.3193,114.1694,Hong Kong,Busan,Hong Kong,South Korea
+848,Valencia,Colombo,Container,75,Blue Horizon,9300021,24.6,39.4699,-0.3763,Valencia,Colombo,Spain,Sri Lanka
+849,Santos,Colombo,Bulk Cargo,75,Golden Wave,9300029,17.7,-23.9608,-46.3336,Santos,Colombo,Brazil,Sri Lanka
+850,Hong Kong,Antwerp,Refrigerated Cargo,10,Neptune Star,9300019,15.0,22.3193,114.1694,Hong Kong,Antwerp,Hong Kong,Belgium
+851,New York,Tokyo,General Cargo,25,Maritime Eagle,9300018,15.4,40.7128,-74.006,New York,Tokyo,USA,Japan
+852,Shanghai,Valencia,Liquid Cargo,50,Blue Horizon,9300015,16.5,31.2304,121.4737,Shanghai,Valencia,China,Spain
+853,Shanghai,Antwerp,Bulk Cargo,40,Cargo Express,9300021,15.9,31.2304,121.4737,Shanghai,Antwerp,China,Belgium
+854,Durban,Hamburg,Refrigerated Cargo,20,Ocean Star,9300015,19.1,-29.8587,31.0218,Durban,Hamburg,South Africa,Germany
+855,Valencia,Sydney,Refrigerated Cargo,40,Maritime Eagle,9300022,15.2,39.4699,-0.3763,Valencia,Sydney,Spain,Australia
+856,Hamburg,New York,Liquid Cargo,20,Sea Voyager,9300018,17.5,53.5511,9.9937,Hamburg,New York,Germany,USA
+857,Durban,Los Angeles,Bulk Cargo,75,Pacific Pearl,9300022,20.4,-29.8587,31.0218,Durban,Los Angeles,South Africa,USA
+858,Sydney,Rotterdam,General Cargo,25,Sea Voyager,9300020,14.4,-33.8688,151.2093,Sydney,Rotterdam,Australia,Netherlands
+859,Colombo,Jebel Ali,Container,50,Pacific Pearl,9300024,21.1,6.9271,79.8612,Colombo,Jebel Ali,Sri Lanka,UAE
+860,Busan,Shanghai,General Cargo,75,Blue Horizon,9300013,12.6,35.1796,129.0756,Busan,Shanghai,South Korea,China
+861,Dubai,Chennai,General Cargo,50,Pacific Pearl,9300016,15.5,25.2048,55.2708,Dubai,Chennai,UAE,India
+862,Hamburg,Mumbai,Bulk Cargo,20,Blue Horizon,9300015,12.2,53.5511,9.9937,Hamburg,Mumbai,Germany,India
+863,Sydney,New York,General Cargo,50,Cargo Express,9300021,25.0,-33.8688,151.2093,Sydney,New York,Australia,USA
+864,Busan,Mumbai,General Cargo,40,Blue Horizon,9300017,12.7,35.1796,129.0756,Busan,Mumbai,South Korea,India
+865,Valencia,Jebel Ali,Refrigerated Cargo,25,Blue Horizon,9300018,14.5,39.4699,-0.3763,Valencia,Jebel Ali,Spain,UAE
+866,Shanghai,Kolkata,Container,50,Global Trader,9300020,17.0,31.2304,121.4737,Shanghai,Kolkata,China,India
+867,Singapore,Hamburg,Liquid Cargo,10,Cargo Express,9300025,21.6,1.3521,103.8198,Singapore,Hamburg,Singapore,Germany
+868,Rotterdam,Antwerp,Bulk Cargo,25,Maritime Eagle,9300025,20.9,51.9244,4.4777,Rotterdam,Antwerp,Netherlands,Belgium
+869,Dubai,Singapore,Refrigerated Cargo,25,Neptune Star,9300028,18.8,25.2048,55.2708,Dubai,Singapore,UAE,Singapore
+870,New York,Rotterdam,General Cargo,20,Atlantic Spirit,9300016,23.5,40.7128,-74.006,New York,Rotterdam,USA,Netherlands
+871,Hamburg,Colombo,Liquid Cargo,25,Atlantic Spirit,9300017,12.2,53.5511,9.9937,Hamburg,Colombo,Germany,Sri Lanka
+872,Chennai,Sydney,Liquid Cargo,5,Global Trader,9300016,12.1,13.0827,80.2707,Chennai,Sydney,India,Australia
+873,Jebel Ali,Kolkata,Container,20,Atlantic Spirit,9300019,22.0,25.0657,55.1713,Jebel Ali,Kolkata,UAE,India
+874,Jebel Ali,Mumbai,General Cargo,5,Golden Wave,9300024,16.4,25.0657,55.1713,Jebel Ali,Mumbai,UAE,India
+875,Hong Kong,Kolkata,Refrigerated Cargo,15,Neptune Star,9300024,22.3,22.3193,114.1694,Hong Kong,Kolkata,Hong Kong,India
+876,Hamburg,Hong Kong,Refrigerated Cargo,30,Neptune Star,9300025,22.3,53.5511,9.9937,Hamburg,Hong Kong,Germany,Hong Kong
+877,Rotterdam,Shanghai,Bulk Cargo,15,Maritime Eagle,9300024,16.7,51.9244,4.4777,Rotterdam,Shanghai,Netherlands,China
+878,Singapore,Antwerp,Refrigerated Cargo,75,Cargo Express,9300026,19.3,1.3521,103.8198,Singapore,Antwerp,Singapore,Belgium
+879,Rotterdam,Durban,Refrigerated Cargo,30,Blue Horizon,9300022,19.1,51.9244,4.4777,Rotterdam,Durban,Netherlands,South Africa
+880,Los Angeles,Santos,Refrigerated Cargo,15,Blue Horizon,9300013,12.9,33.7405,-118.2755,Los Angeles,Santos,USA,Brazil
+881,New York,Los Angeles,Liquid Cargo,5,Neptune Star,9300020,16.8,40.7128,-74.006,New York,Los Angeles,USA,USA
+882,Tokyo,Dubai,Liquid Cargo,30,Ocean Star,9300013,20.1,35.6762,139.6503,Tokyo,Dubai,Japan,UAE
+883,Hamburg,Hong Kong,Refrigerated Cargo,75,Sea Voyager,9300015,20.6,53.5511,9.9937,Hamburg,Hong Kong,Germany,Hong Kong
+884,Rotterdam,Valencia,Liquid Cargo,15,Cargo Express,9300022,22.0,51.9244,4.4777,Rotterdam,Valencia,Netherlands,Spain
+885,New York,Hong Kong,General Cargo,10,Maritime Eagle,9300022,20.3,40.7128,-74.006,New York,Hong Kong,USA,Hong Kong
+886,Antwerp,Mumbai,Container,15,Ocean Star,9300017,22.9,51.2194,4.4025,Antwerp,Mumbai,Belgium,India
+887,Singapore,Hamburg,General Cargo,10,Sea Voyager,9300019,18.3,1.3521,103.8198,Singapore,Hamburg,Singapore,Germany
+888,Santos,Tokyo,Bulk Cargo,100,Cargo Express,9300026,18.8,-23.9608,-46.3336,Santos,Tokyo,Brazil,Japan
+889,Singapore,Tokyo,General Cargo,10,Global Trader,9300023,19.9,1.3521,103.8198,Singapore,Tokyo,Singapore,Japan
+890,Rotterdam,Antwerp,Bulk Cargo,5,Sea Voyager,9300012,18.1,51.9244,4.4777,Rotterdam,Antwerp,Netherlands,Belgium
+891,Valencia,Sydney,Liquid Cargo,5,Atlantic Spirit,9300017,22.3,39.4699,-0.3763,Valencia,Sydney,Spain,Australia
+892,Los Angeles,Valencia,General Cargo,25,Ocean Star,9300013,21.5,33.7405,-118.2755,Los Angeles,Valencia,USA,Spain
+893,Rotterdam,Valencia,Liquid Cargo,20,Sea Voyager,9300015,13.3,51.9244,4.4777,Rotterdam,Valencia,Netherlands,Spain
+894,Tokyo,Rotterdam,Liquid Cargo,20,Global Trader,9300018,18.8,35.6762,139.6503,Tokyo,Rotterdam,Japan,Netherlands
+895,Dubai,Santos,Liquid Cargo,10,Neptune Star,9300024,17.4,25.2048,55.2708,Dubai,Santos,UAE,Brazil
+896,Hong Kong,Jebel Ali,Container,15,Maritime Eagle,9300023,23.5,22.3193,114.1694,Hong Kong,Jebel Ali,Hong Kong,UAE
+897,Valencia,Tokyo,Liquid Cargo,15,Neptune Star,9300026,16.4,39.4699,-0.3763,Valencia,Tokyo,Spain,Japan
+898,Durban,Colombo,Bulk Cargo,75,Atlantic Spirit,9300024,23.7,-29.8587,31.0218,Durban,Colombo,South Africa,Sri Lanka
+899,Hong Kong,Colombo,Liquid Cargo,30,Maritime Eagle,9300026,22.7,22.3193,114.1694,Hong Kong,Colombo,Hong Kong,Sri Lanka
+900,Hamburg,Durban,Bulk Cargo,75,Neptune Star,9300019,14.8,53.5511,9.9937,Hamburg,Durban,Germany,South Africa
