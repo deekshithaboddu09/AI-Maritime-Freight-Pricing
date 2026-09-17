@@ -3,6 +3,7 @@ import "./Login.css";
 
 function Login({ onLogin }) {
   const [mode, setMode] = useState("login");
+  const [role, setRole] = useState("user");
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -22,45 +23,54 @@ function Login({ onLogin }) {
   };
 
   const handleLogin = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    setError("");
-    setSuccess("");
+  setError("");
+  setSuccess("");
 
-    if (!email.trim() || !password) {
-      setError("Please enter your email and password.");
-      return;
-    }
+  if (!email.trim() || !password) {
+    setError("Please enter your email and password.");
+    return;
+  }
 
-    const users = getUsers();
+  let users = getUsers();
 
-    const user = users.find(
-      (item) =>
-        item.email?.toLowerCase() ===
-          email.trim().toLowerCase() &&
-        item.password === password
+  const userIndex = users.findIndex(
+    (item) =>
+      item.email?.toLowerCase() ===
+        email.trim().toLowerCase() &&
+      item.password === password
+  );
+
+  if (userIndex === -1) {
+    setError(
+      "Invalid email or password. Please register first."
     );
+    return;
+  }
 
-    if (!user) {
-      setError(
-        "Invalid email or password. Please register first."
-      );
-      return;
-    }
+  // Update account role based on selected login type
+  users[userIndex].role = role;
 
-    localStorage.setItem(
-      "maritimeLoggedIn",
-      "true"
-    );
+  localStorage.setItem(
+    "maritimeUsers",
+    JSON.stringify(users)
+  );
 
-    localStorage.setItem(
-      "maritimeCurrentUser",
-      JSON.stringify(user)
-    );
+  const loggedInUser = users[userIndex];
 
-    onLogin(user);
-  };
+  localStorage.setItem(
+    "maritimeLoggedIn",
+    "true"
+  );
 
+  localStorage.setItem(
+    "maritimeCurrentUser",
+    JSON.stringify(loggedInUser)
+  );
+
+  onLogin(loggedInUser);
+};
   const handleRegister = (e) => {
     e.preventDefault();
 
@@ -99,16 +109,18 @@ function Login({ onLogin }) {
       return;
     }
 
+    // Create User or Admin account
     const newUser = {
       id: Date.now(),
       name: name.trim(),
       email: email.trim().toLowerCase(),
       password,
+      role: role
     };
 
     const updatedUsers = [
       ...users,
-      newUser,
+      newUser
     ];
 
     localStorage.setItem(
@@ -173,7 +185,6 @@ function Login({ onLogin }) {
 
           </div>
 
-
           {/* HEADING */}
 
           <div className="login-heading">
@@ -192,6 +203,67 @@ function Login({ onLogin }) {
 
           </div>
 
+          {/* ROLE SELECTION */}
+
+          <div
+            style={{
+              display: "flex",
+              gap: "10px",
+              marginBottom: "18px"
+            }}
+          >
+
+            <button
+              type="button"
+              onClick={() => {
+                setRole("user");
+                setError("");
+              }}
+              style={{
+                flex: 1,
+                padding: "11px",
+                borderRadius: "8px",
+                border:
+                  role === "user"
+                    ? "2px solid #0b7fab"
+                    : "1px solid #ccc",
+                background:
+                  role === "user"
+                    ? "#eaf7fb"
+                    : "white",
+                cursor: "pointer",
+                fontWeight: "600"
+              }}
+            >
+              User
+            </button>
+
+            <button
+              type="button"
+              onClick={() => {
+                setRole("admin");
+                setError("");
+              }}
+              style={{
+                flex: 1,
+                padding: "11px",
+                borderRadius: "8px",
+                border:
+                  role === "admin"
+                    ? "2px solid #0b7fab"
+                    : "1px solid #ccc",
+                background:
+                  role === "admin"
+                    ? "#eaf7fb"
+                    : "white",
+                cursor: "pointer",
+                fontWeight: "600"
+              }}
+            >
+              Admin
+            </button>
+
+          </div>
 
           {/* FORM */}
 
@@ -234,7 +306,6 @@ function Login({ onLogin }) {
 
             )}
 
-
             {/* EMAIL */}
 
             <div className="login-field">
@@ -261,7 +332,6 @@ function Login({ onLogin }) {
               </div>
 
             </div>
-
 
             {/* PASSWORD */}
 
@@ -314,28 +384,21 @@ function Login({ onLogin }) {
 
             </div>
 
-
             {/* ERROR */}
 
             {error && (
-
               <div className="login-error">
                 {error}
               </div>
-
             )}
-
 
             {/* SUCCESS */}
 
             {success && (
-
               <div className="login-success">
                 {success}
               </div>
-
             )}
-
 
             {/* SUBMIT */}
 
@@ -345,8 +408,16 @@ function Login({ onLogin }) {
             >
 
               {mode === "login"
-                ? "Sign In"
-                : "Create Account"}
+                ? `Sign In as ${
+                    role === "admin"
+                      ? "Admin"
+                      : "User"
+                  }`
+                : `Create ${
+                    role === "admin"
+                      ? "Admin"
+                      : "User"
+                  } Account`}
 
               <span>
                 →
@@ -355,7 +426,6 @@ function Login({ onLogin }) {
             </button>
 
           </form>
-
 
           {/* SWITCH */}
 
@@ -378,7 +448,6 @@ function Login({ onLogin }) {
 
           </div>
 
-
           {/* SECURITY */}
 
           <div className="login-security">
@@ -390,7 +459,6 @@ function Login({ onLogin }) {
             Secure Maritime Intelligence Access
 
           </div>
-
 
           {/* FOOTER */}
 

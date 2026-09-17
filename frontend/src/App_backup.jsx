@@ -355,22 +355,6 @@ function App() {
             Fleet Intelligence
           </button>
 
-          <button
-            className={
-              activeTab === "history"
-                ? "nav-link active"
-                : "nav-link"
-            }
-            onClick={() =>
-              scrollToSection(
-                "recent-searches",
-                "history"
-              )
-            }
-          >
-            My Shipments
-          </button>
-
         </div>
 
 
@@ -545,9 +529,10 @@ function App() {
 
 
           <p>
-            Plan shipments, compare routes and
-            get AI-powered freight pricing
-            from one place.
+            Analyze maritime routes,
+            compare available vessels and
+            receive intelligent recommendations
+            for your shipment.
           </p>
 
 
@@ -562,11 +547,11 @@ function App() {
               <div>
 
                 <strong>
-                  900+
+                  47+
                 </strong>
 
                 <span>
-                  Route Records
+                  Routes Available
                 </span>
 
               </div>
@@ -622,279 +607,12 @@ function App() {
       </section>
 
 
-
-      {/* =====================================================
-          CUSTOMER QUICK ACCESS
-      ===================================================== */}
-      <section className="customer-command-bar">
-        <div className="command-copy">
-          <span className="eyebrow">SHIPMENT WORKSPACE</span>
-          <h2>Manage your shipment from one place.</h2>
-          <p>Search routes, review quotations and revisit your recent shipment requests.</p>
-        </div>
-
-        <div className="command-actions">
-          <button
-            className="command-button primary"
-            onClick={() => scrollToSection("route-analysis", "route")}
-          >
-            + New Shipment
-          </button>
-          <button
-            className="command-button"
-            onClick={() => scrollToSection("fleet-intelligence", "fleet")}
-          >
-            View Route Results
-          </button>
-        </div>
-      </section>
-
-      {/* =====================================================
-          SHIPMENT WORKSPACE
-      ===================================================== */}
-      <section className="customer-workspace">
-        <div className="workspace-card">
-          <div className="workspace-card-top">
-            <div>
-              <span className="eyebrow">SMART SHIPPING WORKSPACE</span>
-              <h3>Everything you need for your next shipment</h3>
-            </div>
-            <span className="live-pill"><i></i> AI SYSTEM READY</span>
-          </div>
-
-          <div className="workspace-grid">
-            <div className="workspace-tile">
-              <div className="tile-icon">⌖</div>
-              <div>
-                <strong>Route Intelligence</strong>
-                <span>Compare available routes and vessels.</span>
-              </div>
-              <button onClick={() => scrollToSection("fleet-intelligence", "fleet")}>Open →</button>
-            </div>
-
-            <div className="workspace-tile">
-              <div className="tile-icon">▣</div>
-              <div>
-                <strong>Freight Quotation</strong>
-                <span>Review AI-generated freight pricing.</span>
-              </div>
-              <button onClick={() => scrollToSection("fleet-intelligence", "fleet")}>View →</button>
-            </div>
-
-            <div className="workspace-tile">
-              <div className="tile-icon">◷</div>
-              <div>
-                <strong>Shipment History</strong>
-                <span>{recentSearches.length} recent request{recentSearches.length === 1 ? "" : "s"} saved.</span>
-              </div>
-              <button onClick={() => scrollToSection("recent-searches", "dashboard")}>View →</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="operations-card">
-          <div className="operations-heading">
-            <span className="eyebrow">PLATFORM SERVICES</span>
-            <h3>Operational readiness</h3>
-          </div>
-
-          <div className="service-row">
-            <span>Route Agent</span>
-            <b className="service-online">Online</b>
-          </div>
-          <div className="service-row">
-            <span>Pricing Engine</span>
-            <b className="service-online">Online</b>
-          </div>
-          <div className="service-row">
-            <span>Margin Optimization</span>
-            <b className="service-online">Online</b>
-          </div>
-          <div className="service-row">
-            <span>Weather Intelligence</span>
-            <b className="service-soon">Coming Soon</b>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          ADVANCED INSIGHTS
-      ===================================================== */}
-      {result?.status === "found" && (
-        <section className="advanced-insights">
-          <div className="insight-header">
-            <div>
-              <span className="eyebrow">SHIPMENT INSIGHTS</span>
-              <h2>Your AI shipment summary</h2>
-            </div>
-            <span className="analysis-complete">✓ Analysis Complete</span>
-          </div>
-
-          <div className="insight-grid">
-            <div className="insight-box">
-              <span>ROUTE MATCH</span>
-              <strong>{matchScore}%</strong>
-              <p>AI compatibility score for this shipment.</p>
-            </div>
-
-            <div className="insight-box">
-              <span>AVAILABLE OPTIONS</span>
-              <strong>{totalRoutes}</strong>
-              <p>Routes found for your shipment requirements.</p>
-            </div>
-
-            <div className="insight-box">
-              <span>TRANSIT TIME</span>
-              <strong>{bestRoute?.estimated_days ?? "—"} <small>days</small></strong>
-              <p>Estimated transit for the recommended route.</p>
-            </div>
-
-            <div className="insight-box">
-              <span>ESTIMATED PRICE</span>
-              <strong>
-                {result.customer_price_usd != null
-                  ? `$${Number(result.customer_price_usd).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`
-                  : "—"}
-              </strong>
-              <p>AI-generated customer quotation.</p>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* =====================================================
-          RECENT SHIPMENTS
-      ===================================================== */}
-      <section className="recent-shipments-section" id="recent-searches">
-        <div className="recent-heading">
-          <div>
-            <span className="eyebrow">MY SHIPMENTS</span>
-            <h2>Recent shipment requests</h2>
-            <p>Your latest route searches are stored locally for quick reuse.</p>
-          </div>
-
-          {recentSearches.length > 0 && (
-            <button className="clear-history-button" onClick={clearHistory}>
-              Clear History
-            </button>
-          )}
-        </div>
-
-        {recentSearches.length === 0 ? (
-          <div className="recent-empty">
-            <div>⌁</div>
-            <strong>No recent shipments yet</strong>
-            <span>Run your first AI shipment analysis to see it here.</span>
-          </div>
-        ) : (
-          <div className="recent-shipment-list">
-            {recentSearches.map((search, index) => (
-              <button
-                className="recent-shipment-item"
-                key={`${search.origin}-${search.destination}-${search.containers}-${index}`}
-                onClick={() => useRecentSearch(search)}
-              >
-                <div className="recent-route">
-                  <strong>{search.origin}</strong>
-                  <span>→</span>
-                  <strong>{search.destination}</strong>
-                </div>
-                <div className="recent-meta">
-                  <span>{search.cargoType}</span>
-                  <span>{search.containers} containers</span>
-                  <span className={search.status === "found" ? "recent-status found" : "recent-status"}>
-                    {search.status === "found" ? "Route Found" : "No Route"}
-                  </span>
-                </div>
-                <span className="recent-open">Open →</span>
-              </button>
-            ))}
-          </div>
-        )}
-      </section>
-
-      {/* =====================================================
-          FUTURE MARITIME INTELLIGENCE
-      ===================================================== */}
-      <section className="future-intelligence">
-        <div className="future-heading">
-          <span className="eyebrow">NEXT-GENERATION FEATURES</span>
-          <h2>More maritime intelligence, coming next</h2>
-          <p>These modules can be connected to live data as the platform grows.</p>
-        </div>
-
-        <div className="future-grid">
-          <div className="future-card">
-            <span className="future-icon">◒</span>
-            <div>
-              <strong>Port Congestion</strong>
-              <p>Monitor port congestion and operational delays.</p>
-            </div>
-            <em>Coming Soon</em>
-          </div>
-
-          <div className="future-card">
-            <span className="future-icon">☁</span>
-            <div>
-              <strong>Weather Risk</strong>
-              <p>Include weather conditions in route decisions.</p>
-            </div>
-            <em>Coming Soon</em>
-          </div>
-
-          <div className="future-card">
-            <span className="future-icon">◉</span>
-            <div>
-              <strong>Shipment Tracking</strong>
-              <p>Track vessel movement and estimated arrival.</p>
-            </div>
-            <em>Coming Soon</em>
-          </div>
-        </div>
-      </section>
-
       {/* =====================================================
           MAIN
       ===================================================== */}
 
       <main className="main-content">
 
-        {/* REAL-WORLD USER OVERVIEW */}
-        <section className="user-overview-strip">
-          <div className="user-welcome">
-            <div className="welcome-icon">◈</div>
-            <div>
-              <span className="eyebrow">WELCOME BACK</span>
-              <h2>{currentUser?.name || "Shipment Manager"}</h2>
-              <p>Manage your shipment planning, route analysis and quotations from one workspace.</p>
-            </div>
-          </div>
-
-          <div className="overview-statuses">
-            <div className="status-pill"><i></i> Route Engine Online</div>
-            <div className="status-pill"><i></i> Pricing Ready</div>
-            <div className="status-pill"><i></i> AI Analysis Ready</div>
-          </div>
-        </section>
-
-        {/* QUICK ACTIONS */}
-        <section className="quick-actions">
-          <button onClick={() => scrollToSection("route-analysis", "route")}>
-            <span>⚓</span>
-            <div><strong>New Shipment</strong><small>Plan a new route</small></div>
-            <b>→</b>
-          </button>
-          <button onClick={() => scrollToSection("fleet-intelligence", "fleet")}>
-            <span>◎</span>
-            <div><strong>AI Route Match</strong><small>Compare suitable vessels</small></div>
-            <b>→</b>
-          </button>
-          <button onClick={() => scrollToSection("recent-searches", "history")}>
-            <span>◷</span>
-            <div><strong>Recent Shipments</strong><small>Open your latest searches</small></div>
-            <b>→</b>
-          </button>
-        </section>
 
         {/* =================================================
             ROUTE ANALYSIS
@@ -2245,19 +1963,23 @@ function App() {
                   </div>
 
                   <div
-                     className="recommendation-reason"
-                     style={{
-                       marginTop: 0,
-                       padding: "17px 18px"
-                     }}
-                   >
-                     <span style={{ letterSpacing: "1px" }}>
-                       WHY DID AI SELECT THIS ROUTE?
-                     </span>
-                     <p>
-                       This route offers the best overall fit for the shipment based on cargo compatibility, container capacity, and transit time.
-                     </p>
-                   </div>
+                    className="recommendation-reason"
+                    style={{
+                      marginTop: 0,
+                      padding: "17px 18px"
+                    }}
+                  >
+                    <span
+                      style={{
+                        letterSpacing: "1px"
+                      }}
+                    >
+                      WHY THIS ROUTE?
+                    </span>
+                    <p>
+                      {result.recommendation?.recommendation_reason}
+                    </p>
+                  </div>
                 </div>
 
 
@@ -2429,6 +2151,7 @@ function App() {
                 <div className="matching-header">
 
                   <div>
+
                     <span>
                       AVAILABLE OPTIONS
                     </span>
@@ -2438,26 +2161,29 @@ function App() {
                     </h3>
 
                     <p>
-                      Compare the available vessels,
-                      route distance and estimated transit time.
+                      Compare vessel speed,
+                      distance, transit time
+                      and route details.
                     </p>
+
                   </div>
 
+
                   <div className="route-count">
+
                     {totalRoutes}
                     {" "}
-                    {totalRoutes === 1 ? "ROUTE" : "ROUTES"}
+                    ROUTE
+                    {totalRoutes !== 1
+                      ? "S"
+                      : ""}
+
                   </div>
 
                 </div>
 
 
-                <div
-                  className="route-grid"
-                  style={{
-                    gap: "18px"
-                  }}
-                >
+                <div className="route-grid">
 
                   {matchingRoutes.map(
                     (route, index) => {
@@ -2465,12 +2191,6 @@ function App() {
                       const isBest =
                         route.route_id ===
                         bestRoute.route_id;
-
-                      const routeRank =
-                        route.rank ?? index + 1;
-
-                      const cargoMatch =
-                        route.cargo_match === true;
 
                       return (
 
@@ -2484,328 +2204,187 @@ function App() {
                               ? "route-option best-option"
                               : "route-option"
                           }
-                          style={{
-                            position: "relative",
-                            overflow: "hidden",
-                            padding: "22px",
-                            borderRadius: "20px",
-                            border: isBest
-                              ? "1.5px solid rgba(16,185,129,0.55)"
-                              : "1px solid rgba(148,163,184,0.18)",
-                            background: isBest
-                              ? "linear-gradient(145deg, rgba(16,185,129,0.10), rgba(59,130,246,0.07))"
-                              : "rgba(255,255,255,0.025)",
-                            boxShadow: isBest
-                              ? "0 12px 30px rgba(16,185,129,0.09)"
-                              : "none",
-                            transition: "transform 0.2s ease, box-shadow 0.2s ease"
-                          }}
                         >
 
+
                           {isBest && (
-                            <div
-                              className="best-badge"
-                              style={{
-                                position: "absolute",
-                                top: "14px",
-                                right: "14px",
-                                padding: "6px 10px",
-                                borderRadius: "999px",
-                                fontSize: "9px",
-                                fontWeight: 900,
-                                letterSpacing: "0.8px",
-                                background: "rgba(16,185,129,0.16)",
-                                border: "1px solid rgba(16,185,129,0.28)"
-                              }}
-                            >
-                              🥇 BEST MATCH
+
+                            <div className="best-badge">
+                              🥇 BEST ROUTE
                             </div>
+
                           )}
 
 
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                              gap: "12px",
-                              paddingRight: isBest ? "105px" : "0",
-                              marginBottom: "16px"
-                            }}
-                          >
-                            <span
-                              style={{
-                                fontSize: "10px",
-                                fontWeight: 900,
-                                letterSpacing: "1.1px",
-                                opacity: 0.62
-                              }}
-                            >
+                          <div className="route-option-top">
+
+                            <span>
+
                               {isBest
-                                ? "AI TOP RECOMMENDATION"
-                                : `ALTERNATIVE ${index + 1}`}
+                                ? "TOP RECOMMENDATION"
+                                : `OPTION ${
+                                    index + 1
+                                  }`}
+
                             </span>
 
-                            <span
-                              style={{
-                                padding: "5px 9px",
-                                borderRadius: "999px",
-                                fontSize: "9px",
-                                fontWeight: 800,
-                                border: "1px solid rgba(148,163,184,0.18)",
-                                background: "rgba(255,255,255,0.035)"
-                              }}
-                            >
-                              RANK #{routeRank}
-                            </span>
+
+                            <strong>
+                              ⚡{" "}
+                              {route.speed}
+                              {" "}
+                              knots
+                            </strong>
+
                           </div>
 
 
-                          <h4
-                            style={{
-                              fontSize: "21px",
-                              margin: "0 0 12px",
-                              lineHeight: 1.25
-                            }}
-                          >
+                          <h4>
+
                             🚢{" "}
-                            {route.recommended_ship}
+
+                            {
+                              route
+                                .recommended_ship
+                            }
+
                           </h4>
 
 
-                          <div
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              gap: "9px",
-                              marginBottom: "18px",
-                              fontSize: "14px"
-                            }}
-                          >
-                            <strong>
-                              {route.origin}
-                            </strong>
+                          <div className="route-path">
 
-                            <span
-                              style={{
-                                opacity: 0.55,
-                                fontSize: "18px"
-                              }}
-                            >
-                              →
+                            <span>
+                              {route.origin}
                             </span>
 
-                            <strong>
+                            <b>
+                              →
+                            </b>
+
+                            <span>
                               {route.destination}
-                            </strong>
+                            </span>
+
                           </div>
 
 
-                          <div
-                            style={{
-                              display: "grid",
-                              gridTemplateColumns:
-                                "repeat(2, minmax(0, 1fr))",
-                              gap: "10px",
-                              marginBottom: "14px"
-                            }}
-                          >
+                          {/* DISTANCE + TIME */}
 
-                            <div
-                              style={{
-                                padding: "13px",
-                                borderRadius: "14px",
-                                background: "rgba(255,255,255,0.035)",
-                                border: "1px solid rgba(148,163,184,0.14)"
-                              }}
-                            >
-                              <span
-                                style={{
-                                  display: "block",
-                                  fontSize: "9px",
-                                  fontWeight: 800,
-                                  letterSpacing: "1px",
-                                  opacity: 0.58
-                                }}
-                              >
+                          <div className="route-timing">
+
+                            <div>
+
+                              <span>
                                 DISTANCE
                               </span>
 
-                              <strong
-                                style={{
-                                  display: "block",
-                                  marginTop: "6px",
-                                  fontSize: "16px"
-                                }}
-                              >
+                              <strong>
+
                                 {route.distance_nm !==
                                   null &&
                                 route.distance_nm !==
                                   undefined
+
                                   ? `${Number(
                                       route.distance_nm
                                     ).toLocaleString()} NM`
+
                                   : "N/A"}
+
                               </strong>
+
                             </div>
 
 
-                            <div
-                              style={{
-                                padding: "13px",
-                                borderRadius: "14px",
-                                background: "rgba(255,255,255,0.035)",
-                                border: "1px solid rgba(148,163,184,0.14)"
-                              }}
-                            >
-                              <span
-                                style={{
-                                  display: "block",
-                                  fontSize: "9px",
-                                  fontWeight: 800,
-                                  letterSpacing: "1px",
-                                  opacity: 0.58
-                                }}
-                              >
-                                TRANSIT TIME
+                            <div>
+
+                              <span>
+                                EST. TRANSIT
                               </span>
 
-                              <strong
-                                style={{
-                                  display: "block",
-                                  marginTop: "6px",
-                                  fontSize: "16px"
-                                }}
-                              >
+                              <strong>
+
                                 {route.estimated_days !==
                                   null &&
                                 route.estimated_days !==
                                   undefined
+
                                   ? `${route.estimated_days} days`
+
                                   : "N/A"}
+
                               </strong>
+
                             </div>
 
                           </div>
 
 
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                              gap: "10px",
-                              padding: "11px 13px",
-                              borderRadius: "13px",
-                              marginBottom: "14px",
-                              background: "rgba(59,130,246,0.055)",
-                              border: "1px solid rgba(59,130,246,0.12)"
-                            }}
-                          >
-                            <span
-                              style={{
-                                fontSize: "10px",
-                                fontWeight: 800,
-                                letterSpacing: "0.8px",
-                                opacity: 0.65
-                              }}
-                            >
-                              VESSEL SPEED
-                            </span>
+                          {/* DETAILS */}
 
-                            <strong
-                              style={{
-                                fontSize: "13px"
-                              }}
-                            >
-                              ⚡ {route.speed} knots
-                            </strong>
-                          </div>
-
-
-                          <div
-                            style={{
-                              display: "grid",
-                              gridTemplateColumns:
-                                "repeat(3, minmax(0, 1fr))",
-                              gap: "8px"
-                            }}
-                          >
+                          <div className="route-details-grid">
 
                             <div>
-                              <span
-                                style={{
-                                  display: "block",
-                                  fontSize: "8px",
-                                  fontWeight: 800,
-                                  letterSpacing: "0.8px",
-                                  opacity: 0.52
-                                }}
-                              >
+
+                              <span>
                                 CARGO
                               </span>
 
-                              <strong
-                                style={{
-                                  display: "block",
-                                  marginTop: "4px",
-                                  fontSize: "11px"
-                                }}
-                              >
-                                {cargoMatch
-                                  ? "✓ MATCH"
-                                  : "REVIEW"}
+                              <strong>
+                                {
+                                  route
+                                    .cargo_type
+                                }
                               </strong>
+
                             </div>
 
 
                             <div>
-                              <span
-                                style={{
-                                  display: "block",
-                                  fontSize: "8px",
-                                  fontWeight: 800,
-                                  letterSpacing: "0.8px",
-                                  opacity: 0.52
-                                }}
-                              >
+
+                              <span>
                                 CONTAINERS
                               </span>
 
-                              <strong
-                                style={{
-                                  display: "block",
-                                  marginTop: "4px",
-                                  fontSize: "11px"
-                                }}
-                              >
-                                {route.containers}
+                              <strong>
+                                {
+                                  route
+                                    .containers
+                                }
                               </strong>
+
                             </div>
 
 
                             <div>
-                              <span
-                                style={{
-                                  display: "block",
-                                  fontSize: "8px",
-                                  fontWeight: 800,
-                                  letterSpacing: "0.8px",
-                                  opacity: 0.52
-                                }}
-                              >
+
+                              <span>
                                 IMO
                               </span>
 
-                              <strong
-                                style={{
-                                  display: "block",
-                                  marginTop: "4px",
-                                  fontSize: "11px"
-                                }}
-                              >
-                                {route.imo_number}
+                              <strong>
+                                {
+                                  route
+                                    .imo_number
+                                }
                               </strong>
+
+                            </div>
+
+
+                            <div>
+
+                              <span>
+                                ROUTE SCORE
+                              </span>
+
+                              <strong>
+                                {
+                                  route
+                                    .recommendation_score
+                                }
+                              </strong>
+
                             </div>
 
                           </div>
