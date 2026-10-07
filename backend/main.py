@@ -4,6 +4,7 @@ from pydantic import BaseModel
 
 from app.agents.RouteAgent import RouteAgent
 from app.agents.pricing_agent import PricingAgent
+from app.agents.weather_agent import WeatherAgent
 from app.models import QuotationRequest
 from app.services.quotation_service import QuotationService
 
@@ -25,6 +26,7 @@ app.add_middleware(
 
 route_agent = RouteAgent()
 pricing_agent = PricingAgent()
+weather_agent = WeatherAgent()
 quotation_service = QuotationService()
 
 
@@ -97,7 +99,16 @@ def generate_quotation(request: QuotationRequest):
         origin=request.origin,
         destination=request.destination,
         cargo_type=request.cargo_type,
-        containers=request.containers
+        containers=request.containers,
+        declared_documents=getattr(request, "declared_documents", None)
     )
+
+    return result
+
+
+@app.get("/api/weather/{route_id}")
+def assess_weather(route_id: str):
+
+    result = weather_agent.assess_weather(route_id)
 
     return result

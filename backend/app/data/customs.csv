@@ -1,0 +1,6 @@
+customs_id,cargo_type,base_risk_points,inspection_level,special_clearance_required,required_documents
+C001,General Cargo,0,Standard,False,"Commercial Invoice;Packing List;Bill of Lading;Customs Export/Import Declaration"
+C002,Container,0,Standard,False,"Commercial Invoice;Packing List;Bill of Lading;Container Seal Verification"
+C003,Bulk Cargo,1,Moderate,False,"Commercial Invoice;Packing List;Bill of Lading;Certified Weight Certificate"
+C004,Refrigerated Cargo,2,High,True,"Commercial Invoice;Packing List;Bill of Lading;Temperature & Cold-Chain Log;Phytosanitary Certificate"
+C005,Liquid Cargo,3,High,True,"Commercial Invoice;Packing List;Bill of Lading;Material Safety Data Sheet (MSDS);Hazardous Cargo Permit"

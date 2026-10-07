@@ -1,19 +1,28 @@
+from typing import List, Optional
 from app.agents.RouteAgent import RouteAgent
 from app.services.freight_pricing_engine import FreightPricingEngine
+from app.services.risk_service import ShipmentRiskService
 
 
 class QuotationService:
 
-    def __init__(self):
-        self.route_agent = RouteAgent()
-        self.pricing_engine = FreightPricingEngine()
+    def __init__(
+        self,
+        route_agent: Optional[RouteAgent] = None,
+        pricing_engine: Optional[FreightPricingEngine] = None,
+        risk_service: Optional[ShipmentRiskService] = None
+    ):
+        self.route_agent = route_agent or RouteAgent()
+        self.pricing_engine = pricing_engine or FreightPricingEngine()
+        self.risk_service = risk_service or ShipmentRiskService()
 
     def generate_quotation(
         self,
-        origin,
-        destination,
-        cargo_type,
-        containers
+        origin: str,
+        destination: str,
+        cargo_type: str,
+        containers: int,
+        declared_documents: Optional[List[str]] = None
     ):
         route_result = self.route_agent.analyze_route(
             origin=origin,
@@ -51,6 +60,19 @@ class QuotationService:
             for route in route_result["all_routes"]
             if route["route_id"] != best_route["route_id"]
         ]
+
+        # Evaluate combined shipment risk using the selected route & cargo specifications
+        origin_country = best_route.get("origin_country") or origin
+        destination_country = best_route.get("destination_country") or destination
+
+        risk_report = self.risk_service.generate_risk_report(
+            route_id=best_route.get("route_id"),
+            origin_country=origin_country,
+            destination_country=destination_country,
+            cargo_type=cargo_type,
+            containers=containers,
+            declared_documents=declared_documents
+        )
 
         return {
             "status": "success",
@@ -121,6 +143,14 @@ class QuotationService:
             ],
 
             "alternatives": alternatives,
+
+            # Integrated Risk Intelligence
+            "weather_risk": risk_report.get("weather_risk", {}),
+            "customs_risk": risk_report.get("customs_risk", {}),
+            "overall_risk_level": risk_report.get("overall_risk_level", "LOW"),
+            "total_risk_points": risk_report.get("total_risk_points", 0),
+            "risk_summary": risk_report.get("risk_summary", ""),
+            "operational_recommendations": risk_report.get("operational_recommendations", []),
 
             "message": "Quotation generated successfully."
         }

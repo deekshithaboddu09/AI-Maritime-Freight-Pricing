@@ -1,6 +1,386 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Login from "./Login";
+import AdminDashboard from "./AdminDashboard";
+import jsPDF from "jspdf";
+
+
+const downloadQuotationPDF = (quotation, currentUser) => {
+  if (!quotation) return;
+
+  const doc = new jsPDF("p", "mm", "a4");
+  const W = doc.internal.pageSize.getWidth();
+  const H = doc.internal.pageSize.getHeight();
+
+  const navy = [7, 24, 39];
+  const navy2 = [8, 39, 58];
+  const cyan = [43, 177, 229];
+  const green = [42, 190, 139];
+  const white = [255, 255, 255];
+  const ink = [24, 43, 57];
+  const muted = [92, 117, 132];
+  const light = [239, 247, 251];
+  const line = [205, 221, 229];
+
+  const money = (value) =>
+    `$${Number(value ?? 0).toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })}`;
+
+  const date = new Date();
+  const dateText = date.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
+
+  const quotationNumber = `MQ-${date.getFullYear()}${String(
+    date.getMonth() + 1
+  ).padStart(2, "0")}${String(date.getDate()).padStart(2, "0")}-${String(
+    Date.now()
+  ).slice(-5)}`;
+
+  const origin = quotation.origin || "N/A";
+  const destination = quotation.destination || "N/A";
+  const cargo = quotation.cargo_type || "N/A";
+  const containers = quotation.containers ?? "N/A";
+  const route = quotation.recommended_route || quotation.route_info || {};
+  const alternatives = quotation.alternatives || [];
+
+  const section = (title, x, y, width) => {
+    doc.setFillColor(...navy2);
+    doc.roundedRect(x, y, width, 9, 2, 2, "F");
+    doc.setTextColor(...white);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(10);
+    doc.text(title, x + 5, y + 6.1);
+  };
+
+  const labelValue = (label, value, x, y) => {
+    doc.setTextColor(...muted);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(7.3);
+    doc.text(label.toUpperCase(), x, y);
+    doc.setTextColor(...ink);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(8.8);
+    doc.text(String(value), x, y + 6);
+  };
+
+  // Header / brand
+  doc.setFillColor(...navy);
+  doc.rect(0, 0, W, 48, "F");
+  doc.setFillColor(...cyan);
+  doc.roundedRect(14, 8, 17, 17, 4, 4, "F");
+  doc.setTextColor(...white);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(13);
+  doc.text("M", 20.1, 19.5);
+  doc.setFontSize(19);
+  doc.text("MaritimeAI", 37, 16);
+  doc.setTextColor(163, 207, 222);
+  doc.setFontSize(7);
+  doc.setCharSpace(1.5);
+  doc.text("INTELLIGENT SHIPPING", 38, 22);
+  doc.setCharSpace(0);
+  doc.setTextColor(...white);
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(8.5);
+  doc.text("Global Routes. Smarter Decisions.", W - 14, 13, { align: "right" });
+  doc.setTextColor(...cyan);
+  doc.text("Efficient  •  Reliable  •  Sustainable", W - 14, 19, { align: "right" });
+
+  // Title
+  doc.setTextColor(...navy);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(23);
+  doc.text("Freight Quotation", 14, 61);
+  doc.setTextColor(...muted);
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(10);
+  doc.text("AI-Powered Route Optimization & Pricing", 14, 68);
+
+  doc.setFillColor(...navy);
+  doc.roundedRect(W - 72, 52, 58, 28, 3, 3, "F");
+  doc.setTextColor(170, 215, 230);
+  doc.setFontSize(7.5);
+  doc.text("QUOTATION NO.", W - 67, 59.5);
+  doc.setTextColor(...white);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(9.5);
+  doc.text(quotationNumber, W - 67, 66.5);
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(7.5);
+  doc.text(`Date: ${dateText}`, W - 67, 74);
+
+  // Shipment and customer
+  section("Shipment Details", 14, 87, 110);
+  section("Customer Information", 128, 87, 68);
+  labelValue("Origin", origin, 20, 103);
+  labelValue("Destination", destination, 20, 119);
+  labelValue("Cargo Type", cargo, 75, 103);
+  labelValue("Containers", `${containers} containers`, 75, 119);
+  labelValue("Customer Name", currentUser?.name || "Customer", 133, 103);
+  labelValue("Email", currentUser?.email || "N/A", 133, 119);
+
+  // Route and pricing
+  section("Recommended Route", 14, 137, 110);
+  section("Pricing Summary", 128, 137, 68);
+  labelValue("Route ID", route.route_id ?? "N/A", 20, 151);
+  labelValue("Recommended Vessel", route.recommended_ship ?? "N/A", 20, 166);
+  labelValue("Distance", `${route.distance_nm ?? "N/A"} NM`, 75, 151);
+  labelValue("Transit Time", `${quotation.transit_time_days ?? route.estimated_days ?? "N/A"} days`, 75, 166);
+  labelValue("AI Route Match", `${quotation.route_score ?? quotation.recommendation?.match_percentage ?? "N/A"}%`, 20, 181);
+
+  const priceRows = [
+    ["Base Freight", money(quotation.base_freight_usd)],
+    ["Fuel Surcharge", money(quotation.fuel_surcharge_usd)],
+    ["Port Charges", money(quotation.port_charge_usd)],
+    ["Risk Surcharge", money(quotation.risk_surcharge_usd)],
+    ["Operating Cost", money(quotation.operating_cost_usd)],
+    ["Customer Price", money(quotation.customer_price_usd)],
+  ];
+
+  let py = 146;
+  priceRows.forEach(([label, value], i) => {
+    if (i === priceRows.length - 1) {
+      doc.setFillColor(...light);
+      doc.rect(128, py - 4, 68, 9, "F");
+    }
+    doc.setTextColor(...(i === priceRows.length - 1 ? navy : ink));
+    doc.setFont("helvetica", i === priceRows.length - 1 ? "bold" : "normal");
+    doc.setFontSize(7.4);
+    doc.text(label, 132, py + 1);
+    doc.text(value, 192, py + 1, { align: "right" });
+    if (i !== priceRows.length - 1) {
+      doc.setDrawColor(...line);
+      doc.line(132, py + 4, 192, py + 4);
+    }
+    py += 9;
+  });
+
+  // Margin analysis
+  doc.setFillColor(...light);
+  doc.roundedRect(14, 197, 182, 27, 3, 3, "F");
+  doc.setTextColor(...navy);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(10);
+  doc.text("AI Pricing & Margin Analysis", 20, 206);
+  labelValue("Target Margin", `${quotation.target_margin_percent ?? "N/A"}%`, 20, 211);
+  labelValue("Actual Margin", `${quotation.actual_margin_percent ?? "N/A"}%`, 72, 211);
+  labelValue("Estimated Profit", money(quotation.profit_usd), 132, 211);
+
+  // Alternatives
+  section("Alternative Routes", 14, 232, 110);
+  section("Terms & Conditions", 128, 232, 68);
+  const rows = alternatives.slice(0, 3);
+  let ay = 244;
+  doc.setFillColor(225, 238, 244);
+  doc.rect(14, ay - 5, 110, 8, "F");
+  doc.setTextColor(...navy);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(7);
+  doc.text("ROUTE", 18, ay);
+  doc.text("DISTANCE", 77, ay);
+  doc.text("TRANSIT", 105, ay);
+  ay += 8;
+  doc.setFont("helvetica", "normal");
+  rows.forEach((item) => {
+    doc.setTextColor(...ink);
+    doc.text(`${item.origin || origin} → ${item.destination || destination}`.slice(0, 38), 18, ay);
+    doc.text(`${item.distance_nm ?? "N/A"} NM`, 77, ay);
+    doc.text(`${item.estimated_days ?? "N/A"} days`, 105, ay);
+    doc.setDrawColor(...line);
+    doc.line(14, ay + 3, 124, ay + 3);
+    ay += 8;
+  });
+  if (!rows.length) {
+    doc.setTextColor(...muted);
+    doc.text("No alternative routes available.", 18, ay);
+  }
+
+  const terms = [
+    "Quotation subject to route and capacity availability.",
+    "Transit time is an estimate and may vary.",
+    "Prices may change with operational conditions.",
+    "Final booking requires confirmation.",
+  ];
+  doc.setTextColor(...ink);
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(7.1);
+  terms.forEach((term, i) => doc.text(`• ${term}`, 133, 247 + i * 8));
+
+  // Appreciation
+  doc.setFillColor(...navy);
+  doc.roundedRect(14, 271, 182, 20, 3, 3, "F");
+  doc.setTextColor(...white);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(9.5);
+  doc.text("Thank you for choosing MaritimeAI", 20, 280);
+  doc.setTextColor(165, 208, 222);
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(7.2);
+  doc.text("AI-powered shipping intelligence for smarter logistics decisions.", 20, 286);
+
+  // Footer
+  doc.setFillColor(...navy);
+  doc.rect(0, H - 15, W, 15, "F");
+  doc.setTextColor(...white);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(7.5);
+  doc.text("MaritimeAI", 14, H - 7);
+  doc.setFont("helvetica", "normal");
+  doc.setTextColor(160, 202, 216);
+  doc.text("Intelligent Shipping  •  AI Route Optimization  •  Freight Intelligence", W / 2, H - 7, { align: "center" });
+  doc.text("Generated electronically", W - 14, H - 7, { align: "right" });
+
+
+  // ── Page 2: Shipment Risk & Customs Clearance ─────────────────────────────
+  if (quotation.overall_risk_level) {
+    doc.addPage();
+
+    // Page header
+    doc.setFillColor(...navy);
+    doc.rect(0, 0, W, 28, "F");
+    doc.setFillColor(...cyan);
+    doc.roundedRect(14, 6, 11, 11, 2, 2, "F");
+    doc.setTextColor(...white);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(9);
+    doc.text("M", 17.5, 13.5);
+    doc.setFontSize(13);
+    doc.text("MaritimeAI", 30, 14);
+    doc.setTextColor(163, 207, 222);
+    doc.setFontSize(7);
+    doc.setCharSpace(1.2);
+    doc.text("INTELLIGENT SHIPPING", 31, 20);
+    doc.setCharSpace(0);
+    doc.setTextColor(...white);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(8);
+    doc.text(`Quotation: ${quotationNumber}`, W - 14, 14, { align: "right" });
+    doc.text(`Date: ${dateText}`, W - 14, 21, { align: "right" });
+
+    // Page title
+    doc.setTextColor(...navy);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(18);
+    doc.text("Shipment Risk & Customs Clearance", 14, 46);
+    doc.setTextColor(...muted);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(9);
+    doc.text("AI-generated risk assessment for this shipment", 14, 53);
+
+    // Helper to render a colored risk pill inline in PDF
+    const riskColor = (level) => {
+      switch ((level || "").toUpperCase()) {
+        case "HIGH":   return [248, 113, 113];
+        case "MEDIUM": return [245, 158, 11];
+        default:       return [52, 211, 153];
+      }
+    };
+
+    const riskPill = (level, x, y) => {
+      const col = riskColor(level);
+      doc.setFillColor(...col);
+      doc.roundedRect(x, y - 5, 22, 7, 2, 2, "F");
+      doc.setTextColor(...white);
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(7.5);
+      doc.text((level || "N/A").toUpperCase(), x + 11, y + 0.2, { align: "center" });
+    };
+
+    // Risk overview section
+    section("Risk Overview", 14, 62, 182);
+
+    const overallLevel   = quotation.overall_risk_level  || "N/A";
+    const weatherLevel   = quotation.weather_risk?.risk_level  || "N/A";
+    const customsLevel   = quotation.customs_risk?.customs_risk_level || "N/A";
+    const totalPts       = quotation.total_risk_points ?? 0;
+    const validationSt   = quotation.customs_risk?.validation_status || "N/A";
+
+    // Labels row
+    doc.setTextColor(...muted);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(7.3);
+    doc.text("OVERALL RISK", 20, 79);
+    doc.text("WEATHER RISK", 78, 79);
+    doc.text("CUSTOMS RISK", 136, 79);
+
+    // Coloured pills
+    riskPill(overallLevel,  20, 91);
+    riskPill(weatherLevel,  78, 91);
+    riskPill(customsLevel, 136, 91);
+
+    // Total risk points
+    doc.setFillColor(...light);
+    doc.roundedRect(14, 100, 182, 14, 3, 3, "F");
+    doc.setTextColor(...muted);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(7.3);
+    doc.text("TOTAL RISK POINTS", 20, 108);
+    doc.setTextColor(...navy);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(11);
+    doc.text(`${totalPts} pts`, 100, 108);
+    doc.setTextColor(...muted);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(7.3);
+    doc.text("CUSTOMS VALIDATION", 140, 108);
+    doc.setTextColor(...navy);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(8);
+    doc.text(validationSt, 172, 108);
+
+    // Risk summary
+    section("Risk Summary", 14, 122, 182);
+    const summaryText = quotation.risk_summary || "No risk summary available.";
+    doc.setTextColor(...ink);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(8);
+    const summaryLines = doc.splitTextToSize(summaryText, 172);
+    doc.text(summaryLines, 20, 138);
+
+    // Operational recommendations
+    const summaryBlockH = Math.max(summaryLines.length * 5, 14);
+    const recTop = 130 + summaryBlockH;
+    section("Operational Recommendations", 14, recTop, 182);
+    const recs = Array.isArray(quotation.operational_recommendations)
+      ? quotation.operational_recommendations
+      : [];
+    let ry = recTop + 16;
+    if (recs.length === 0) {
+      doc.setTextColor(...muted);
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(8);
+      doc.text("No recommendations at this time.", 20, ry);
+    } else {
+      recs.forEach((rec) => {
+        doc.setTextColor(...ink);
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(8);
+        const recLines = doc.splitTextToSize(`• ${rec}`, 168);
+        doc.text(recLines, 20, ry);
+        ry += recLines.length * 5 + 4;
+      });
+    }
+
+    // Page 2 footer
+    doc.setFillColor(...navy);
+    doc.rect(0, H - 15, W, 15, "F");
+    doc.setTextColor(...white);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(7.5);
+    doc.text("MaritimeAI", 14, H - 7);
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(160, 202, 216);
+    doc.text("Intelligent Shipping  •  AI Route Optimization  •  Freight Intelligence", W / 2, H - 7, { align: "center" });
+    doc.text("Page 2", W - 14, H - 7, { align: "right" });
+  }
+
+  doc.save(`MaritimeAI_Quotation_${quotationNumber}.pdf`);
+};
 
 function App() {
   const [origin, setOrigin] = useState("");
@@ -119,7 +499,7 @@ function App() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:8000/api/quotations/generate",
+        "http://127.0.0.1:8001/api/quotations/generate",
         {
           method: "POST",
           headers: {
@@ -265,6 +645,16 @@ function App() {
     );
   }
 
+  // ADMIN HAS A COMPLETELY SEPARATE WORKSPACE
+  if (currentUser?.role === "admin") {
+    return (
+      <AdminDashboard
+        currentUser={currentUser}
+        onLogout={handleLogout}
+      />
+    );
+  }
+
   return (
     <div className="app">
 
@@ -335,25 +725,11 @@ function App() {
               )
             }
           >
-            Route Analysis
+            New Shipment
           </button>
 
 
-          <button
-            className={
-              activeTab === "fleet"
-                ? "nav-link active"
-                : "nav-link"
-            }
-            onClick={() =>
-              scrollToSection(
-                "fleet-intelligence",
-                "fleet"
-              )
-            }
-          >
-            Fleet Intelligence
-          </button>
+
 
           <button
             className={
@@ -624,96 +1000,17 @@ function App() {
 
 
       {/* =====================================================
-          CUSTOMER QUICK ACCESS
+          CUSTOMER SHIPMENT ACTIONS
       ===================================================== */}
-      <section className="customer-command-bar">
-        <div className="command-copy">
-          <span className="eyebrow">SHIPMENT WORKSPACE</span>
-          <h2>Manage your shipment from one place.</h2>
-          <p>Search routes, review quotations and revisit your recent shipment requests.</p>
+      <section className="customer-actions-clean">
+        <div>
+          <span className="eyebrow">SHIPMENT MANAGEMENT</span>
+          <h2>What would you like to do today?</h2>
+          <p>Plan a shipment, review your quotation, or open your recent requests.</p>
         </div>
-
-        <div className="command-actions">
-          <button
-            className="command-button primary"
-            onClick={() => scrollToSection("route-analysis", "route")}
-          >
-            + New Shipment
-          </button>
-          <button
-            className="command-button"
-            onClick={() => scrollToSection("fleet-intelligence", "fleet")}
-          >
-            View Route Results
-          </button>
-        </div>
-      </section>
-
-      {/* =====================================================
-          SHIPMENT WORKSPACE
-      ===================================================== */}
-      <section className="customer-workspace">
-        <div className="workspace-card">
-          <div className="workspace-card-top">
-            <div>
-              <span className="eyebrow">SMART SHIPPING WORKSPACE</span>
-              <h3>Everything you need for your next shipment</h3>
-            </div>
-            <span className="live-pill"><i></i> AI SYSTEM READY</span>
-          </div>
-
-          <div className="workspace-grid">
-            <div className="workspace-tile">
-              <div className="tile-icon">⌖</div>
-              <div>
-                <strong>Route Intelligence</strong>
-                <span>Compare available routes and vessels.</span>
-              </div>
-              <button onClick={() => scrollToSection("fleet-intelligence", "fleet")}>Open →</button>
-            </div>
-
-            <div className="workspace-tile">
-              <div className="tile-icon">▣</div>
-              <div>
-                <strong>Freight Quotation</strong>
-                <span>Review AI-generated freight pricing.</span>
-              </div>
-              <button onClick={() => scrollToSection("fleet-intelligence", "fleet")}>View →</button>
-            </div>
-
-            <div className="workspace-tile">
-              <div className="tile-icon">◷</div>
-              <div>
-                <strong>Shipment History</strong>
-                <span>{recentSearches.length} recent request{recentSearches.length === 1 ? "" : "s"} saved.</span>
-              </div>
-              <button onClick={() => scrollToSection("recent-searches", "dashboard")}>View →</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="operations-card">
-          <div className="operations-heading">
-            <span className="eyebrow">PLATFORM SERVICES</span>
-            <h3>Operational readiness</h3>
-          </div>
-
-          <div className="service-row">
-            <span>Route Agent</span>
-            <b className="service-online">Online</b>
-          </div>
-          <div className="service-row">
-            <span>Pricing Engine</span>
-            <b className="service-online">Online</b>
-          </div>
-          <div className="service-row">
-            <span>Margin Optimization</span>
-            <b className="service-online">Online</b>
-          </div>
-          <div className="service-row">
-            <span>Weather Intelligence</span>
-            <b className="service-soon">Coming Soon</b>
-          </div>
+        <div className="customer-actions-buttons">
+          <button className="command-button primary" onClick={() => scrollToSection("route-analysis", "route")}>+ New Shipment</button>
+          <button className="command-button" onClick={() => scrollToSection("recent-searches", "history")}>My Shipments</button>
         </div>
       </section>
 
@@ -814,87 +1111,12 @@ function App() {
       </section>
 
       {/* =====================================================
-          FUTURE MARITIME INTELLIGENCE
-      ===================================================== */}
-      <section className="future-intelligence">
-        <div className="future-heading">
-          <span className="eyebrow">NEXT-GENERATION FEATURES</span>
-          <h2>More maritime intelligence, coming next</h2>
-          <p>These modules can be connected to live data as the platform grows.</p>
-        </div>
-
-        <div className="future-grid">
-          <div className="future-card">
-            <span className="future-icon">◒</span>
-            <div>
-              <strong>Port Congestion</strong>
-              <p>Monitor port congestion and operational delays.</p>
-            </div>
-            <em>Coming Soon</em>
-          </div>
-
-          <div className="future-card">
-            <span className="future-icon">☁</span>
-            <div>
-              <strong>Weather Risk</strong>
-              <p>Include weather conditions in route decisions.</p>
-            </div>
-            <em>Coming Soon</em>
-          </div>
-
-          <div className="future-card">
-            <span className="future-icon">◉</span>
-            <div>
-              <strong>Shipment Tracking</strong>
-              <p>Track vessel movement and estimated arrival.</p>
-            </div>
-            <em>Coming Soon</em>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
           MAIN
       ===================================================== */}
 
       <main className="main-content">
 
-        {/* REAL-WORLD USER OVERVIEW */}
-        <section className="user-overview-strip">
-          <div className="user-welcome">
-            <div className="welcome-icon">◈</div>
-            <div>
-              <span className="eyebrow">WELCOME BACK</span>
-              <h2>{currentUser?.name || "Shipment Manager"}</h2>
-              <p>Manage your shipment planning, route analysis and quotations from one workspace.</p>
-            </div>
-          </div>
-
-          <div className="overview-statuses">
-            <div className="status-pill"><i></i> Route Engine Online</div>
-            <div className="status-pill"><i></i> Pricing Ready</div>
-            <div className="status-pill"><i></i> AI Analysis Ready</div>
-          </div>
-        </section>
-
-        {/* QUICK ACTIONS */}
-        <section className="quick-actions">
-          <button onClick={() => scrollToSection("route-analysis", "route")}>
-            <span>⚓</span>
-            <div><strong>New Shipment</strong><small>Plan a new route</small></div>
-            <b>→</b>
-          </button>
-          <button onClick={() => scrollToSection("fleet-intelligence", "fleet")}>
-            <span>◎</span>
-            <div><strong>AI Route Match</strong><small>Compare suitable vessels</small></div>
-            <b>→</b>
-          </button>
-          <button onClick={() => scrollToSection("recent-searches", "history")}>
-            <span>◷</span>
-            <div><strong>Recent Shipments</strong><small>Open your latest searches</small></div>
-            <b>→</b>
-          </button>
-        </section>
+        {/* ROUTE ANALYSIS IS THE PRIMARY CUSTOMER WORKSPACE */}
 
         {/* =================================================
             ROUTE ANALYSIS
@@ -1207,17 +1429,15 @@ function App() {
             <div>
 
               <span>
-                FLEET INTELLIGENCE
+                ROUTE & VESSEL RESULTS
               </span>
 
               <h2>
-                Intelligent Vessel Selection
+                Your route and vessel recommendation
               </h2>
 
               <p>
-                AI-powered route and vessel
-                recommendations based on your
-                shipment requirements.
+                Review the recommended route, vessel details, alternatives and freight quotation for this shipment.
               </p>
 
             </div>
@@ -1253,13 +1473,11 @@ function App() {
               </div>
 
               <h3>
-                Ready for Fleet Analysis
+                Ready for Route Analysis
               </h3>
 
               <p>
-                Analyze a shipment above to
-                view intelligent vessel
-                recommendations.
+                Enter your shipment details above to view the AI recommendation and quotation.
               </p>
 
             </div>
@@ -1445,6 +1663,13 @@ function App() {
                       <h3 style={{ marginBottom: "4px" }}>
                         Customer Quotation
                       </h3>
+                      <button
+                        type="button"
+                        className="download-quotation-btn"
+                        onClick={() => downloadQuotationPDF(result, currentUser)}
+                      >
+                        ↓ Download Freight Quotation
+                      </button>
                       <p
                         style={{
                           margin: 0,
@@ -2011,6 +2236,116 @@ function App() {
                   )}
                 </div>
               </div>
+
+
+              {/* SHIPMENT RISK */}
+
+              {result?.overall_risk_level && (
+                <div className="quotation-result">
+                  <div
+                    className="fleet-card"
+                    style={{ overflow: "hidden", borderRadius: "22px" }}
+                  >
+                    <div
+                      className="fleet-card-heading"
+                      style={{ alignItems: "center", marginBottom: "18px" }}
+                    >
+                      <div>
+                        <span style={{ letterSpacing: "1.5px" }}>
+                          SHIPMENT RISK &amp; CUSTOMS CLEARANCE
+                        </span>
+                        <h3 style={{ margin: "6px 0 0" }}>
+                          Shipment Risk Assessment
+                        </h3>
+                      </div>
+                      <span
+                        className={`risk-badge risk-badge-${(result.overall_risk_level || "").toLowerCase()}`}
+                      >
+                        {result.overall_risk_level} RISK
+                      </span>
+                    </div>
+
+                    {/* Risk grid: Overall / Weather / Customs */}
+                    <div className="risk-grid">
+                      <div className="risk-grid-item">
+                        <span className="risk-grid-label">Overall Risk</span>
+                        <span
+                          className={`risk-badge risk-badge-${(result.overall_risk_level || "").toLowerCase()}`}
+                        >
+                          {result.overall_risk_level ?? "N/A"}
+                        </span>
+                      </div>
+
+                      <div className="risk-grid-item">
+                        <span className="risk-grid-label">Weather Risk</span>
+                        <span
+                          className={`risk-badge risk-badge-${(result.weather_risk?.risk_level || "").toLowerCase()}`}
+                        >
+                          {result.weather_risk?.risk_level ?? "N/A"}
+                        </span>
+                      </div>
+
+                      <div className="risk-grid-item">
+                        <span className="risk-grid-label">Customs Risk</span>
+                        <span
+                          className={`risk-badge risk-badge-${(result.customs_risk?.customs_risk_level || "").toLowerCase()}`}
+                        >
+                          {result.customs_risk?.customs_risk_level ?? "N/A"}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Total risk points */}
+                    <div className="risk-points-row">
+                      <span className="risk-grid-label">Total Risk Points</span>
+                      <strong className="risk-points-value">
+                        {result.total_risk_points ?? 0} pts
+                      </strong>
+                    </div>
+
+                    {/* Risk summary */}
+                    {result.risk_summary && (
+                      <div className="risk-summary-block">
+                        <span className="risk-grid-label">Risk Summary</span>
+                        <p className="risk-summary-text">{result.risk_summary}</p>
+                      </div>
+                    )}
+
+                    {/* Operational recommendations */}
+                    {Array.isArray(result.operational_recommendations) &&
+                      result.operational_recommendations.length > 0 && (
+                        <div className="risk-summary-block">
+                          <span className="risk-grid-label">
+                            Operational Recommendations
+                          </span>
+                          <ul className="risk-rec-list">
+                            {result.operational_recommendations.map((rec, i) => (
+                              <li key={i}>{rec}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                    {/* Customs validation status */}
+                    {result.customs_risk?.validation_status && (
+                      <div className="risk-points-row" style={{ marginTop: "10px" }}>
+                        <span className="risk-grid-label">Customs Validation</span>
+                        <span
+                          className={`risk-badge risk-badge-${
+                            result.customs_risk.validation_status === "VALID"
+                              ? "low"
+                              : result.customs_risk.validation_status === "CONDITIONAL"
+                              ? "medium"
+                              : "high"
+                          }`}
+                        >
+                          {result.customs_risk.validation_status}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
 
 
               {/* AI + VESSEL */}
@@ -2828,124 +3163,7 @@ function App() {
         </section>
 
 
-        {/* =================================================
-            RECENT SEARCHES
-        ================================================= */}
 
-        <section className="recent-section">
-
-          <div className="recent-header">
-
-            <div>
-
-              <span>
-                RECENT ACTIVITY
-              </span>
-
-              <h2>
-                Recent Searches
-              </h2>
-
-            </div>
-
-
-            {recentSearches.length > 0 && (
-
-              <button
-                className="clear-history"
-                onClick={clearHistory}
-              >
-                Clear History
-              </button>
-
-            )}
-
-          </div>
-
-
-          {recentSearches.length === 0 ? (
-
-            <div className="empty-history">
-
-              Your recent route searches
-              will appear here.
-
-            </div>
-
-          ) : (
-
-            <div className="recent-grid">
-
-              {recentSearches.map(
-                (search, index) => (
-
-                  <div
-                    className="recent-card"
-                    key={index}
-                    onClick={() =>
-                      useRecentSearch(search)
-                    }
-                  >
-
-                    <div className="recent-route">
-
-                      <strong>
-                        {search.origin}
-                      </strong>
-
-                      <span>
-                        →
-                      </span>
-
-                      <strong>
-                        {search.destination}
-                      </strong>
-
-                    </div>
-
-
-                    <p>
-
-                      {search.cargoType}
-                      {" • "}
-                      {search.containers}
-                      {" Containers"}
-
-                    </p>
-
-
-                    <div
-                      className={
-                        search.status ===
-                        "found"
-
-                          ? "recent-status found"
-
-                          : "recent-status not-found"
-                      }
-                    >
-
-                      ●{" "}
-
-                      {search.status ===
-                      "found"
-
-                        ? "Route Found"
-
-                        : "Route Not Found"}
-
-                    </div>
-
-                  </div>
-
-                )
-              )}
-
-            </div>
-
-          )}
-
-        </section>
 
       </main>
 
